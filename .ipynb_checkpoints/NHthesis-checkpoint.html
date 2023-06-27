@@ -1,0 +1,1020 @@
+<html><head>
+<script src="NHthesis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/quarto.js"></script>
+<script src="NHthesis_files/libs/quarto-html/popper.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/anchor.min.js"></script>
+<link href="NHthesis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="NHthesis_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="NHthesis_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="NHthesis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="NHthesis_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script src="NHthesis_files/libs/clipboard/clipboard.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/quarto.js"></script>
+<script src="NHthesis_files/libs/quarto-html/popper.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="NHthesis_files/libs/quarto-html/anchor.min.js"></script>
+<link href="NHthesis_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="NHthesis_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="NHthesis_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="NHthesis_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="NHthesis_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"></head><body class="fullcontent">1"&gt;<span class="co"># construct the dataframe for two parts of the digitized text with the topostext function</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>df1 <span class="op">=</span> topostext(url1)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>df2 <span class="op">=</span> topostext(url2)</span>
+
+
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df1.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>(1158, 4)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="5">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df2.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>(2335, 4)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="6">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df1.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">UUID4</th>
+<th data-quarto-table-cell-role="th">Reference</th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>7da79925-2010-47ca-ae38-771e596fc34b</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.1.1</td>
+<td>1.1.1</td>
+<td>PREFACE IN THE FORM OF A LETTER: PLINIUS SECUN...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>36136e66-7e14-4827-8a5a-5026de8b6a39</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.2.1</td>
+<td>1.2.1</td>
+<td>But who could judge the value of these composi...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>eed75d39-9292-43e8-977c-2e1941108bea</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.3.1</td>
+<td>1.3.1</td>
+<td>But if Lucilius, the originator of critical sn...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2fceb4a6-2e53-4c50-ba13-0ef23f9be723</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.4.1</td>
+<td>1.4.1</td>
+<td>My own presumption has indeed gone further, in...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>79b0c382-3821-4bd7-bdf6-c6279155c0ca</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.5.1</td>
+<td>1.5.1</td>
+<td>For my own part I am of opinion that a special...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="7">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># combine the two parts of scraped text</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>wholebook <span class="op">=</span> pd.concat([df1, df2], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>wholebook.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>(3493, 4)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="8">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># store the sparsed text into csv file</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>wholebook.to_csv(<span class="st">'wholebooktext.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="9">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># construct a corpus for the entire text</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>wholebook_corpus <span class="op">=</span> wholebook[[<span class="st">'Chapter&amp;Paragraph'</span>, <span class="st">'Text'</span>]]</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>wholebook_corpus[<span class="st">'Text'</span>] <span class="op">=</span> wholebook_corpus[<span class="st">'Text'</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>wholebook_corpus.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\dawn\AppData\Local\Temp\ipykernel_11960\2434696912.py:4: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  wholebook_corpus['Text'] = wholebook_corpus['Text'].str.lower()</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1.1.1</td>
+<td>preface in the form of a letter: plinius secun...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>1.2.1</td>
+<td>but who could judge the value of these composi...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1.3.1</td>
+<td>but if lucilius, the originator of critical sn...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>1.4.1</td>
+<td>my own presumption has indeed gone further, in...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>1.5.1</td>
+<td>for my own part i am of opinion that a special...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="12">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># set the counter to only output the first 5 file names for check</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> wholebook_corpus.iterrows():</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>    chapter_paragraph <span class="op">=</span> row[<span class="st">'Chapter&amp;Paragraph'</span>]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> row[<span class="st">'Text'</span>]</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>chapter_paragraph<span class="sc">}</span><span class="ss">_text.txt"</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">'w'</span>, encoding <span class="op">=</span> <span class="st">'utf-8'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(text)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co"># print the last exported filename for check     </span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Exported </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Exported 37.78.1_text.txt</code></pre>
+</div>
+</div>
+
+<section id="b.-scrape-text-with-geographical-annotation" class="level2">
+<h2 data-anchor-id="b.-scrape-text-with-geographical-annotation">B. Scrape text with geographical annotation</h2>
+<div class="cell" data-execution_count="13">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the place names with annotation in the first part of the digitized book</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url1)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>soup <span class="op">=</span> BeautifulSoup(response.content, features<span class="op">=</span><span class="st">"lxml"</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>links <span class="op">=</span> soup.find_all(<span class="st">"a"</span>, {<span class="st">"class"</span>: <span class="st">"place"</span>})</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> link <span class="kw">in</span> links[:<span class="dv">5</span>]:</span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(link)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;a about="https://topostext.org/place/380237SAca" class="place" lat="37.992" long="23.707"&gt;Academy&lt;/a&gt;
+&lt;a about="https://topostext.org/place/419125LPal" class="place" lat="41.8896" long="12.4884"&gt;Palatine&lt;/a&gt;
+&lt;a about="https://topostext.org/place/419125LEsq" class="place" lat="41.895" long="12.496"&gt;Esquiline&lt;/a&gt;
+&lt;a about="https://topostext.org/place/419125SCap" class="place" lat="41.8933" long="12.483"&gt;Capitol&lt;/a&gt;
+&lt;a about="https://topostext.org/place/419125PRom" class="place" lat="41.891" long="12.486"&gt;Rome&lt;/a&gt;</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="14">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># number of class=place detected</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(links)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="14">
+<pre><code>5595</code></pre>
+</div>
+</div>
+<div class="cell" data-scrolled="true" data-execution_count="15">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># function for text with geographical name annotation scraping</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> toposgeotext(url):</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(url)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">!=</span> <span class="dv">200</span>:</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">raise</span> <span class="pp">FileNotFoundError</span>(<span class="st">"Failed to retrieve HTML content: "</span> <span class="op">+</span> url)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> []</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    soup <span class="op">=</span> BeautifulSoup(response.content, features<span class="op">=</span><span class="st">"lxml"</span>)</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>    links <span class="op">=</span> soup.find_all(<span class="st">"a"</span>, {<span class="st">"class"</span>: <span class="st">"place"</span>})</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> link <span class="kw">in</span> links:</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>        Place_Name <span class="op">=</span> link.contents[<span class="dv">0</span>]  <span class="co"># Place name</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>        ToposText_ID <span class="op">=</span> link.get(<span class="st">'about'</span>)  <span class="co"># ToposText ID</span></span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>        Lat <span class="op">=</span> link.get(<span class="st">'lat'</span>)</span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>        Long <span class="op">=</span> link.get(<span class="st">'long'</span>)</span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>        Parent <span class="op">=</span> link.find_parent(<span class="st">"p"</span>)</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>        Text <span class="op">=</span> Parent.text  <span class="co"># Extract related text</span></span>
+<span id="cb20-19"><a href="#cb20-19" aria-hidden="true" tabindex="-1"></a>        Reference <span class="op">=</span> Parent.get(<span class="st">"id"</span>)  <span class="co"># Indicate book, chapter, paragraph</span></span>
+<span id="cb20-20"><a href="#cb20-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-21"><a href="#cb20-21" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Separate the information in Text using the regular expression pattern</span></span>
+<span id="cb20-22"><a href="#cb20-22" aria-hidden="true" tabindex="-1"></a>        match <span class="op">=</span> re.search(<span class="vs">r'§\s+(\d+\.\d+\.\d*)\s+(.*)$'</span>, Text)</span>
+<span id="cb20-23"><a href="#cb20-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> match:</span>
+<span id="cb20-24"><a href="#cb20-24" aria-hidden="true" tabindex="-1"></a>            Chapternparagraph <span class="op">=</span> match.group(<span class="dv">1</span>)  <span class="co"># Extract the reference from the pattern</span></span>
+<span id="cb20-25"><a href="#cb20-25" aria-hidden="true" tabindex="-1"></a>            Text <span class="op">=</span> match.group(<span class="dv">2</span>)  <span class="co"># Extract the remaining text from the pattern</span></span>
+<span id="cb20-26"><a href="#cb20-26" aria-hidden="true" tabindex="-1"></a>            UUID4 <span class="op">=</span> uuid.uuid4()  <span class="co"># Create a unique ID</span></span>
+<span id="cb20-27"><a href="#cb20-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-28"><a href="#cb20-28" aria-hidden="true" tabindex="-1"></a>            data.append({</span>
+<span id="cb20-29"><a href="#cb20-29" aria-hidden="true" tabindex="-1"></a>                <span class="st">'UUID4'</span>: UUID4,</span>
+<span id="cb20-30"><a href="#cb20-30" aria-hidden="true" tabindex="-1"></a>                <span class="st">'ToposText_ID'</span>: ToposText_ID,</span>
+<span id="cb20-31"><a href="#cb20-31" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Place_Name'</span>: Place_Name,</span>
+<span id="cb20-32"><a href="#cb20-32" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Reference'</span>: Reference,</span>
+<span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Lat'</span>: Lat,</span>
+<span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Long'</span>: Long,</span>
+<span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Chapter&amp;Paragraph'</span>: Chapternparagraph,</span>
+<span id="cb20-36"><a href="#cb20-36" aria-hidden="true" tabindex="-1"></a>                <span class="st">'Text'</span>: Text</span>
+<span id="cb20-37"><a href="#cb20-37" aria-hidden="true" tabindex="-1"></a>            })</span>
+<span id="cb20-38"><a href="#cb20-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-39"><a href="#cb20-39" aria-hidden="true" tabindex="-1"></a>    df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb20-40"><a href="#cb20-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="16">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># construct the dataframe for two parts of the digitized text with geographical annotations with the toposgeotext function</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>geodf1 <span class="op">=</span> toposgeotext(url1)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>geodf2 <span class="op">=</span> toposgeotext(url2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="17">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>geodf1.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="17">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">UUID4</th>
+<th data-quarto-table-cell-role="th">ToposText_ID</th>
+<th data-quarto-table-cell-role="th">Place_Name</th>
+<th data-quarto-table-cell-role="th">Reference</th>
+<th data-quarto-table-cell-role="th">Lat</th>
+<th data-quarto-table-cell-role="th">Long</th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>861d5a8c-891d-42c9-b678-e630cf9b90c4</td>
+<td>https://topostext.org/place/380237SAca</td>
+<td>Academy</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.8.1</td>
+<td>37.992</td>
+<td>23.707</td>
+<td>1.8.1</td>
+<td>For my own part I frankly confess that my work...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>cc90d708-9b8f-4cb1-86ac-28662fa571df</td>
+<td>https://topostext.org/place/419125LPal</td>
+<td>Palatine</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.8896</td>
+<td>12.4884</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2dc0ccda-3629-4d3a-86b2-35b2c48a8377</td>
+<td>https://topostext.org/place/419125LEsq</td>
+<td>Esquiline</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.895</td>
+<td>12.496</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>a070a3fb-68a4-48f6-8cf3-fa17b540ee68</td>
+<td>https://topostext.org/place/419125SCap</td>
+<td>Capitol</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.8933</td>
+<td>12.483</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>d160b06f-9ffc-4d84-8e70-b0740954171d</td>
+<td>https://topostext.org/place/419125PRom</td>
+<td>Rome</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.6.3</td>
+<td>41.891</td>
+<td>12.486</td>
+<td>2.6.3</td>
+<td>Below the sun revolves a very large star named...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="18">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>geodf1.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="18">
+<pre><code>(5595, 8)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="19">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>geodf2.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="19">
+<pre><code>(3281, 8)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="20">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>geotext_whole <span class="op">=</span> pd.concat([geodf1, geodf2], ignore_index<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>geotext_whole.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">UUID4</th>
+<th data-quarto-table-cell-role="th">ToposText_ID</th>
+<th data-quarto-table-cell-role="th">Place_Name</th>
+<th data-quarto-table-cell-role="th">Reference</th>
+<th data-quarto-table-cell-role="th">Lat</th>
+<th data-quarto-table-cell-role="th">Long</th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>861d5a8c-891d-42c9-b678-e630cf9b90c4</td>
+<td>https://topostext.org/place/380237SAca</td>
+<td>Academy</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.8.1</td>
+<td>37.992</td>
+<td>23.707</td>
+<td>1.8.1</td>
+<td>For my own part I frankly confess that my work...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>cc90d708-9b8f-4cb1-86ac-28662fa571df</td>
+<td>https://topostext.org/place/419125LPal</td>
+<td>Palatine</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.8896</td>
+<td>12.4884</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2dc0ccda-3629-4d3a-86b2-35b2c48a8377</td>
+<td>https://topostext.org/place/419125LEsq</td>
+<td>Esquiline</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.895</td>
+<td>12.496</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>a070a3fb-68a4-48f6-8cf3-fa17b540ee68</td>
+<td>https://topostext.org/place/419125SCap</td>
+<td>Capitol</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
+<td>41.8933</td>
+<td>12.483</td>
+<td>2.5.1</td>
+<td>For this reason I deem it a mark of human weak...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>d160b06f-9ffc-4d84-8e70-b0740954171d</td>
+<td>https://topostext.org/place/419125PRom</td>
+<td>Rome</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.6.3</td>
+<td>41.891</td>
+<td>12.486</td>
+<td>2.6.3</td>
+<td>Below the sun revolves a very large star named...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="21">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>geotext_whole.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="21">
+<pre><code>(8876, 8)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="22">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>geotext_whole.to_csv(<span class="st">'geotext_whole.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="23">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># construct a corpus for the text with annotated place names</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>geotext_corpus <span class="op">=</span> geotext_whole[[<span class="st">'Chapter&amp;Paragraph'</span>, <span class="st">'Text'</span>]].drop_duplicates(subset<span class="op">=</span><span class="st">'Text'</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>geotext_corpus[<span class="st">'Text'</span>] <span class="op">=</span> geotext_corpus[<span class="st">'Text'</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>geotext_corpus.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>1.8.1</td>
+<td>for my own part i frankly confess that my work...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.5.1</td>
+<td>for this reason i deem it a mark of human weak...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2.6.3</td>
+<td>below the sun revolves a very large star named...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2.8.1</td>
+<td>this theory leads mortal minds upward to heave...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2.9.1</td>
+<td>the first person indeed of roman nationality w...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="24">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> geotext_corpus.iterrows():</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    chapter_paragraph <span class="op">=</span> row[<span class="st">'Chapter&amp;Paragraph'</span>]</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> row[<span class="st">'Text'</span>]</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>chapter_paragraph<span class="sc">}</span><span class="ss">_text.txt"</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">'w'</span>, encoding <span class="op">=</span> <span class="st">'utf-8'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(text)</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a><span class="co"># print the last exported filename for check     </span></span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Exported </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Exported 37.78.1_text.txt</code></pre>
+</div>
+</div>
+</section>
+<section id="c.-filter-dataframe-and-corpus-related-to-india" class="level2">
+<h2 data-anchor-id="c.-filter-dataframe-and-corpus-related-to-india">C. Filter dataframe and corpus related to India</h2>
+<div class="cell" data-execution_count="25">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>geotext_whole[<span class="st">'Lat'</span>] <span class="op">=</span> geotext_whole[<span class="st">'Lat'</span>].astype(<span class="bu">float</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>geotext_whole[<span class="st">'Long'</span>] <span class="op">=</span> geotext_whole[<span class="st">'Long'</span>].astype(<span class="bu">float</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>Since the Indo-Roman trade relations during the era of Natural History refers to the empires of Indian subcontinent, the approximate range of coordinates of the region is as follows:</p>
+<p>Latitude:</p>
+<p>Northernmost point: Approximately 37.6 degrees North (located in the region of Jammu and Kashmir in India) Southernmost point: Approximately 5.5 degrees North (located in the region of Dondra Head in Sri Lanka)</p>
+<p>Longitude:</p>
+<p>Westernmost point: Approximately 60.9 degrees East (located in the region of Gwadar in Pakistan) Easternmost point: Approximately 97.4 degrees East (located in the region of Kibithu in India)</p>
+<div class="cell" data-execution_count="33">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># define the latitude and longitude ranges for India </span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>lat_range <span class="op">=</span> (<span class="fl">8.4</span>, <span class="fl">37.6</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>long_range <span class="op">=</span> (<span class="fl">68.7</span>, <span class="fl">97.25</span>)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a><span class="co"># create a boolean mask for filtering</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> (geotext_whole[<span class="st">'Lat'</span>].between(<span class="op">*</span>lat_range)) <span class="op">&amp;</span> (geotext_whole[<span class="st">'Long'</span>].between(<span class="op">*</span>long_range))</span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a><span class="co"># apply the mask to filter the dataframe</span></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>geotext_india <span class="op">=</span> geotext_whole[mask]</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>geotext_india.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="33">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">UUID4</th>
+<th data-quarto-table-cell-role="th">ToposText_ID</th>
+<th data-quarto-table-cell-role="th">Place_Name</th>
+<th data-quarto-table-cell-role="th">Reference</th>
+<th data-quarto-table-cell-role="th">Lat</th>
+<th data-quarto-table-cell-role="th">Long</th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">85</td>
+<td>d4f97ed8-1279-42f3-894b-0bd40ac66f47</td>
+<td>https://topostext.org/place/300740RInd</td>
+<td>India</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>30.0000</td>
+<td>74.0000</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">92</td>
+<td>fd82b062-abdf-43ed-95ba-19c050784a78</td>
+<td>https://topostext.org/place/300740RInd</td>
+<td>India</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>30.0000</td>
+<td>74.0000</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">93</td>
+<td>b5f281c4-2cc7-494e-8c4f-e90b27670363</td>
+<td>https://topostext.org/place/300740RInd</td>
+<td>India</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>30.0000</td>
+<td>74.0000</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">343</td>
+<td>f53799b0-5303-470a-a92b-f27442ad2010</td>
+<td>https://topostext.org/place/300740RInd</td>
+<td>India</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.112.1</td>
+<td>30.0000</td>
+<td>74.0000</td>
+<td>2.112.1</td>
+<td>Our own portion of the earth, which is my subj...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">348</td>
+<td>e518b663-ea53-4545-97f3-da99d63495f7</td>
+<td>https://topostext.org/place/38898WGan</td>
+<td>Ganges</td>
+<td>urn:cts:latinLit:phi0978.phi001:2.112.1</td>
+<td>23.7818</td>
+<td>89.8009</td>
+<td>2.112.1</td>
+<td>Our own portion of the earth, which is my subj...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="34">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>geotext_india.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="34">
+<pre><code>(194, 8)</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="35">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>geotext_india.to_csv(<span class="st">'geotext_indianregion.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell" data-execution_count="39">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># construct a corpus for the text mentioned place names in Indian subcontinent</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>india_corpus <span class="op">=</span> geotext_india[[<span class="st">'Chapter&amp;Paragraph'</span>, <span class="st">'Text'</span>]].drop_duplicates(subset<span class="op">=</span><span class="st">'Text'</span>).reset_index(drop<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>india_corpus[<span class="st">'Text'</span>] <span class="op">=</span> india_corpus[<span class="st">'Text'</span>].<span class="bu">str</span>.lower()</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>india_corpus[:<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="39">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Chapter&amp;Paragraph</th>
+<th data-quarto-table-cell-role="th">Text</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>similarly it is reported that at the town of s...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.112.1</td>
+<td>our own portion of the earth, which is my subj...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>4.17.4</td>
+<td>such is macedonia, which was once the mistress...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>4.26.2</td>
+<td>at this spot begins a well-wooded district, wh...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>5.11.1</td>
+<td>the cities of egypt: egypt, besides its boast ...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="37">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> india_corpus.iterrows():</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>    chapter_paragraph <span class="op">=</span> row[<span class="st">'Chapter&amp;Paragraph'</span>]</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    text <span class="op">=</span> row[<span class="st">'Text'</span>]</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> <span class="ss">f"</span><span class="sc">{</span>chapter_paragraph<span class="sc">}</span><span class="ss">_text.txt"</span></span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(filename, <span class="st">'w'</span>, encoding <span class="op">=</span> <span class="st">'utf-8'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb40-7"><a href="#cb40-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">file</span>.write(text)</span>
+<span id="cb40-8"><a href="#cb40-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-9"><a href="#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="co"># print the last exported filename for check     </span></span>
+<span id="cb40-10"><a href="#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Exported </span><span class="sc">{</span>filename<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Exported 37.77.1_text.txt</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="40">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check the distinct place names in the selected region</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>distinct_places <span class="op">=</span> geotext_india[<span class="st">'Place_Name'</span>].unique()</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>distinct_places</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display" data-execution_count="40">
+<pre><code>array(['India', 'Ganges', 'Acesinus', 'Hydaspes', 'Muziris', 'Baragaza'],
+      dtype=object)</code></pre>
+</div>
+</div>
+</section>
+
+
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+ <!-- /content -->
+
+
+
+</body></html>
