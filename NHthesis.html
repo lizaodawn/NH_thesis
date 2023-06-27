@@ -36383,7 +36383,7 @@ if(typeof(LDAvis) !== "undefined"){
 <span id="cb27-19"><a href="#cb27-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-20"><a href="#cb27-20" aria-hidden="true" tabindex="-1"></a><span class="co"># store the edges and nodes generated for network analysis about place names in the entire book</span></span>
 <span id="cb27-21"><a href="#cb27-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a><span class="co">#geonameco = place_name_edge(geotext_whole)</span></span>
+<span id="cb27-22"><a href="#cb27-22" aria-hidden="true" tabindex="-1"></a>geonameco <span class="op">=</span> place_name_edge(geotext_whole)</span>
 <span id="cb27-23"><a href="#cb27-23" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-24"><a href="#cb27-24" aria-hidden="true" tabindex="-1"></a>geonameco.rename(columns<span class="op">=</span>{<span class="st">'Place1'</span>: <span class="st">'source'</span>, <span class="st">'Place2'</span>: <span class="st">'target'</span>}, inplace<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb27-25"><a href="#cb27-25" aria-hidden="true" tabindex="-1"></a>geonameco.to_csv(<span class="st">'geonameco.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
@@ -36641,7 +36641,7 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 <p>As manifested in <a href="#fig-indiantext_clustering">Figure&nbsp;8</a>, there is obvious clustering of person names occuring in Indian subcontinent related texts. In other words, groups of person names are tend to be referenced in some specific topics. (more detailed illustration will be further conducted)</p>
-<div class="cell" data-execution_count="294">
+<div class="cell" data-execution_count="419">
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> SVG</span>
@@ -36652,7 +36652,7 @@ if(typeof(LDAvis) !== "undefined"){
 <span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the SVG file</span></span>
 <span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>SVG(filename<span class="op">=</span>svg_path)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="294">
+<div class="cell-output cell-output-display" data-execution_count="419">
 <div id="fig-indiantext_clustering" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <figcaption class="figure-caption">Figure&nbsp;8: People reference referred in India-subcontinent related text in Natural History</figcaption>
@@ -36700,7 +36700,7 @@ Tran, Khuyen. 2022. <span>“pyLDAvis: Topic Modelling Exploration Tool That Eve
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Given the challenges in precisely determining the coordinate range Empires in India during the 1st century AD, the Indian coordinate range of current Indian subcontinent is applied as a rough approximation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Given the challenges in determining the precise coordinates of the Empires in the Indian region during the 1st century AD, an approximate range of coordinates for the current Indian subcontinent is used as a rough estimation.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
