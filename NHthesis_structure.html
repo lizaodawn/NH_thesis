@@ -68,7 +68,7 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul class="collapse">
   <li><a href="#natural-history-and-its-complexity" id="toc-natural-history-and-its-complexity" class="nav-link" data-scroll-target="#natural-history-and-its-complexity"><span class="header-section-number">1.1</span> <em>Natural History</em> and its complexity</a></li>
   <li><a href="#spatial-perstpective-in-natural-history" id="toc-spatial-perstpective-in-natural-history" class="nav-link" data-scroll-target="#spatial-perstpective-in-natural-history"><span class="header-section-number">1.2</span> Spatial perstpective in <em>Natural History</em></a></li>
@@ -80,7 +80,7 @@ div.csl-indent {
   <li><a href="#why-india" id="toc-why-india" class="nav-link" data-scroll-target="#why-india"><span class="header-section-number">2.2</span> Why India?</a></li>
   <li><a href="#india-related-text-as-a-case-study" id="toc-india-related-text-as-a-case-study" class="nav-link" data-scroll-target="#india-related-text-as-a-case-study"><span class="header-section-number">2.3</span> India-related text as a case study</a></li>
   </ul></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">3</span> Methodology</a>
+  <li><a href="#sec-methodology" id="toc-sec-methodology" class="nav-link" data-scroll-target="#sec-methodology"><span class="header-section-number">3</span> Methodology</a>
   <ul class="collapse">
   <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="header-section-number">3.1</span> Workflow</a></li>
   <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation"><span class="header-section-number">3.2</span> Data preparation</a></li>
@@ -133,8 +133,8 @@ div.csl-indent {
 
 </header>
 
-<section id="introduction" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">1</span> Introduction</h2>
+<section id="sec-introduction" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
 <section id="natural-history-and-its-complexity" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="natural-history-and-its-complexity"><span class="header-section-number">1.1</span> <em>Natural History</em> and its complexity</h3>
 <p>Pliny the Elder’s <em>Natural History</em> is widely recognized as the earliest encyclopedia in the world, manifesting a pioneering effort in comprehensively cataloging the vast array of human knowledge from that era.</p>
@@ -167,7 +167,7 @@ div.csl-indent {
 
 <div id="tbl-place_book_distribution" class="anchored">
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<caption>Table&nbsp;1: Distribution of place names in Natural History</caption>
+<caption>Table&nbsp;1: Normalized distribution of place names in <em>Natural History</em></caption>
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -416,7 +416,7 @@ div.csl-indent {
 <div class="cell-output cell-output-display">
 <div id="fig-place_distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<figcaption class="figure-caption">Figure&nbsp;1: Place name distribution in <em>Natural History</em></figcaption>
+<figcaption class="figure-caption">Figure&nbsp;1: Normalized distribution of place names in <em>Natural History</em></figcaption>
 <p><img src="NHthesis_structure_files/figure-html/fig-place_distribution-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
@@ -427,9 +427,9 @@ div.csl-indent {
 <h3 data-number="1.3" class="anchored" data-anchor-id="text-source-for-the-study"><span class="header-section-number">1.3</span> Text source for the study</h3>
 <p><em>Natural History</em> is originally written in Latin. For the purpose of this study, an English translation conducted by Henry T. Riley (1816-1878) and John Bostock (1773-1846), which was first published in 1855, is utilized. The translated text is obtained in a digitized version from the <a href="https://topostext.org/the-project">TOPOSText project</a>, having been sourced from the Perseus Project and governed by a Creative Commons Attribution-Share-Alike 3.0 U.S. License.</p>
 <p>Annotations of people’s name, places’ name and geographical coordinates are available together with the text of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) on <a href="https://topostext.org/the-project">TOPOSText project</a>. This invaluable resource allows for the creation of a dataset that includes both the textual contents and geographical annotations, which can be utilized to investigate the distribution of place names in the entire text and examine the frequencies and patterns of geography-related content.</p>
-<div class="cell" data-execution_count="7">
+<div class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
-<p>The entire text of <em>Natural Histroy</em> has 797821 tokens and 34551 types. And the extracted geography related text contains 2812874 tokens and 28404 types. The workflow of text parsing and dataset creation will be further explained in the Methodology section.</p>
+<p>The entire text of <em>Natural Histroy</em> has 797821 tokens and 34551 types. And the extracted geography related text contains 2812874 tokens and 28404 types. The workflow of text parsing and dataset creation will be further explained in the Methodology section (<a href="#sec-methodology">Section&nbsp;3</a>).</p>
 </div>
 </div>
 </section>
@@ -674,8 +674,8 @@ div.csl-indent {
 <section id="why-india" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="why-india"><span class="header-section-number">2.2</span> Why India?</h3>
 <p>Geographically, India presents itself as a distant and disconnected territory from the Roman Empire, lacking any direct aquatic or land routes with the Mediterranean region. Despite this apparent physical separation, the exotic curiosity Pliny attempted to integrate, as well as the Indo-roman goods exchange network reflected in the work, may contribute to an explaination of the prominent mentioning of India in <em>Natural History</em> as the broader context.</p>
-<p>As suggested by <span class="citation" data-cites="murphy2003">(<a href="#ref-murphy2003" role="doc-biblioref">Murphy 2003</a>)</span>, the <em>mirabilia</em>, encompassing accounts of extraordinary landscapes, peoples, plants, and animals, assumes a substantial proportion within the books of <em>Natural History</em>. Pliny’s inclusion of such exotic elements not only catered to the prevailing curiosity of his Roman readers but also fostered a comparative perspective between distant locales, exemplified by his references to India, and their natural counterparts within Rome <span class="citation" data-cites="naas2011">(<a href="#ref-naas2011" role="doc-biblioref"><strong>naas2011?</strong></a>)</span>. Within research framework of Roman Imperialism, the detailed portrayal of foreign lands, such as India, holds significant importance in shaping both Pliny’s and his contemporary Roman readers’ perception of their place within the global landscape <span class="citation" data-cites="pollard2009">(<a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>.</p>
-<p>In addition, <em>Natural History</em> serves as a valuable reference for tracking the Indo-Mediterranean network of exchange <span class="citation" data-cites="pollard2009">(<a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>. Through the depiction of cities, ports, and rivers along the trade routes, the work provides substantive evidence of the flourishing trade relations between the Roman Empire and the Indian subcontinent <span class="citation" data-cites="neelis2011">(<a href="#ref-neelis2011" role="doc-biblioref"><strong>neelis2011?</strong></a>)</span>. The extensive exemplify of diverse commodities, such as gemstones, glass, spices, textiles, plants, wine, along with the accounts of the currency <em>sestertii</em> involved in the merchandise exchange in the work shed lights to the compelling details and social and cultural implications of this long-distance trade <span class="citation" data-cites="székely2006 pollard2009">(<a href="#ref-székely2006" role="doc-biblioref"><strong>székely2006?</strong></a>; <a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>. Furthermore, the direct criticisms regarding the high cost for the luxury items imported from India implies both the magnitude of the trade volume and Pliny’s stance towards this commercial interaction <span class="citation" data-cites="neelis2011">(<a href="#ref-neelis2011" role="doc-biblioref"><strong>neelis2011?</strong></a>)</span>.</p>
+<p>As suggested by <span class="citation" data-cites="murphy2003">(<a href="#ref-murphy2003" role="doc-biblioref">Murphy 2003</a>)</span>, the <em>mirabilia</em>, encompassing accounts of extraordinary landscapes, peoples, plants, and animals, assumes a substantial proportion within the books of <em>Natural History</em>. Pliny’s inclusion of such exotic elements not only catered to the prevailing curiosity of his Roman readers but also fostered a comparative perspective between distant locales, exemplified by his references to India, and their natural counterparts within Rome <span class="citation" data-cites="naas2011">(<a href="#ref-naas2011" role="doc-biblioref">Naas 2011</a>)</span>. Within research framework of Roman Imperialism, the detailed portrayal of foreign lands, such as India, holds significant importance in shaping both Pliny’s and his contemporary Roman readers’ perception of their place within the global landscape <span class="citation" data-cites="pollard2009">(<a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>.</p>
+<p>In addition, <em>Natural History</em> serves as a valuable reference for tracking the Indo-Mediterranean network of exchange <span class="citation" data-cites="pollard2009">(<a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>. Through the depiction of cities, ports, and rivers along the trade routes, the work provides substantive evidence of the flourishing trade relations between the Roman Empire and the Indian subcontinent <span class="citation" data-cites="neelis2011">(<a href="#ref-neelis2011" role="doc-biblioref">Neelis 2011</a>)</span>. The extensive exemplify of diverse commodities, such as gemstones, glass, spices, textiles, plants, wine, along with the accounts of the currency <em>sestertii</em> involved in the merchandise exchange in the work shed lights to the compelling details and social and cultural implications of this long-distance trade <span class="citation" data-cites="szekely2006 pollard2009">(<a href="#ref-szekely2006" role="doc-biblioref">Székely 2006</a>; <a href="#ref-pollard2009" role="doc-biblioref">Pollard 2009</a>)</span>. Furthermore, the direct criticisms regarding the high cost for the luxury items imported from India implies both the magnitude of the trade volume and Pliny’s stance towards this commercial interaction <span class="citation" data-cites="neelis2011">(<a href="#ref-neelis2011" role="doc-biblioref">Neelis 2011</a>)</span>.</p>
 </section>
 <section id="india-related-text-as-a-case-study" class="level3" data-number="2.3">
 <h3 data-number="2.3" class="anchored" data-anchor-id="india-related-text-as-a-case-study"><span class="header-section-number">2.3</span> India-related text as a case study</h3>
@@ -683,11 +683,24 @@ div.csl-indent {
 <p>The main aim of this study is to explore how is India described, and how is the information about India structured in <em>Natural History</em>, which may also contribute to a more profound comprehension of the inherent complexity and interconnectivity that permeates this monumental work.</p>
 </section>
 </section>
-<section id="methodology" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="methodology"><span class="header-section-number">3</span> Methodology</h2>
+<section id="sec-methodology" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sec-methodology"><span class="header-section-number">3</span> Methodology</h2>
 <section id="workflow" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="workflow"><span class="header-section-number">3.1</span> Workflow</h3>
-<p>The workflow for this study involved several key stages. First, data collection was carried out using online surveys and interviews with participants. Next, the collected data was subjected to data preprocessing, involving data cleaning and handling missing values. Subsequently, the data was analyzed using statistical methods to identify patterns and trends. Finally, the research findings were interpreted and presented through data visualizations and textual analysis.</p>
+<p>The workflow for this study involved the following key stages:</p>
+<p><strong>Data Collection</strong>: As mentioned in the Introduction section (<a href="#sec-introduction">Section&nbsp;1</a>), the text employed for this study is obtained from the digitized English translation (by Henry T. Riley (1816-1878) and John Bostock (1773-1846)) of Pliny’s <em>Natural History</em> available on <a href="https://topostext.org/the-project">TOPOSText project</a>.</p>
+<p>The two parts of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) are scraped for their the textual contents together with the annotated information of the geographical coordinates of the ancient places mentioned in the work, and the book, chapter and paragraph locations with the scraping function provided in <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> library of Python.</p>
+<p><strong>Data Preparation</strong>: The information extracted from the html is structured into separate columns as <a href="https://pandas.pydata.org/">Pandas</a> data frame, a data frame for plain text of the entire work, and a data frame for geographical-related text in <em>Natural History</em> with the geographical annotations are generated and stored in CSV format respectively.</p>
+<p>After a preliminary exploration, the research focus is narrowed down to India-related text in <em>Natural History</em>. With a reference to the geographical territories in the consideration of ancient Greek and Roman world <span class="citation" data-cites="talbert2000">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000</a>)</span>, a data frame for India-related text is filtered with the range of geographical coordinates for India subcontinent of the era of <em>Natural History</em> from the abovementioned data frame for geographical-related text. The flitered India-related text data frame is also stored in CSV format.</p>
+<p><strong>Data Analysis</strong>: Statistical analysis is conducted in the preliminary exploration of the extracted data frames. A nomalized frequency of geographical name occurence in each book is calculated for an overview of the place name distribution in <em>Natural History</em>. And the top 1% prominently mentioned place names in the entire work are sorted out with the time of their occurencies. The specific attention on India-related text as a case study is drown from this initial observation.</p>
+<p>In the analysis of the India-related text in <em>Natural History</em>, three analysis methods are employed:</p>
+<ol type="1">
+<li>Word frequency counting<br></li>
+<li>Topic modelling<br></li>
+<li>Network analysis for Named Entities<br></li>
+</ol>
+<p><strong>Interpretation and Conclusion</strong>: The workflow and parameter setting of each research method is explained in the beginning of each analysis section. The results aquired from each method is interpreted with a dialouge to the broader literature and close reading of the related text.</p>
+<p>In the Conclusion section, the findings are illustrated comprehensively in the context of the research questions. And the limitations of each method is discussed and evaluated.</p>
 </section>
 <section id="data-preparation" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="data-preparation"><span class="header-section-number">3.2</span> Data preparation</h3>
@@ -36686,14 +36699,20 @@ Murphy, Trevor. 2003. <span>“11. Pliny<span>’</span>s Naturalis Historia: Th
 <div id="ref-naas2002" class="csl-entry" role="listitem">
 Naas, Valérie. 2002. <em>Le Projet Encyclopédique de <span>Pline</span> l’<span>Ancien</span></em>. Collection de l’école Française de <span>Rome</span> 303. Rome: Ecole française de Rome.
 </div>
+<div id="ref-naas2011" class="csl-entry" role="listitem">
+———. 2011. <span>“Chapter <span>Four</span>. <span>Imperialism</span>, <span>Mirabilia</span>, <span>And</span> <span>Knowledge</span>: <span>Some</span> <span>Paradoxes</span> <span>In</span> <span>The</span> <span>Naturalis</span> <span>Historia</span>.”</span> In <em>Pliny the <span>Elder</span>: <span>Themes</span> and <span>Contexts</span></em>, 57–70. Brill. <a href="https://brill.com/display/book/edcoll/9789004210073/Bej.9789004202344.i-248_005.xml">https://brill.com/display/book/edcoll/9789004210073/Bej.9789004202344.i-248_005.xml</a>.
+</div>
 <div id="ref-nappo2017" class="csl-entry" role="listitem">
 Nappo, Dario. 2017. <em>Money and Flows of Coinage in the Red Sea Trade</em>. Vol. 1. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198790662.003.0017">https://doi.org/10.1093/oso/9780198790662.003.0017</a>.
+</div>
+<div id="ref-neelis2011" class="csl-entry" role="listitem">
+Neelis, J. 2011. <span>“Chapter <span>Three</span>. <span>Trade</span> <span>Networks</span> <span>In</span> <span>Ancient</span> <span>South</span> <span>Asia</span>.”</span> In <em>Early <span>Buddhist</span> <span>Transmission</span> and <span>Trade</span> <span>Networks</span></em>, 183–228. Brill. <a href="https://brill.com/display/book/9789004194588/Bej.9789004181595.i-372_004.xml">https://brill.com/display/book/9789004194588/Bej.9789004181595.i-372_004.xml</a>.
 </div>
 <div id="ref-pinkster2005" class="csl-entry" role="listitem">
 Pinkster, Harm. 2005. <span>“The <span>Language</span> of <span>Pliny</span> the <span>Elder</span>.”</span> <em>Journal of Asthma - J ASTHMA</em> 129 (November): 239–56. <a href="https://doi.org/10.5871/bacad/9780197263327.003.0011">https://doi.org/10.5871/bacad/9780197263327.003.0011</a>.
 </div>
 <div id="ref-pollard2009" class="csl-entry" role="listitem">
-Pollard, Elizabeth Ann. 2009. <span>“Pliny<span>’</span>s &lt;i&gt;Natural History&lt;/i&gt; and the Flavian &lt;i&gt;Templum Pacis&lt;/i&gt;: Botanical Imperialism in First-Century &lt;Small Class=<span>"</span>caps<span>"</span> Xmlns:m=<span>"</span>http://Www.w3.org/1998/Math/MathML<span>"</span> Xmlns:mml=<span>"</span>http://Www.w3.org/1998/Math/MathML<span>"</span> Xmlns:xlink=<span>"</span>http://Www.w3.org/1999/Xlink<span>"</span>&gt;c.e&lt;/Small&gt;. Rome.”</span> <em>Journal of World History</em> 20 (3): 309–38. <a href="https://doi.org/10.1353/jwh.0.0074">https://doi.org/10.1353/jwh.0.0074</a>.
+Pollard, Elizabeth Ann. 2009. <span>“Pliny’s <span>Natural</span> <span>History</span> and the <span>Flavian</span> <span>Templum</span> <span>Pacis</span>: <span>Botanical</span> <span>Imperialism</span> in <span>First</span>-<span>Century</span> <span>C</span>. <span>E</span>. <span>Rome</span>.”</span> <em>Journal of World History</em> 20 (3): 309–38. <a href="https://www.jstor.org/stable/40542802">https://www.jstor.org/stable/40542802</a>.
 </div>
 <div id="ref-roller2022" class="csl-entry" role="listitem">
 Roller, D. W. 2022. <span>“Introduction.”</span> In <em>A <span>Guide</span> to the <span>Geography</span> of <span>Pliny</span> the <span>Elder</span></em>, 1–14. Cambridge: Cambridge University Press. <a href="https://doi.org/10.1017/9781108693660.003">https://doi.org/10.1017/9781108693660.003</a>.
@@ -36703,6 +36722,12 @@ Rydberg-Cox, Jeff. 2021. <span>“Modeling the <span>Sources</span> and <span>To
 </div>
 <div id="ref-schultze2011" class="csl-entry" role="listitem">
 Schultze, Clemence. 2011. <span>“Chapter <span>Ten</span>. <span>Encyclopaedic</span> <span>Exemplarity</span> <span>In</span> <span>Pliny</span> <span>The</span> <span>Elder</span>.”</span> In <em>Pliny the <span>Elder</span>: <span>Themes</span> and <span>Contexts</span></em>, 167–86. Brill. <a href="https://brill.com/display/book/edcoll/9789004210073/Bej.9789004202344.i-248_011.xml">https://brill.com/display/book/edcoll/9789004210073/Bej.9789004202344.i-248_011.xml</a>.
+</div>
+<div id="ref-szekely2006" class="csl-entry" role="listitem">
+Székely, Melinda. 2006. <span>“Eastern <span>Trade</span> of the <span>Roman</span> <span>Empire</span> Based on <span>Pliny</span> the <span>Elder</span>’s <span>Natural</span> <span>History</span>.”</span> <em>Chronica</em> 6 (January): 199–206. <a href="https://www.proquest.com/docview/2379648941/citation/93A42D142D614235PQ/1">https://www.proquest.com/docview/2379648941/citation/93A42D142D614235PQ/1</a>.
+</div>
+<div id="ref-talbert2000" class="csl-entry" role="listitem">
+Talbert, Richard J. A. 2000. <em>Barrington Atlas of the <span>Greek</span> and <span>Roman</span> World.</em> Princeton (N.J.): Princeton university press.
 </div>
 <div id="ref-tedeschi2021" class="csl-entry" role="listitem">
 Tedeschi, Simone, Valentino Maiorca, Niccolò Campolungo, Francesco Cecconi, and Roberto Navigli. 2021. <span>“WikiNEuRal: Combined Neural and Knowledge-Based Silver Data Creation for Multilingual NER.”</span> In, 25212533. Punta Cana, Dominican Republic: Association for Computational Linguistics. <a href="https://aclanthology.org/2021.findings-emnlp.215">https://aclanthology.org/2021.findings-emnlp.215</a>.
