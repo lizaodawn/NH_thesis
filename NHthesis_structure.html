@@ -114,7 +114,7 @@ div.csl-indent {
   </ul></li>
   </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="NHthesis_structure.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -701,7 +701,7 @@ div.csl-indent {
 <p><strong>Data Collection</strong>: As mentioned in the Introduction chapter (<a href="#sec-introduction">Section&nbsp;1</a>), the text employed for this study is obtained from the digitized English translation (by Henry T. Riley (1816-1878) and John Bostock (1773-1846)) of Pliny’s <em>Natural History</em> available on <a href="https://topostext.org/the-project">TOPOSText project</a>.</p>
 <p>The two parts of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) are scraped for their the textual contents together with the annotated information of the geographical coordinates of the ancient places mentioned in the work, and the book, chapter and paragraph affiliations with the function provided in <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> library of Python.</p>
 <p><strong>Data Preprocessing</strong>: The information extracted from the html is structured into separate columns as <a href="https://pandas.pydata.org/">Pandas</a> data frame, a data frame for plain text of the entire work, and a data frame for geographical-related text in <em>Natural History</em> with the geographical annotations are generated and stored in CSV format respectively.</p>
-<p>After a preliminary exploration, the research focus is narrowed down to India-related text in <em>Natural History</em>. With a reference to the geographical territories in the consideration of ancient Greek and Roman world <span class="citation" data-cites="talbert2000">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000</a>)</span>, a data frame for India-related text is filtered from the abovementioned data frame for geographical-related text with the range of geographical coordinates of India subcontinent in the era of <em>Natural History</em>. The flitered India-related text data frame is also stored in CSV format.</p>
+<p>After a preliminary exploration, the research focus is narrowed down to India-related text in <em>Natural History</em>. With a reference to the geographical territories in the consideration of ancient Greek and Roman world <span class="citation" data-cites="talbert2000">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000b</a>)</span>, a data frame for India-related text is filtered from the abovementioned data frame for geographical-related text with the range of geographical coordinates of India subcontinent in the era of <em>Natural History</em>. The flitered India-related text data frame is also stored in CSV format.</p>
 <p>The location names mentioned in the India-related text is cross checked manually. For those have not annotated in the TOPOstext, they are appended to the dataset.</p>
 <p><strong>Data Analysis</strong>: Statistical analysis is conducted in the preliminary exploration of the extracted data frames. A nomalized frequency of geographical name occurence in each book is calculated for an overview of the place name distribution in <em>Natural History</em>. And the top 1% prominently mentioned place names in the entire work are sorted out with the time of their occurencies. The specific attention on India-related text as a case study is drown from this initial observation.</p>
 <p>In the analysis of the India-related text (target corpus) in <em>Natural History</em>, three analysis methods are employed:</p>
@@ -815,8 +815,8 @@ div.csl-indent {
 <p>Since there might be multiple names of one same place, the ToposText_ID, which is assigned distinctly for unique places available on TOPOSText is also extracted as a reference. An example for the dataset of geographical-related text in <em>Natural Histroy</em> can be referred as <strong>?@tbl-dataset_geo_text</strong>.</p>
 <p>Moreover, the geographical annotations concerning the ancient places mentioned in the text are labeled with a class attribute denoted as “place”, exemplified by the following HTML code snippet: <strong>&lt;a about=“https://topostext.org/place/419125LPal” class=“place” lat=“41.8896” long=“12.4884”&gt;Palatine&lt;/a&gt;</strong>. To compile a comprehensive dataset encompassing all the annotated ancient places, along with their corresponding geographical coordinates and contextual information (such as book, chapter, and paragraph numbers), all annotations under the “place” class are extracted. This dataset enables an in-depth analysis of the distribution of place names within Natural History.</p>
 <p>As certain places may possess multiple names, ToposText_ID, which is the unique identifier assigned to distinct places available on TOPOSText is also extracted as a reference information. An example of the dataset presenting the geographical-related text in <em>Natural History</em> is provided in <a href="#tbl-dataset_geotext">Table&nbsp;4</a> for reference.</p>
-<div class="cell" data-df-print="tibble" data-execution_count="100">
-<div class="cell-output cell-output-display" data-execution_count="100">
+<div class="cell" data-df-print="tibble" data-execution_count="110">
+<div class="cell-output cell-output-display" data-execution_count="110">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -853,68 +853,68 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>90ea8931-5793-4e06-88...</td>
-<td>https://topostext.org...</td>
+<td>90ea89...</td>
+<td>https:...</td>
 <td>Academy</td>
-<td>urn:cts:latinLit:phi0...</td>
+<td>urn:ct...</td>
 <td>37.9920</td>
 <td>23.7070</td>
 <td>1</td>
 <td>8</td>
 <td>1.0</td>
-<td>For my own part I fra...</td>
+<td>For my...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>df7f258d-5346-45d2-87...</td>
-<td>https://topostext.org...</td>
+<td>df7f25...</td>
+<td>https:...</td>
 <td>Palatine</td>
-<td>urn:cts:latinLit:phi0...</td>
+<td>urn:ct...</td>
 <td>41.8896</td>
 <td>12.4884</td>
 <td>2</td>
 <td>5</td>
 <td>1.0</td>
-<td>For this reason I dee...</td>
+<td>For th...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>2a3d7bbe-8147-4f65-9f...</td>
-<td>https://topostext.org...</td>
+<td>2a3d7b...</td>
+<td>https:...</td>
 <td>Esquiline</td>
-<td>urn:cts:latinLit:phi0...</td>
+<td>urn:ct...</td>
 <td>41.8950</td>
 <td>12.4960</td>
 <td>2</td>
 <td>5</td>
 <td>1.0</td>
-<td>For this reason I dee...</td>
+<td>For th...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>cc85d37f-ad78-4af0-85...</td>
-<td>https://topostext.org...</td>
+<td>cc85d3...</td>
+<td>https:...</td>
 <td>Capitol</td>
-<td>urn:cts:latinLit:phi0...</td>
+<td>urn:ct...</td>
 <td>41.8933</td>
 <td>12.4830</td>
 <td>2</td>
 <td>5</td>
 <td>1.0</td>
-<td>For this reason I dee...</td>
+<td>For th...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>2c6f1767-cb79-4cf9-87...</td>
-<td>https://topostext.org...</td>
+<td>2c6f17...</td>
+<td>https:...</td>
 <td>Rome</td>
-<td>urn:cts:latinLit:phi0...</td>
+<td>urn:ct...</td>
 <td>41.8910</td>
 <td>12.4860</td>
 <td>2</td>
 <td>6</td>
 <td>3.0</td>
-<td>Below the sun revolve...</td>
+<td>Below ...</td>
 </tr>
 </tbody>
 </table>
@@ -932,7 +932,7 @@ div.csl-indent {
 <section id="filtered-dataset-of-india-related-text" class="level4" data-number="3.2.2">
 <h4 data-number="3.2.2" class="anchored" data-anchor-id="filtered-dataset-of-india-related-text"><span class="header-section-number">3.2.2</span> Filtered dataset of “India-related text”</h4>
 <p>As outlined in the Research Question chapter (<a href="#sec-research_question">Section&nbsp;2</a>), this thesis examines texts concerning the Indian region in Pliny’s <em>Natural History</em> as a case study. The objective is to explore how India is described, portrayed, and imagined within this extensive work, providing valuable insights into its complexity.</p>
-<p>To ensure a comprehensive contextual analysis, the dataset creation considers not only instances where the word “India” is directly mentioned but also text related to the Indian region. This broader approach aims to encompass a wider scope of relevant information. Drawing from the research and mapping of the Indian region in the perception of the ancient Greek and Roman world, as explained and manifested in the <em>Barrington Atlas of the Greek and Roman World</em> <span class="citation" data-cites="talbert2000 talbert2000-1">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000</a>; <a href="#ref-talbert2000-1" role="doc-biblioref"><strong>talbert2000-1?</strong></a>)</span>, the approximate coordinates defining the target region are as follows<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
+<p>To ensure a comprehensive contextual analysis, the dataset creation considers not only instances where the word “India” is directly mentioned but also text related to the Indian region. This broader approach aims to encompass a wider scope of relevant information. Drawing from the research and mapping of the Indian region in the perception of the ancient Greek and Roman world, as explained and manifested in the <em>Barrington Atlas of the Greek and Roman World</em> <span class="citation" data-cites="talbert2000 talbert2000-1">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000b</a>, <a href="#ref-talbert2000-1" role="doc-biblioref">2000a</a>)</span>, the approximate coordinates defining the target region are as follows<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>:</p>
 <ul>
 <li>Latitude: 5-35 degrees North</li>
 <li>Longitude: 65-95 degrees East</li>
@@ -37071,8 +37071,11 @@ Schultze, Clemence. 2011. <span>“Chapter <span>Ten</span>. <span>Encyclopaedic
 <div id="ref-szekely2006" class="csl-entry" role="listitem">
 Székely, Melinda. 2006. <span>“Eastern <span>Trade</span> of the <span>Roman</span> <span>Empire</span> Based on <span>Pliny</span> the <span>Elder</span>’s <span>Natural</span> <span>History</span>.”</span> <em>Chronica</em> 6 (January): 199–206. <a href="https://www.proquest.com/docview/2379648941/citation/93A42D142D614235PQ/1">https://www.proquest.com/docview/2379648941/citation/93A42D142D614235PQ/1</a>.
 </div>
+<div id="ref-talbert2000-1" class="csl-entry" role="listitem">
+Talbert, Richard J. A. 2000a. <em>Barrington Atlas of the <span>Greek</span> and <span>Roman</span> World: Map-by-Map Directory</em>. Princeton (N.J.): Princeton university press.
+</div>
 <div id="ref-talbert2000" class="csl-entry" role="listitem">
-Talbert, Richard J. A. 2000. <em>Barrington Atlas of the <span>Greek</span> and <span>Roman</span> World.</em> Princeton (N.J.): Princeton university press.
+———. 2000b. <em>Barrington Atlas of the <span>Greek</span> and <span>Roman</span> World.</em> Princeton (N.J.): Princeton university press.
 </div>
 <div id="ref-tedeschi2021" class="csl-entry" role="listitem">
 Tedeschi, Simone, Valentino Maiorca, Niccolò Campolungo, Francesco Cecconi, and Roberto Navigli. 2021. <span>“WikiNEuRal: Combined Neural and Knowledge-Based Silver Data Creation for Multilingual NER.”</span> In, 25212533. Punta Cana, Dominican Republic: Association for Computational Linguistics. <a href="https://aclanthology.org/2021.findings-emnlp.215">https://aclanthology.org/2021.findings-emnlp.215</a>.
