@@ -1,16 +1,13 @@
 id,label,type
 India,India,Place_Name
 Indus,Indus,Place_Name
-Bactria,Bactria,Place_Name
 Ganges,Ganges,Place_Name
 Acesinus,Acesinus,Place_Name
-Oxus,Oxus,Place_Name
 Hydaspes,Hydaspes,Place_Name
 Taprobane,Taprobane,Place_Name
 Arachosia,Arachosia,Place_Name
 Muziris,Muziris,Place_Name
 Baragaza,Baragaza,Place_Name
-Aria,Aria,Place_Name
 Ceylon,Ceylon,Place_Name
 2,Book 2,Book
 4,Book 4,Book
@@ -41,8 +38,6 @@ Ceylon,Ceylon,Place_Name
 37,Book 37,Book
 Onesicritus,Onesicritus,Person_Name
 Alexander,Alexander,Person_Name
-Ctesias,Ctesias,Person_Name
-Theopompus,Theopompus,Person_Name
 Artemidorus,Artemidorus,Person_Name
 Isidore,Isidore,Person_Name
 Father Liber,Father Liber,Person_Name
@@ -81,6 +76,7 @@ Leonnatus,Leonnatus,Person_Name
 Pandion,Pandion,Person_Name
 Erythras,Erythras,Person_Name
 Epiphanes,Epiphanes,Person_Name
+Ctesias,Ctesias,Person_Name
 Pompey the Great,Pompey the Great,Person_Name
 Liber,Liber,Person_Name
 Procilius,Procilius,Person_Name
@@ -114,6 +110,7 @@ Anaxilaus,Anaxilaus,Person_Name
 Cleopatra,Cleopatra,Person_Name
 Mark Antony,Mark Antony,Person_Name
 Polyclitus,Polyclitus,Person_Name
+Theopompus,Theopompus,Person_Name
 Coelius,Coelius,Person_Name
 Apion,Apion,Person_Name
 Medes,Medes,Person_Name
@@ -160,6 +157,3 @@ Sotacus,Sotacus,Person_Name
 Menander,Menander,Person_Name
 Venus,Venus,Person_Name
 Milo,Milo,Person_Name
-Zoroaster,Zoroaster,Person_Name
-Baal,Baal,Person_Name
-Eusebes,Eusebes,Person_Name
