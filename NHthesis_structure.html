@@ -96,10 +96,18 @@ div.csl-indent {
   <li><a href="#place-name-distribution-in-india-related-text" id="toc-place-name-distribution-in-india-related-text" class="nav-link" data-scroll-target="#place-name-distribution-in-india-related-text"><span class="header-section-number">4.1</span> Place name distribution in India-related text</a></li>
   <li><a href="#word-frequency-and-collocating-bi-grams" id="toc-word-frequency-and-collocating-bi-grams" class="nav-link" data-scroll-target="#word-frequency-and-collocating-bi-grams"><span class="header-section-number">4.2</span> Word frequency and collocating bi-grams</a></li>
   <li><a href="#topic-modeling" id="toc-topic-modeling" class="nav-link" data-scroll-target="#topic-modeling"><span class="header-section-number">4.3</span> Topic modeling</a></li>
-  <li><a href="#network-analysis-for-named-entity" id="toc-network-analysis-for-named-entity" class="nav-link" data-scroll-target="#network-analysis-for-named-entity"><span class="header-section-number">4.4</span> Network analysis for Named Entity</a></li>
+  <li><a href="#network-analysis-for-named-entity" id="toc-network-analysis-for-named-entity" class="nav-link" data-scroll-target="#network-analysis-for-named-entity"><span class="header-section-number">4.4</span> Network analysis for Named Entity</a>
+  <ul class="collapse">
+  <li><a href="#person-name-annotationtag-retrieve" id="toc-person-name-annotationtag-retrieve" class="nav-link" data-scroll-target="#person-name-annotationtag-retrieve"><span class="header-section-number">4.4.1</span> Person name annotation/tag retrieve</a></li>
+  <li><a href="#network-graph-generation" id="toc-network-graph-generation" class="nav-link" data-scroll-target="#network-graph-generation"><span class="header-section-number">4.4.2</span> Network graph generation</a></li>
   </ul></li>
-  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">5</span> Conclusions</a></li>
-  <li><a href="#old-structure" id="toc-old-structure" class="nav-link" data-scroll-target="#old-structure"><span class="header-section-number">6</span> Old structure</a></li>
+  </ul></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">5</span> Conclusions</a>
+  <ul>
+  <li><a href="#comprehension-of-india-in-the-narrative" id="toc-comprehension-of-india-in-the-narrative" class="nav-link" data-scroll-target="#comprehension-of-india-in-the-narrative"><span class="header-section-number">5.1</span> Comprehension of “India” in the narrative</a></li>
+  <li><a href="#distant-reading-as-a-method" id="toc-distant-reading-as-a-method" class="nav-link" data-scroll-target="#distant-reading-as-a-method"><span class="header-section-number">5.2</span> Distant reading as a method</a></li>
+  <li><a href="#reflection-and-limitation" id="toc-reflection-and-limitation" class="nav-link" data-scroll-target="#reflection-and-limitation"><span class="header-section-number">5.3</span> Reflection and limitation</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="NHthesis_structure.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -149,8 +157,8 @@ div.csl-indent {
 <p>As pointed out by <span class="citation" data-cites="beagon2011">Beagon (<a href="#ref-beagon2011" role="doc-biblioref">2011</a>)</span>, differenciating from his pressedors, Pliny showed a “terrestrial curiosity” in <em>Natural History</em>, emphasizing a recognition of the physical, material world. In this regard, the vision of geography plays a pivotal role in distributing information, knowledge, and events throughout <em>Natural History</em>.</p>
 <p>Drawing from the long-established topographical and ethnographic traditions, Pliny seamlessly connects volumes dedicated to geography (books 3-6) with broader elements, activities, and cultural, historical, and societal contexts<span class="citation" data-cites="roller2022">(<a href="#ref-roller2022" role="doc-biblioref">Roller 2022</a>)</span>, exemplified in his portrayal of exotic plants, communities’ habitats, imperial expeditions, and trade ventures. In other words, geographical names occured in each book of <em>Natural History</em> served as signposts guiding readers through diverse lands, shedding light on how Pliny and his contemporaries perceived and conceptualized the world around them.</p>
 <p>A normalized frequency of place name occurence in the work is calculated as the ratio of counts of the occurrences of place names in each book to the word lengths of the book (<a href="#tbl-place_book_distribution">Table&nbsp;1</a>). The bar chart (<a href="#fig-place_distribution">Figure&nbsp;1</a>) depicted the comparison of distribution of place names in the books of <em>Natural History</em>. The observation is in line with content structure of <em>Natural History</em>, that books 3-6 centered around the themes of “Geography and ethnography”, contains the most mentions of location names, and place names are also frequently referred in books about agriculture and horticulture (book 12-14), aquatic life (book 31), and mining and mineralogy (book 34-37).</p>
-<div class="cell" data-df-print="tibble" data-execution_count="9">
-<div class="cell-output cell-output-display" data-execution_count="9">
+<div class="cell" data-df-print="tibble" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -413,7 +421,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="13">
+<div class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div id="fig-place_distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -435,14 +443,14 @@ div.csl-indent {
 <h2 data-number="2" class="anchored" data-anchor-id="sec-research_question"><span class="header-section-number">2</span> Research Question</h2>
 <section id="prominent-mentioned-places-in-natural-history" class="level3" data-number="2.1">
 <h3 data-number="2.1" class="anchored" data-anchor-id="prominent-mentioned-places-in-natural-history"><span class="header-section-number">2.1</span> Prominent mentioned places in <em>Natural History</em></h3>
-<div class="cell" data-execution_count="40">
+<div class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <p>Based on the geographical annotations in <em>Natural History</em> provided by TOPOSText project, there are 2052 unique places mentioned in <em>Natural History</em>.</p>
 </div>
 </div>
 <p>The top 20 most frequent place names mentioned (as 1% of total) in <em>Natural History</em> is shown in <a href="#tbl-topplace">Table&nbsp;2</a>.</p>
-<div class="cell" data-df-print="tibble" data-execution_count="10">
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell" data-df-print="tibble" data-execution_count="6">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -474,111 +482,111 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">1687</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/406163RIta</td>
 <td>Italy</td>
-<td>40.6000</td>
-<td>16.30000</td>
+<td>40.6</td>
+<td>16.3</td>
 <td>292</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">2034</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/419125PRom</td>
 <td>Rome</td>
-<td>41.8910</td>
-<td>12.48600</td>
+<td>41.891</td>
+<td>12.486</td>
 <td>269</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">52</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/271307REgy</td>
 <td>Egypt</td>
-<td>27.1000</td>
-<td>30.70000</td>
+<td>27.1</td>
+<td>30.7</td>
 <td>261</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">82</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/300740RInd</td>
 <td>India</td>
-<td>30.0000</td>
-<td>74.00000</td>
+<td>30</td>
+<td>74</td>
 <td>167</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">57</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/280400RAra</td>
 <td>Arabia</td>
-<td>28.0000</td>
-<td>40.00000</td>
+<td>28</td>
+<td>40</td>
 <td>123</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">320</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/355390RSyr</td>
 <td>Syria</td>
-<td>35.5000</td>
-<td>39.00000</td>
+<td>35.5</td>
+<td>39</td>
 <td>109</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">255</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/350330RCyp</td>
 <td>Cyprus</td>
-<td>35.0000</td>
-<td>33.00000</td>
+<td>35</td>
+<td>33</td>
 <td>85</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">109</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/312301WNil</td>
 <td>Nile</td>
 <td>30.0918</td>
-<td>31.23130</td>
+<td>31.2313</td>
 <td>85</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2282</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/441073LAlp</td>
 <td>Alps</td>
-<td>44.1420</td>
-<td>7.34300</td>
+<td>44.142</td>
+<td>7.343</td>
 <td>82</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">766</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/376145RSic</td>
 <td>Sicily</td>
-<td>37.6000</td>
-<td>14.50000</td>
+<td>37.6</td>
+<td>14.5</td>
 <td>71</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">275</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/352252IKre</td>
 <td>Crete</td>
 <td>35.2052</td>
-<td>25.18360</td>
+<td>25.1836</td>
 <td>64</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">7</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/130350REth</td>
 <td>Ethiopia</td>
-<td>13.0100</td>
-<td>35.01000</td>
+<td>13.01</td>
+<td>35.01</td>
 <td>58</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">417</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/364282IRho</td>
 <td>Rhodes</td>
 <td>36.4408</td>
-<td>28.22440</td>
+<td>28.2244</td>
 <td>56</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">966</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/380237PAth</td>
 <td>Athens</td>
 <td>37.9718</td>
 <td>23.72793</td>
@@ -586,66 +594,66 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2043</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/419125SCap</td>
 <td>Capitol</td>
 <td>41.8933</td>
-<td>12.48300</td>
+<td>12.483</td>
 <td>52</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">298</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/353403WEup</td>
 <td>Euphrates</td>
 <td>35.2791</td>
-<td>40.27080</td>
+<td>40.2708</td>
 <td>47</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2241</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/435335WPon</td>
 <td>Pontus</td>
-<td>43.5000</td>
-<td>33.50000</td>
+<td>43.5</td>
+<td>33.5</td>
 <td>47</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1839</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/411146RCam</td>
 <td>Campania</td>
-<td>41.1000</td>
-<td>14.60000</td>
+<td>41.1</td>
+<td>14.6</td>
 <td>46</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">1480</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/397443RArm</td>
 <td>Armenia</td>
-<td>39.7020</td>
-<td>44.29800</td>
+<td>39.702</td>
+<td>44.298</td>
 <td>45</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">17</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/195390WEry</td>
 <td>Red Sea</td>
-<td>19.5000</td>
-<td>39.00000</td>
+<td>19.5</td>
+<td>39</td>
 <td>42</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">545</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/369103PCar</td>
 <td>Carthage</td>
-<td>36.8500</td>
-<td>10.32000</td>
+<td>36.85</td>
+<td>10.32</td>
 <td>42</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">602</td>
-<td>https://topostext.org...</td>
+<td>https://topostext.org/place/370340RCil</td>
 <td>Cilicia</td>
-<td>37.0100</td>
-<td>34.01000</td>
+<td>37.01</td>
+<td>34.01</td>
 <td>42</td>
 </tr>
 </tbody>
@@ -657,8 +665,8 @@ div.csl-indent {
 </div>
 <p>The place names referenced in <em>Natural History</em> are geographically mapped, with each location marked on the map using its corresponding coordinates. A dot is assigned to represent each place, with the size and color of the dot reflecting the frequency of its mention in the book. The larger and darker the dot, the more frequently the place is referenced within the context of Natural History.</p>
 <p>An intriguing observation from the output, as depicted in <a href="#fig-geonamemap_pdf">Figure&nbsp;2</a>, is the prominence of India, a region outside the Mediterranean, despite its high frequency of mentions.</p>
-<div class="cell" data-execution_count="30">
-<div class="cell-output cell-output-display" data-execution_count="30">
+<div class="cell" data-execution_count="149">
+<div class="cell-output cell-output-display" data-execution_count="149">
 <div id="fig-geonamemap_pdf" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <figcaption class="figure-caption">Figure&nbsp;2: Place name distribution map</figcaption>
@@ -933,8 +941,8 @@ div.csl-indent {
 </ul>
 <p>Utilizing the aforementioned dataset of geographical-related text in <em>Natural History</em>, the text having annotations with geographical coordinates falling within the specified range are extracted to construct a dataset relevant to the discourse about Indian region in the work. The filtering process ensures not only the text explicitly mentioning “India” but also those including other place names situated within the defined boundaries of the Indian region were retained.</p>
 <p>The new dataset comprises the textual content as well as the geographical coordinates of the mentioned Indian place in <em>Natural History</em>. An example of the structure of the dataset of India-related text is showed as <a href="#tbl-dataset_indiatext">Table&nbsp;5</a>.</p>
-<div class="cell" data-df-print="tibble" data-fontsize="8pt" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell" data-df-print="tibble" data-fontsize="8pt" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -971,7 +979,7 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">85</td>
-<td>db4c15ee-2b98-431c-8e9d-3178e0a8d243</td>
+<td>98d704ef-eaf0-4952-b1f2-09e7481fd94b</td>
 <td>https://topostext.org/place/300740RInd</td>
 <td>India</td>
 <td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
@@ -984,7 +992,7 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">92</td>
-<td>02c5b989-216d-4bc7-8674-fd6b837795df</td>
+<td>03e8e20b-7537-441c-bc1d-646023aa23aa</td>
 <td>https://topostext.org/place/300740RInd</td>
 <td>India</td>
 <td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
@@ -997,7 +1005,7 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">93</td>
-<td>1a60ecc5-81d5-45c8-83fd-f2a3e1d90fe9</td>
+<td>5aaa0e6a-2b78-4769-8caf-b90263b0cae7</td>
 <td>https://topostext.org/place/300740RInd</td>
 <td>India</td>
 <td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
@@ -1010,7 +1018,7 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">218</td>
-<td>4545e749-5ff0-431b-9a29-1bc351f19a99</td>
+<td>4611f8c4-26b0-4e6e-b076-a8b10c722bde</td>
 <td>https://topostext.org/place/254683WInd</td>
 <td>Indus</td>
 <td>urn:cts:latinLit:phi0978.phi001:2.98.1</td>
@@ -1023,7 +1031,7 @@ div.csl-indent {
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">343</td>
-<td>779b6add-68d5-42fa-b26c-65501432f819</td>
+<td>4229e45c-2c91-4055-966c-b6384de3b317</td>
 <td>https://topostext.org/place/300740RInd</td>
 <td>India</td>
 <td>urn:cts:latinLit:phi0978.phi001:2.112.1</td>
@@ -1041,7 +1049,7 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display">
 <p>There are 229 occurrences of paragraphs mentioning the places in Indian region with geographical coordinates annotation. And the distinct places mentioned are [‘India’ ‘Indus’ ‘Ganges’ ‘Acesinus’ ‘Hydaspes’ ‘Taprobane’ ‘Arachosia’ ‘Muziris’ ‘Baragaza’ ‘Ceylon’]. The textual content pertaining India compiles 18029 tokens and 5384 types after preprocessed. The dataset and corpus for India-related text in <em>Natural History</em> are saved respectively in CSV format for further reference.</p>
 </div>
@@ -1071,8 +1079,8 @@ div.csl-indent {
 <p><strong>PLACE_TYPE</strong>: This column contains the automatically matched geographical role provided by the gazetteers. It describes the type of place the name represents.</p>
 <p><strong>VERIFICATION_STATUS</strong>: The VERIFICATION_STATUS column indicates whether the place names have been “verified” with confirmed coordinates that match the gazetteers’ information.</p>
 <p><strong>COMMENTS</strong>: The COMMENTS column includes manual remarks for the place names that do not have matching coordinates but are believed to indicate Indian place names based on the context.</p>
-<div class="cell" data-execution_count="90">
-<div class="cell-output cell-output-display" data-execution_count="90">
+<div class="cell" data-execution_count="23">
+<div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1196,14 +1204,19 @@ unlocated,settlement     1
 Name: UUID, dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="195">
+<div class="cell" data-execution_count="24">
 <div class="cell-output cell-output-display">
 <p>After the mannual annotation process, 56 Indian place names were identified and can be added as supplementary annotations to the existing dataset, most of which are names of rivers, settlements, and islands. Among these, 45 place names have confirmed geographical coordinates based on the reference in Recogito. For the other 11 place names, though have no matching coordinates on Recogito, there are contextual clues indicating that they are probably Indian location names.</p>
 </div>
 </div>
-<div class="cell" data-execution_count="197">
+<div class="cell" data-execution_count="15">
 <div class="cell-output cell-output-display">
 <p>The supplemented place name annotations were added to the India-related text dataset. The updated dataset contains 285 occurrences of paragraphs mentioning Indian places. And the distinct places mentioned are [‘India’ ‘Indus’ ‘Ganges’ ‘Acesinus’ ‘Hydaspes’ ‘Taprobane’ ‘Arachosia’ ‘Muziris’ ‘Baragaza’ ‘Ceylon’ ‘Hypasis’ ‘Sydrus’ ‘Rhodapha’ ‘Palibothra’ ‘Prinas’ ‘Cainas’ ‘Condochates’ ‘Erannoboas’ ‘Cosoagus’ ‘Sonus’ ‘Protalis’ ‘Peucolaitis’ ‘Taxilla’ ‘Modogalinga’ ‘Andarae’ ‘Dardae’ ‘Methora’ ‘Chrysobora’ ‘Dandaguda’ ‘Tropina’ ‘Patala’ ‘Capitalia’ ‘Automula’ ‘Amenda’ ‘Cantaba’ ‘Prasiane’ ‘Argyre’ ‘Crocala’ ‘Bibraga’ ‘Toralliba’ ‘Hippuros’ ‘Palaesimundus’ ‘Megisba’ ‘Palesimundus’ ‘Cydara’ ‘Coliacum’ ‘Emodian mountains’ ‘Capisa’ ‘Parabeste’ ‘Cartana’ ‘Tonberos’ ‘Arosapes’ ‘Gedrusi’ ‘Arbis’ ‘Sigerus’ ‘Catarcludi’ ‘Meros’ ‘Perimula’ ‘Chenab’ ‘Oratae’].</p>
+</div>
+</div>
+<div class="cell" data-execution_count="21">
+<div class="cell-output cell-output-display">
+<p>And the supplemented indian place names are updated to the dataset for all place names occured in the work. Expanded the dataset from 8876 occurrences of geographical names to 8932.</p>
 </div>
 </div>
 </section>
@@ -1221,7 +1234,7 @@ Name: UUID, dtype: int64</code></pre>
 <h3 data-number="4.1" class="anchored" data-anchor-id="place-name-distribution-in-india-related-text"><span class="header-section-number">4.1</span> Place name distribution in India-related text</h3>
 <p>The comparison between the total number of place names and the place names specifically related to the Indian subcontinent mentioned in each book, is depicted in <a href="#fig-grouped_place_name_count_comparison">Figure&nbsp;3</a>. The difference in numbers between the two categories is significant, as indicated by the large disparity.</p>
 <p>To facilitate a more effective comparison of the referencing trends across different books, <a href="#fig-subplots_place_name_count_comparison">Figure&nbsp;4</a> presents subplots with varying y-axis scales. This approach allows for a clearer visualization of the trends and patterns in place name references throughout the various books.</p>
-<div class="cell" data-execution_count="129">
+<div class="cell" data-execution_count="16">
 <div class="cell-output cell-output-display">
 <div id="fig-grouped_place_name_count_comparison" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1252,12 +1265,12 @@ Name: UUID, dtype: int64</code></pre>
 <h3 data-number="4.2" class="anchored" data-anchor-id="word-frequency-and-collocating-bi-grams"><span class="header-section-number">4.2</span> Word frequency and collocating bi-grams</h3>
 <p>By utilizing the measurements available in the <a href="https://www.nltk.org/">NLTK</a> package, a word frequency list and collocating bi-grams were generated from the text associated with Indian place names in <em>Natural History</em>. These outputs provide an overview of the prevalent words and word patterns, as potential keywords in the text.</p>
 <p>In the initial observation, the words “India” and “one” ranked high in the frequency list. However, it is apparent that the passages would include the word “India” when discussing about India, making it less informative as a keyword. Likewise, the word “one” appeared as a generic descriptor for bringing up a type of tribe, plant, or attributes like distance, volume, or range, offering limited insight as a keyword. To enhance the relevance and descriptive nature of the frequency list, these two common but less informative words, “India” and “one”, are further excluded from the token list.</p>
-<div class="cell" data-execution_count="5">
+<div class="cell" data-execution_count="18">
 <div class="cell-output cell-output-display">
 <p>Among 17729 tokens excluding “India” and “one”, 201 (the top 1%) frequently occuring words in the India-related text in <em>Natural History</em> are shown in <a href="#fig-freqwords_treemap">Figure&nbsp;5</a> and <a href="#fig-freqwords_wordcloud">Figure&nbsp;6</a>.</p>
 </div>
 </div>
-<div class="cell" data-execution_count="85">
+<div class="cell" data-execution_count="19">
 <div class="cell-output cell-output-display">
 <div id="fig-freqwords_treemap" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1267,7 +1280,7 @@ Name: UUID, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="80">
+<div class="cell" data-execution_count="20">
 <div class="cell-output cell-output-display">
 <div id="fig-freqwords_wordcloud" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1304,8 +1317,8 @@ Name: UUID, dtype: int64</code></pre>
 </div>
 <p>However, during the initial observation, it was noted that approximately one-third of the extracted bi-grams contained the word “hundred”, such as in (‘hundred’, ‘fifty’) and (‘six’, ‘hundred’). These bi-grams typically denoted measurements for distance, object length, or quantity, offering limited descriptive information about the content of the text. Consequently, the word “hundred” was excluded from further bi-gram extraction to focus on more informative and relevant co-occuring words.</p>
 <p>And the updated output bi-grams are list as follows:</p>
-<div class="cell" data-execution_count="76">
-<div class="cell-output cell-output-display" data-execution_count="76">
+<div class="cell" data-execution_count="21">
+<div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>[('alexander', 'great'),
  ('father', 'liber'),
  ('caspian', 'gate'),
@@ -1318,8 +1331,8 @@ Name: UUID, dtype: int64</code></pre>
  ('olive', 'oil'),
  ('asia', 'minor'),
  ('equinoctial', 'hour'),
- ('red', 'sea'),
  ('lapis', 'lazuli'),
+ ('red', 'sea'),
  ('mile', 'breadth'),
  ('emperor', 'nero'),
  ('already', 'mentioned'),
@@ -1525,7 +1538,7 @@ if(typeof(LDAvis) !== "undefined"){
 <p>37.23.2 “…Indeed, as is generally known, in India the stone is exposed to view by the mountain streams…Later we persuaded the Indians to share our appreciation of it.”</p>
 </blockquote>
 <p>And the distribution of context type concluded from close reading is shown in <a href="#fig-book_context_distribution">Figure&nbsp;12</a> and <a href="#fig-context_type_freq">Figure&nbsp;13</a>.</p>
-<div class="cell" data-execution_count="89">
+<div class="cell" data-execution_count="24">
 <div class="cell-output cell-output-display">
 <div id="fig-book_context_distribution" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1535,7 +1548,7 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="88">
+<div class="cell" data-execution_count="25">
 <div class="cell-output cell-output-display">
 <div id="fig-context_type_freq" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -1546,615 +1559,658 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 <p>In general, the contexts concluded from the close reading can relate to the latent topics generated from the distant reading method and added more details to the keywords clusters. That is, if we understand the content about India in <em>Natural History</em> in three main topics, namely stons, trade, and contrasting nation, under the “stone” topic, except for describing the colour and texture of different types of gemstone, there also include the description about India as an origin of gemstones in a high quality. And under the large proportion of Indian places as geographical reference and focused introduction mentioned in the narrative, contributes to the formation of “nation” condition as a major topic. Additionally, there were conquest history of the Roman Empire to Indian subcontinent referred in the description. And for the topic about “trade”, though it seem inferior to the previous two in terms of quantity, but it is this part that reflects more sentimental judgement from Pliny out of his stoicism standpoint that worshiping nature as a devine and against luxurious desire <span class="citation" data-cites="beagon1996">(<a href="#ref-beagon1996" role="doc-biblioref">Beagon 1996</a>)</span>.</p>
-<p>On top of the observation from the previous section, that India is seen as an important geographical contrast, as well as a significant trading partner in the narrative, a more nuanced protrait of India, linking the conquest history of the Roman Empire and criticism aobut human greed from the stoicism with abundant natural wonders and products of the best quality in the world can be drawn from the comprehension of topic modelling and close reading.</p>
+<p>On top of the observation from the previous section, that India is seen as an important geographical contrast, as well as a significant trading partner in the narrative, a more nuanced protrait of India, linking the conquest story/history of the Roman Empire and criticism aobut human greed from the stoicism with abundant natural wonders and products of the best quality in the world can be drawn from the comprehension of topic modelling and close reading.</p>
 </section>
 <section id="network-analysis-for-named-entity" class="level3" data-number="4.4">
 <h3 data-number="4.4" class="anchored" data-anchor-id="network-analysis-for-named-entity"><span class="header-section-number">4.4</span> Network analysis for Named Entity</h3>
-<div class="cell" data-execution_count="140">
-<div class="cell-output cell-output-display" data-execution_count="140">
+<p>In addition to the previous methods partly answered on the question about “how India is described?” in <em>Natural History</em>, a network analysis of the named entities in the text may shed a light on the structure of the India-related content in the work. As inspired by the person name collocations observed from the collocation analysis, the initial idea for this section is to extract person names mentioned in the India-related text, and generate a entity cluster for the person names, place names, and book number, to explore how the content is structured in the context.</p>
+<p>Employing the dataset with supplemented Indian place name annotations, distinct place names (including annotated places outside Indian subcontinenet), person names and book numbers are considered as nodes, and the co-occurences of person name and place names, as well as that of two different place names in the same paragraph, and the book number the person and place name occured, are counted as edges.</p>
+<p>To identify the the impact of different entities in the discourse, the betweeness centrality of the nodes are mesured and represented by the size of the node. And the weight of edge between two nodes represents the time the two entities appeared in the same context. Gone through a Force Atlas 2 layout algorithm, the graph also demonstrates the rough cluster of entities which tend to be mentioned together.</p>
+<div class="cell" data-execution_count="29">
+<div class="cell-output cell-output-display">
+<p>Indexing with the book-chapter-paragraph number of the India-related text, the place names outside Indian subcontinent mentioned in the same paragraph are also included for the network analysis. And according to the original TOPOSText and supplemented place name annotations, there are total of 908 occurences of place names in paragraphs of Indian-related text in <em>Natural History</em>.</p>
+</div>
+</div>
+<section id="person-name-annotationtag-retrieve" class="level4" data-number="4.4.1">
+<h4 data-number="4.4.1" class="anchored" data-anchor-id="person-name-annotationtag-retrieve"><span class="header-section-number">4.4.1</span> Person name annotation/tag retrieve</h4>
+<p>In order to extract the people names within the captioned text, approaches of retriving from the TOPOSText annotation and from the tagging of text given by the pretrained multilingual named entity recognition model <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> are compared for adopting the most completed output.</p>
+<p><strong>1. Annotation retrieving from TOPOSText</strong></p>
+<p>On TOPOSText, other than place names, a list of proper names (including people, gods, festivals, animals and artworks) are also annotated to the text of the classics. Each proper name has a unique URI as identifier in the html structure, such as: **&lt;a href=“/people/54” target=“_blank”&gt;Muses&lt;/a&gt;**.</p>
+<p>Utilizing the tools of <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a>, the textual proper names, their URIs along with the book-chapter-paragraph number they occured in, can be retrieved with the URLs of both parts of <em>Natural History</em> on TOPOSText.</p>
+<div class="cell" data-execution_count="35">
+<div class="cell-output cell-output-display">
+<p>In the annotated text of <em>Natural History</em> on TOPOSText, there are 5109 such proper name annotations in book 1-11 and 7038 in book 12-37, adding up to a combined total of 12147 throughout the work.</p>
+</div>
+</div>
+<p>The specific annotation type as “person name” can be further validated with the <a href="https://topostext.org/api/people/readweb.php">api</a> on TOPOText. In the api file, all the entities of people/gods, has been valued as “male” or “female” as its “gender” key. Based on this criteria, those with other values in their “gender” key, such as “gender”:“animal” or “gender”:“other”, are not considered as “people” and filtered out from the retrieved output. Moreover, as there is a “concat” value indicating a detailed name of the signified person and shared with all variants of the same URI, the “concat” value is also fetched as a more accurate information of person name enetity.</p>
+<div class="cell" data-execution_count="40">
+<div class="cell-output cell-output-display" data-execution_count="40">
 <div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
 
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-validated_people_anno" class="anchored">
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Place_URI</th>
-<th data-quarto-table-cell-role="th">Place_Name</th>
-<th data-quarto-table-cell-role="th">Reference</th>
-<th data-quarto-table-cell-role="th">Lat</th>
-<th data-quarto-table-cell-role="th">Long</th>
-<th data-quarto-table-cell-role="th">Book</th>
-<th data-quarto-table-cell-role="th">Chapter</th>
-<th data-quarto-table-cell-role="th">Paragraph</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>https://topostext.org/place/380237SAca</td>
-<td>Academy</td>
-<td>urn:cts:latinLit:phi0978.phi001:1.8.1</td>
-<td>37.99200</td>
-<td>23.70700</td>
-<td>1.0</td>
-<td>8.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>https://topostext.org/place/419125LPal</td>
-<td>Palatine</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
-<td>41.88960</td>
-<td>12.48840</td>
-<td>2.0</td>
-<td>5.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>https://topostext.org/place/419125LEsq</td>
-<td>Esquiline</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
-<td>41.89500</td>
-<td>12.49600</td>
-<td>2.0</td>
-<td>5.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>https://topostext.org/place/419125SCap</td>
-<td>Capitol</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.5.1</td>
-<td>41.89330</td>
-<td>12.48300</td>
-<td>2.0</td>
-<td>5.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>https://topostext.org/place/419125PRom</td>
-<td>Rome</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.6.3</td>
-<td>41.89100</td>
-<td>12.48600</td>
-<td>2.0</td>
-<td>6.0</td>
-<td>3.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8927</td>
-<td>NaN</td>
-<td>Catarcludi</td>
-<td>urn:cts:latinLit:phi0978.phi001:7.2.6</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>7.0</td>
-<td>2.0</td>
-<td>6.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8928</td>
-<td>http://pleiades.stoa.org/places/59927</td>
-<td>Meros</td>
-<td>urn:cts:latinLit:phi0978.phi001:16.62.1</td>
-<td>36.25530</td>
-<td>71.84060</td>
-<td>16.0</td>
-<td>62.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8929</td>
-<td>http://pleiades.stoa.org/places/50212</td>
-<td>Perimula</td>
-<td>urn:cts:latinLit:phi0978.phi001:9.54.1</td>
-<td>17.50000</td>
-<td>72.50000</td>
-<td>9.0</td>
-<td>54.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8930</td>
-<td>http://sws.geonames.org/1167507</td>
-<td>Chenab</td>
-<td>urn:cts:latinLit:phi0978.phi001:37.76.1</td>
-<td>31.75511</td>
-<td>72.91403</td>
-<td>37.0</td>
-<td>76.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8931</td>
-<td>http://pleiades.stoa.org/places/59955</td>
-<td>Oratae</td>
-<td>urn:cts:latinLit:phi0978.phi001:31.14.1</td>
-<td>27.50000</td>
-<td>72.50000</td>
-<td>31.0</td>
-<td>14.0</td>
-<td>1.0</td>
-</tr>
-</tbody>
-</table>
-
-<p>8932 rows × 8 columns</p>
-</div>
-</div>
-</div>
-<div class="cell" data-execution_count="149">
-<div class="cell-output cell-output-display" data-execution_count="149">
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;7: Example of retrieved and validated person name annotations in <em>Naturl History</em></caption>
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th">FILE_ID</th>
-<th data-quarto-table-cell-role="th">Place_URI</th>
-<th data-quarto-table-cell-role="th">Place_Name</th>
+<th data-quarto-table-cell-role="th">Person_name</th>
+<th data-quarto-table-cell-role="th">ToposText_ID</th>
 <th data-quarto-table-cell-role="th">Reference</th>
-<th data-quarto-table-cell-role="th">Lat</th>
-<th data-quarto-table-cell-role="th">Long</th>
-<th data-quarto-table-cell-role="th">Book</th>
-<th data-quarto-table-cell-role="th">Chapter</th>
-<th data-quarto-table-cell-role="th">Paragraph</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">84</td>
-<td>2.75.1</td>
-<td>https://topostext.org/place/241329USye</td>
-<td>Syene</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
-<td>24.08110</td>
-<td>32.89800</td>
-<td>2.0</td>
-<td>75.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">85</td>
-<td>2.75.1</td>
-<td>https://topostext.org/place/300740RInd</td>
-<td>India</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
-<td>30.00000</td>
-<td>74.00000</td>
-<td>2.0</td>
-<td>75.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">86</td>
-<td>2.75.1</td>
-<td>https://topostext.org/place/239355UBer</td>
-<td>Berenice</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
-<td>23.91100</td>
-<td>35.47200</td>
-<td>2.0</td>
-<td>75.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">87</td>
-<td>2.75.1</td>
-<td>https://topostext.org/place/191373UPto</td>
-<td>Ptolemais</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
-<td>19.10500</td>
-<td>37.33400</td>
-<td>2.0</td>
-<td>75.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">88</td>
-<td>2.75.1</td>
-<td>https://topostext.org/place/195390WEry</td>
-<td>Red Sea</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
-<td>19.50000</td>
-<td>39.00000</td>
-<td>2.0</td>
-<td>75.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8927</td>
-<td>7.2.6</td>
-<td>NaN</td>
-<td>Catarcludi</td>
-<td>urn:cts:latinLit:phi0978.phi001:7.2.6</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>7.0</td>
-<td>2.0</td>
-<td>6.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8928</td>
-<td>16.62.1</td>
-<td>http://pleiades.stoa.org/places/59927</td>
-<td>Meros</td>
-<td>urn:cts:latinLit:phi0978.phi001:16.62.1</td>
-<td>36.25530</td>
-<td>71.84060</td>
-<td>16.0</td>
-<td>62.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8929</td>
-<td>9.54.1</td>
-<td>http://pleiades.stoa.org/places/50212</td>
-<td>Perimula</td>
-<td>urn:cts:latinLit:phi0978.phi001:9.54.1</td>
-<td>17.50000</td>
-<td>72.50000</td>
-<td>9.0</td>
-<td>54.0</td>
-<td>1.0</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8930</td>
-<td>37.76.1</td>
-<td>http://sws.geonames.org/1167507</td>
-<td>Chenab</td>
-<td>urn:cts:latinLit:phi0978.phi001:37.76.1</td>
-<td>31.75511</td>
-<td>72.91403</td>
-<td>37.0</td>
-<td>76.0</td>
-<td>1.0</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8931</td>
-<td>31.14.1</td>
-<td>http://pleiades.stoa.org/places/59955</td>
-<td>Oratae</td>
-<td>urn:cts:latinLit:phi0978.phi001:31.14.1</td>
-<td>27.50000</td>
-<td>72.50000</td>
-<td>31.0</td>
-<td>14.0</td>
-<td>1.0</td>
-</tr>
-</tbody>
-</table>
-
-<p>908 rows × 9 columns</p>
-</div>
-</div>
-</div>
-<div class="cell" data-execution_count="151">
-<div class="cell-output cell-output-display" data-execution_count="151">
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">source</th>
-<th data-quarto-table-cell-role="th">target</th>
+<th data-quarto-table-cell-role="th">Person_name_concat</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>Syene</td>
-<td>India</td>
+<td>1.1.1</td>
+<td>Muses</td>
+<td>/people/54</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.1.1</td>
+<td>Muses (goddesses)</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>Syene</td>
-<td>Berenice</td>
+<td>1.1.1</td>
+<td>Catullus</td>
+<td>/people/1881</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.1.1</td>
+<td>Catullus</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>Syene</td>
-<td>Ptolemais</td>
+<td>1.2.1</td>
+<td>Cicero</td>
+<td>/people/2300</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.2.1</td>
+<td>Marcus Tullius Cicero</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>Syene</td>
-<td>Red Sea</td>
+<td>1.2.1</td>
+<td>Cicero</td>
+<td>/people/2300</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.2.1</td>
+<td>Marcus Tullius Cicero</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>Syene</td>
-<td>Meroe</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6098</td>
-<td>Capisa</td>
-<td>Cartana</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">6099</td>
-<td>Parabeste</td>
-<td>Cartana</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6100</td>
-<td>Tonberos</td>
-<td>Arosapes</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">6101</td>
-<td>Tonberos</td>
-<td>Gedrusi</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6102</td>
-<td>Arosapes</td>
-<td>Gedrusi</td>
+<td>1.2.1</td>
+<td>Manius</td>
+<td>/people/382</td>
+<td>urn:cts:latinLit:phi0978.phi001:1.2.1</td>
+<td>Manius</td>
 </tr>
 </tbody>
 </table>
+</div>
 
-<p>6103 rows × 2 columns</p>
 </div>
 </div>
 </div>
-</section>
-</section>
-<section id="conclusions" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">5</span> Conclusions</h2>
-</section>
-<section id="old-structure" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="old-structure"><span class="header-section-number">6</span> Old structure</h2>
-<section id="network-analysis-about-indian-subcontinent-region-related-texts" class="level5" data-number="6.0.0.1">
-<h5 data-number="6.0.0.1" class="anchored" data-anchor-id="network-analysis-about-indian-subcontinent-region-related-texts"><span class="header-section-number">6.0.0.1</span> Network analysis about Indian subcontinent region related texts</h5>
-<p>Two separate network analyses were conducted. The first analysis focused on exploring the relationships between place names mentioned throughout the entire book. The second analysis specifically examined the name entities of people and place names associated with the Indian subcontinent regions. Nodes and edges were generated for both analyses and imported into Gephi for visualization. By studying the clustering patterns of place names and people in the resulting network graphs, valuable insights can be gained into both the overall context of the book and the specific context of the Indian subcontinent within <em>Natural History</em>.</p>
-<div class="cell" data-execution_count="417">
+<div class="cell" data-execution_count="91">
 <div class="cell-output cell-output-display">
-<p>In the network analysis for place names throughout the entire book, unique place names are seen as nodes, and once two place names co-occur in the same paragraph, it will be counted as one edge. There are total 2255 nodes and 52602 edges in the prepared data.</p>
+<p>An example of the data structure of the retrieved output of person name annotations in <em>Natural History</em> is shown in <a href="#tbl-validated_people_anno">Table&nbsp;7</a>. There are total 6568 occurences of person names annotated in the whole work, <strong>330</strong> of which are within the India-related text.</p>
 </div>
 </div>
-<p>As shown in <a href="#fig-geoname_network">Figure&nbsp;14</a>, the size of the node represents the betweeness centrality a place name mentioned in the book, and the weight of edge between two nodes represents the time the two place names appeared in the same paragraph (as seen in the same context). Gone through a Force Atlas 2 layout algorithm, the graph also demonstrates the rough cluster of place names which tend to be mentioned together.</p>
-<p>In the case of “India”, it is observed mostly incooperates with “Egypt”, “Arabia” and “Nille”, which tend to be appearing in the description of trading route.</p>
-<div class="cell" data-execution_count="63">
-<div class="cell-output cell-output-display" data-execution_count="63">
-<div id="fig-geoname_network" class="quarto-figure quarto-figure-center anchored">
+<div class="cell" data-execution_count="79">
+<div class="cell-output cell-output-display" data-execution_count="79">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-person_anno_merged" class="anchored">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;8: Example for person name annotation merged into India-related text dataset</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">FILE_ID</th>
+<th data-quarto-table-cell-role="th">Place_Name</th>
+<th data-quarto-table-cell-role="th">Book</th>
+<th data-quarto-table-cell-role="th">Text</th>
+<th data-quarto-table-cell-role="th">Person_name_concat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Syene</td>
+<td>2.0</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.75.1</td>
+<td>Syene</td>
+<td>2.0</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>Alexander III, the Great (general)</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>2.75.1</td>
+<td>Syene</td>
+<td>2.0</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>Alexander III, the Great (general)</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>2.75.1</td>
+<td>Syene</td>
+<td>2.0</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>2.75.1</td>
+<td>India</td>
+<td>2.0</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>Onesicritus</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="92">
+<div class="cell-output cell-output-display">
+<p>As shown in <a href="#tbl-person_anno_merged">Table&nbsp;8</a>, the validated annotated person names are added to the India-related text dataset. With the person name annotation retrieving, there found total <strong>3583</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
+</div>
+</div>
+<p><strong>2. Named entity recognition with <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a></strong></p>
+<p>To evaluate the quality and completeness of the extracted person name annotations, two widely practiced pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> are utilized for tagging person names in the India-related text.</p>
+<div class="cell" data-execution_count="86">
+<div class="cell-output cell-output-display" data-execution_count="86">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-wiki_ppl_tag" class="anchored">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;9: Example of person name tags retrieved with WikiNEuRal from India-related text in <em>Natural History</em></caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">FILE_ID</th>
+<th data-quarto-table-cell-role="th">Text</th>
+<th data-quarto-table-cell-role="th">Text_ner</th>
+<th data-quarto-table-cell-role="th">PER_name_tag</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Alexander</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Alexander</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">21</td>
+<td>2.112.1</td>
+<td>Our own portion of the earth, which is my subj...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.7412269, '...</td>
+<td>Artemidorus</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="89">
+<div class="cell-output cell-output-display">
+<p>An example of the person name tags retrieved from WikiNEuRal of the given text are shown in <a href="#tbl-wiki_ppl_tag">Table&nbsp;9</a>. There are total <strong>225</strong> occurences retrieved within the India-related text.</p>
+</div>
+</div>
+<div class="cell" data-execution_count="90">
+<div class="cell-output cell-output-display">
+<p>And after merging the person name tags with the dataset of place name occurences, there found total <strong>1881</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
+</div>
+</div>
+<p><strong>3. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span></strong></p>
+<p>As a comparison, another well-esteemed NLP pretrained model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> is also applied for the named enetity recognition to the same text.</p>
+<div class="cell" data-execution_count="97">
+<div class="cell-output cell-output-display" data-execution_count="97">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-flair_ppl_tag" class="anchored">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;10: Example of person name tags retrieved with Flair from India-related text in <em>Natural History</em></caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">FILE_ID</th>
+<th data-quarto-table-cell-role="th">Text</th>
+<th data-quarto-table-cell-role="th">Text_ner</th>
+<th data-quarto-table-cell-role="th">PER_name_tag</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Leo</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Alexander</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Alexander</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">0</td>
+<td>2.75.1</td>
+<td>Similarly it is reported that at the town of S...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">66</td>
+<td>4.17.4</td>
+<td>Such is Macedonia, which was once the mistress...</td>
+<td>[{'entity_group': 'LOC', 'score': 0.95384216, ...</td>
+<td>Paulus Aemilius</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+<div class="cell" data-execution_count="98">
+<div class="cell-output cell-output-display">
+<p>An example of the person name tags retrieved from WikiNEuRal of the given text are shown in <a href="#tbl-flair_ppl_tag">Table&nbsp;10</a>. There are total <strong>102</strong> occurences retrieved within the India-related text.</p>
+</div>
+</div>
+<div class="cell" data-execution_count="99">
+<div class="cell-output cell-output-display">
+<p>And after merging the person name tags with the dataset of place name occurences, there found total <strong>938</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em> with the NER tool of Flair.</p>
+</div>
+</div>
+<p>As shown in <a href="#tbl-ner_compare">Table&nbsp;11</a>, the TOPOSText annotation provide more person name entities comparing to the other two methods.</p>
+<div class="cell" data-execution_count="108">
+<div class="cell-output cell-output-display" data-execution_count="108">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-ner_compare" class="anchored">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;11: Quantity of person name entities retrieved with different methods</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Distinct person name</th>
+<th data-quarto-table-cell-role="th">Person name occurence</th>
+<th data-quarto-table-cell-role="th">Place-person co-occurence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">TOPOSText Annotation</td>
+<td>153</td>
+<td>330</td>
+<td>3583</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">WikiNEuRal NER</td>
+<td>121</td>
+<td>225</td>
+<td>1881</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">Flair NER</td>
+<td>71</td>
+<td>102</td>
+<td>938</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+<p>And the first fifteen distinct retrieved person names of the three methods can be referred in <a href="#tbl-per_name_compare">Table&nbsp;12</a>. For the case of “Alexander III, the Great (general)”, since the annotation retrieved from TOPOSText is validated with the URI, both “Alexander” and “Alexander the Great” will be recognized as the same entity. While from the output of WikiNEuRal and Flair, the two variants are recognized as two different entities. And for the case “Leo” retrieved from Flair NER, it actually refers to the zodiac constellation, rather than a person/god name, and the same entity has a “gender”:“astronomic” value in the TOPOSText annotation, which will prevent it being added to the dataset as a person name.</p>
+<div class="cell" data-execution_count="137">
+<div class="cell-output cell-output-display" data-execution_count="137">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+
+<div id="tbl-per_name_compare" class="anchored">
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<caption>Table&nbsp;12: First 15 distinct person names retrieved with different methods</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">TOPOSText Annotation</th>
+<th data-quarto-table-cell-role="th">WikiNEuRal NER</th>
+<th data-quarto-table-cell-role="th">Flair NER</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Onesicritus</td>
+<td>Onesicritus</td>
+<td>Leo</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Alexander III, the Great (general)</td>
+<td>Alexander</td>
+<td>Alexander</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Heracles (s. of Zeus), Hercules</td>
+<td>Artemidorus</td>
+<td>Onesicritus</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Artemidorus Ephesius</td>
+<td>Isidore</td>
+<td>Paulus Aemilius</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Isidoros of Charax</td>
+<td>Father Liber</td>
+<td>Cyrus</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Dionysus (s. of Zeus), Bacchus</td>
+<td>Hercules</td>
+<td>SCYTHIA</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Paulus</td>
+<td>Paulus Aemilius</td>
+<td>Aramii</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Aemilius</td>
+<td>Amasis</td>
+<td>M. Varro</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Amasis</td>
+<td>Alexander the Great</td>
+<td>Pompey</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Memnon (s. of Tithonus)</td>
+<td>Antiochus</td>
+<td>Laros</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">10</td>
+<td>Osiris</td>
+<td>Seleucus</td>
+<td>Hecataeus</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">11</td>
+<td>Calliope (d. of Zeus)</td>
+<td>M</td>
+<td>Patrocles</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">12</td>
+<td>Antiochus, Antiochos (misc)</td>
+<td>Varro</td>
+<td>Alexander the Great</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">13</td>
+<td>Seleucus I Nicator s. Antiochus</td>
+<td>Amometus</td>
+<td>Baeton</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">14</td>
+<td>Margos</td>
+<td>Hecataeus</td>
+<td>Protalis</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+<p>Both in terms of quantity and quality, the person names retrieved from the TOPOSText is more reliable for this study. Therefore, the output of TOPOSText annotation retriving is appended to the dataset for node/edge generation for the network analysis.</p>
+</section>
+<section id="network-graph-generation" class="level4" data-number="4.4.2">
+<h4 data-number="4.4.2" class="anchored" data-anchor-id="network-graph-generation"><span class="header-section-number">4.4.2</span> Network graph generation</h4>
+<p>As mentioned, there will be three types of nodes for the expected network graph, namely <strong>place name</strong>, <strong>person name</strong> and <strong>book number</strong>.</p>
+<p>And there are four types of edges taken into consideration, including the co-occurence of:</p>
+<ol type="1">
+<li><strong>place name</strong> and <strong>person name</strong> in the same paragraph<br></li>
+<li><strong>person name</strong> and <strong>book number</strong> it appears in<br></li>
+<li><strong>place name</strong> and <strong>book number</strong> it appears in<br></li>
+<li><strong>place name</strong> and <strong>place name</strong> in the same paragraph<br></li>
+</ol>
+<div class="cell" data-execution_count="141">
+<div class="cell-output cell-output-display">
+<p>There are total 519 nodes and 14177 edges for the network of place name/person name/book number in India-related text of <em>Natural History</em>.</p>
+</div>
+</div>
+<p>The network graph generated from the captioned nodes and edges can be explored as <a href="#fig-network_graph">Figure&nbsp;14</a>. As mentioned, the size of the nodes represents the betweeness centralality of the entity in the context, which means the bigger the node, the more central it is in the discourse. The types of nodes (place name, person name, book number) are differenciated by colour.</p>
+<p>And the curved lines linking different nodes indicate the co-occurences between single place name and person name, two place names, and the book number of place name and person name occurs. The thickness of the line represent the counts of the co-occurence edge, which means, the thicker the line linking, the more frequent the two nodes are mentioned together.</p>
+<p>Apparently, “India” is the absolute center of the discourse. And drawing from both the node size and edge thickness, “Arabia” is the place that often mentioned together with India. Actually, the two countries are even often mentioned in the same time, for example:</p>
+<blockquote class="blockquote">
+<p>13.28.1 “Ethiopia, which is on the borders of Egypt, has virtually no remarkable trees except the wool-tree, like the one described among the trees of <strong>India</strong> and <strong>Arabia</strong>.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>22.56.1 “I myself shall not touch upon drugs imported from <strong>India</strong> and <strong>Arabia</strong> or from the outer world.”</p>
+</blockquote>
+<p>One possible reason for this pairing occurence is that Arabia locates in the middle of the route from Rome to India, and the two places similarly significant importers for the exotic and luxurious goods trade.</p>
+<div class="cell" data-execution_count="165">
+<div class="cell-output cell-output-display">
+<div id="fig-network_graph" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<figcaption class="figure-caption">Figure&nbsp;14: Network graph for place namesmentioned in Natural History</figcaption>
-<p><img src="NHthesis_structure_files/figure-html/fig-geoname_network-output-1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;14: Place/person/book number network of India-related content in <em>Natural History</em></figcaption>
+<p><img src="NHthesis_structure_files/figure-html/fig-network_graph-output-1.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>To gain a more detailed cluster of narrative contents about Indian subcontinent in <em>Natural History</em>, the idea is to generate a network for book number, place names and person names in the target corpus. The person name nodes are retrieved from the tagging of text given by the pretrained multilingual Name Entity Recognition model <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span>.</p>
-<p>##(will further compare with scraping person name annotations from ToposText, to see which way gets more accurate information.)</p>
-<p>The tags for name entity groups retrieved from WikiNEuRal model is appended as a new column in the corpus dataframe. And the tags as “PER”, which means “person name” are further extracted as another column.</p>
-<div class="cell" data-df-print="tibble" data-execution_count="12">
-<div class="cell-output cell-output-display" data-execution_count="12">
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Place_Name</th>
-<th data-quarto-table-cell-role="th">Book</th>
-<th data-quarto-table-cell-role="th">Chapter</th>
-<th data-quarto-table-cell-role="th">Paragraph</th>
-<th data-quarto-table-cell-role="th">Text_ner</th>
-<th data-quarto-table-cell-role="th">PER_names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">85</td>
-<td>India</td>
-<td>2</td>
-<td>75</td>
-<td>1.0</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
-<td>[Onesicritus, Alexander, Alexander, Onesicritus]</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">92</td>
-<td>India</td>
-<td>2</td>
-<td>75</td>
-<td>1.0</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
-<td>[Onesicritus, Alexander, Alexander, Onesicritus]</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">93</td>
-<td>India</td>
-<td>2</td>
-<td>75</td>
-<td>1.0</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
-<td>[Onesicritus, Alexander, Alexander, Onesicritus]</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">218</td>
-<td>Indus</td>
-<td>2</td>
-<td>98</td>
-<td>1.0</td>
-<td>[{'entity_group': 'LOC', 'score': 0.999539, 'w...</td>
-<td>[]</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">343</td>
-<td>India</td>
-<td>2</td>
-<td>112</td>
-<td>1.0</td>
-<td>[{'entity_group': 'LOC', 'score': 0.7412269, '...</td>
-<td>[Artemidorus, Isidore, Artemidorus, Artemidorus]</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<p>The rows containing no person name were dropped and those with multiple person name records were exploded to separate rows.</p>
-<div class="cell" data-df-print="tibble" data-execution_count="13">
-<div class="cell-output cell-output-display" data-execution_count="13">
-<div>
-
-
-<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Place_Name</th>
-<th data-quarto-table-cell-role="th">Book</th>
-<th data-quarto-table-cell-role="th">PER_names</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">85</td>
-<td>India</td>
-<td>2</td>
-<td>Onesicritus</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">85</td>
-<td>India</td>
-<td>2</td>
-<td>Alexander</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">85</td>
-<td>India</td>
-<td>2</td>
-<td>Alexander</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">85</td>
-<td>India</td>
-<td>2</td>
-<td>Onesicritus</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">92</td>
-<td>India</td>
-<td>2</td>
-<td>Onesicritus</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">...</td>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8842</td>
-<td>India</td>
-<td>37</td>
-<td>Jupiter</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8847</td>
-<td>India</td>
-<td>37</td>
-<td>Xenocrates</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8866</td>
-<td>Indus</td>
-<td>37</td>
-<td>Democritus</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">8873</td>
-<td>India</td>
-<td>37</td>
-<td>Nature</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8873</td>
-<td>India</td>
-<td>37</td>
-<td>Nature</td>
-</tr>
-</tbody>
-</table>
-
-<p>453 rows × 3 columns</p>
-</div>
-</div>
-</div>
-<p>Within the Indian subcontinent context, the nodes consist of three types, namely <strong>place name</strong>, <strong>person name</strong> and <strong>book number</strong>.</p>
-<p>And there are four types of edges being recorded and combined, including the co-occurence of:</p>
-<ol type="1">
-<li><strong>place name</strong> and <strong>person name</strong> in the same paragraph<br></li>
-<li><strong>person name</strong> and <strong>book number</strong><br></li>
-<li><strong>place name</strong> and <strong>book number</strong><br></li>
-<li><strong>place name</strong> and <strong>place name</strong> in the same paragraph<br></li>
-</ol>
-<div class="cell" data-execution_count="16">
+<p>Besides, there are several groups of place names located the edge of the graph, as shown in <a href="#fig-nw_edged_groups">Figure&nbsp;15</a>, indicating they tend to be mentioned together, but relatively distanced from the discussion of India. In most cases India is just a passing metion in the enumerition context.</p>
+<div class="cell" data-execution_count="164">
 <div class="cell-output cell-output-display">
-<p>In the network analysis for place names and person names within the Indian subcontinent context, there are total 158 nodes and 1353 edges in the prepared data.</p>
+<div id="fig-nw_edged_groups" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<figcaption class="figure-caption">Figure&nbsp;15: Example of edged groups in the network graph of India-related text in <em>Natural History</em></figcaption>
+<p><img src="NHthesis_structure_files/figure-html/fig-nw_edged_groups-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<div class="cell" data-execution_count="33">
-<div class="cell-output cell-output-stdout">
-<pre><code>              Link          Name
-0       /people/54         Muses
-1     /people/1881      Catullus
-2     /people/2300        Cicero
-4      /people/382        Manius
-5     /people/1515       Persius
-...            ...           ...
-6972  /people/9015  Bostrychitis
-6990  /people/7679       Eusebes
-6999  /people/6553         Idaei
-7001  /people/9782      Memnonia
-7017  /people/6166          Adad
-
-[2764 rows x 2 columns]</code></pre>
+</div>
+<p>And there are three obvious person name clusters centering on Book 6, Book 7 and Book 37, the zoomed in captures are shown in <a href="#fig-network_zoom_book6n7">Figure&nbsp;16</a> (for Book 6 and Book 7) and <a href="#fig-network_zoom_book37">Figure&nbsp;17</a> (for Book 37).</p>
+<p>From the cluster of Book 6, the most frequent mentioned historical figures are Alexander the Great, and Dionysus (often with a variant name as “Father Liber”), which has been mentioned to be related to the epic and history of conquest from Roman Empire to Indian subcontinent. Also other governers/generals/navigators have significant connectness within the discourse, such as “Juba II”, “Ptolemy II Philadelphus”, “Hippalus”, “Patrocles”, “Leonnatus” etc. And it also show the frequent referred scholars of Pliny in the India-related narratives, for example, “Seneca”, “Eratosthenes”, “Posidonius of Apameia”.</p>
+<p>And in the cluster of Book 7, where the discussion focus is on anthropology (human races, tribes, human behaviors), a group of scholars are significantly referred, including “Aristotle”, “Eudoxus of Cnidus”, “Duris”, “Agatharchides”.</p>
+<div class="cell" data-execution_count="160">
+<div class="cell-output cell-output-display" data-execution_count="160">
+<div id="fig-network_zoom_book6n7" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<figcaption class="figure-caption">Figure&nbsp;16: Clusters of Book 6 &amp; Book 7 in India-related content in <em>Natural History</em></figcaption>
+<p><img src="NHthesis_structure_files/figure-html/fig-network_zoom_book6n7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
 </div>
 </div>
-<p>As manifested in <strong>?@fig-indiantext_clustering</strong>, there is obvious clustering of person names occuring in Indian subcontinent related texts. In other words, groups of person names are tend to be referenced in some specific topics.</p>
-<p>##(more detailed illustration will be further conducted.)</p>
+</div>
+<p>While in the cluster of Book 37, strong edges are connected to Greek scholars, such as “Xenocrates”, “Aeschylus”, “Sudines” and “Zenothemis”. Also there is a significant connectness with “Magi”, referring to the priests in Zoroastrianism mentioned in the discussion about tales and myths related to the precious stones. An interesting finding in close reading is that in Book 37, Pliny had addressed direct disprovement to these two groups, with a strong critical attitude. As quoted in the following paragraphs, the Greek scholars and Magus are often mentioned as debatable subjects in Book 37, as a strategy for him to express his own worship of nature and the material world.</p>
+<blockquote class="blockquote">
+<p>37.11.2 “Here is an opportunity for <strong>exposing the falsehoods of the Greeks</strong>.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>37.14.1 “Now I shall discuss those kinds of gemstones that are acknowledged as such, beginning with the finest. And this shall not be my only aim, but to the greater profit of mankind <strong>I shall incidentally confute the abominable falsehoods of the Magi</strong>, since in very many of their statements about gems they have gone far beyond providing an alluring substitute for medical science into the realms of the supernatural.”</p>
+</blockquote>
+<div class="cell" data-execution_count="161">
+<div class="cell-output cell-output-display" data-execution_count="161">
+<div id="fig-network_zoom_book37" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<figcaption class="figure-caption">Figure&nbsp;17: Clusters of Book 37 in India-related content in <em>Natural History</em></figcaption>
+<p><img src="NHthesis_structure_files/figure-html/fig-network_zoom_book37-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="conclusions" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="conclusions"><span class="header-section-number">5</span> Conclusions</h2>
+<section id="comprehension-of-india-in-the-narrative" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="comprehension-of-india-in-the-narrative"><span class="header-section-number">5.1</span> Comprehension of “India” in the narrative</h3>
+<ol type="1">
+<li>geographical contrast (significant standpoint, linked by river); trade partner (frequent trade, importer of numerous rare and precious treasures)</li>
+<li>three main topics: stones(sole origin and origin of high qualities), origin of marvels and large/good stuff, luxuries trade(criticism), nation history(on and off mentioning the conquest history, in epic, in history), of course it is partly where the knowledge come from, but also show a state of mind of imperialism</li>
+<li>always mentioned with arabia, ethopia, and person name cluster</li>
+</ol>
+</section>
+<section id="distant-reading-as-a-method" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="distant-reading-as-a-method"><span class="header-section-number">5.2</span> Distant reading as a method</h3>
+<ol type="1">
+<li>help inspire insight, the research question is driven from the premilinary observation</li>
+<li>combining close reading will have more insights</li>
+<li>completeness check and validation plays important role, will make great difference in the outcome</li>
+<li>output of the study that may contribute to further studies:</li>
+</ol>
+<ul>
+<li>Creation of a dataset of textual passages from the NH related to India</li>
+<li>Evaluation and integration of the ToposText annotation in these passages</li>
+<li>Exploration of the Named Entities connected by Pliny to India</li>
+</ul>
+</section>
+<section id="reflection-and-limitation" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="reflection-and-limitation"><span class="header-section-number">5.3</span> Reflection and limitation</h3>
+<ol type="1">
+<li>if time permits, mannual check of geo annotation of the whole text will be better</li>
+<li>topic modelling part, need more fine tuning on the parameters</li>
+<li>the network part could include more categories, integrate with other types of nodes</li>
+</ol>
 
 </section>
 </section>

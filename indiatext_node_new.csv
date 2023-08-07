@@ -1,0 +1,520 @@
+id,label,type
+Syene,Syene,Place_Name
+India,India,Place_Name
+Berenice,Berenice,Place_Name
+Ptolemais,Ptolemais,Place_Name
+Red Sea,Red Sea,Place_Name
+Meroe,Meroe,Place_Name
+Nile,Nile,Place_Name
+Harpasa,Harpasa,Place_Name
+Assos,Assos,Place_Name
+Troad,Troad,Place_Name
+Indus,Indus,Place_Name
+Locri,Locri,Place_Name
+Croton,Croton,Place_Name
+Lycia,Lycia,Place_Name
+Arpi,Arpi,Place_Name
+Veii,Veii,Place_Name
+Tusculum,Tusculum,Place_Name
+Crustuminum,Crustuminum,Place_Name
+Pillars,Pillars,Place_Name
+Cadiz,Cadiz,Place_Name
+Sacred Promontory,Sacred Promontory,Place_Name
+Ganges,Ganges,Place_Name
+Parthyene,Parthyene,Place_Name
+Myriandrus,Myriandrus,Place_Name
+Issic gulf,Issic gulf,Place_Name
+Cyprus,Cyprus,Place_Name
+Patara,Patara,Place_Name
+Rhodes,Rhodes,Place_Name
+Astypalaea,Astypalaea,Place_Name
+Taenarus,Taenarus,Place_Name
+Laconia,Laconia,Place_Name
+Lilybaion,Lilybaion,Place_Name
+Sicily,Sicily,Place_Name
+Caralis,Caralis,Place_Name
+Sardinia,Sardinia,Place_Name
+Euphrates,Euphrates,Place_Name
+Mazaca,Mazaca,Place_Name
+Cappadocia,Cappadocia,Place_Name
+Caria,Caria,Place_Name
+Ephesus,Ephesus,Place_Name
+Aegean Sea,Aegean Sea,Place_Name
+Delos,Delos,Place_Name
+Isthmus,Isthmus,Place_Name
+Gulf of Corinth,Gulf of Corinth,Place_Name
+Patras,Patras,Place_Name
+Peloponnese,Peloponnese,Place_Name
+Leucas,Leucas,Place_Name
+Corcyra,Corcyra,Place_Name
+Acroceraunia,Acroceraunia,Place_Name
+Brindisi,Brindisi,Place_Name
+Rome,Rome,Place_Name
+Alps,Alps,Place_Name
+Scingomagum,Scingomagum,Place_Name
+Pyrenees,Pyrenees,Place_Name
+Illiberis,Illiberis,Place_Name
+Macedonia,Macedonia,Place_Name
+Armenia,Armenia,Place_Name
+Iberia,Iberia,Place_Name
+Albania,Albania,Place_Name
+Syria,Syria,Place_Name
+Egypt,Egypt,Place_Name
+Taurus,Taurus,Place_Name
+Caucasus,Caucasus,Place_Name
+Panticapes,Panticapes,Place_Name
+Acesinus,Acesinus,Place_Name
+Borysthenes,Borysthenes,Place_Name
+Olbia,Olbia,Place_Name
+Hypanis,Hypanis,Place_Name
+City of Apollo,City of Apollo,Place_Name
+Leucothea,Leucothea,Place_Name
+Thebes,Thebes,Place_Name
+Coptos,Coptos,Place_Name
+Arabia,Arabia,Place_Name
+city of Venus,city of Venus,Place_Name
+city of Jupiter,city of Jupiter,Place_Name
+Tentyris,Tentyris,Place_Name
+Abydus,Abydus,Place_Name
+Libya,Libya,Place_Name
+Panopolis,Panopolis,Place_Name
+Lycon,Lycon,Place_Name
+Thebais,Thebais,Place_Name
+city of Mercury,city of Mercury,Place_Name
+Alabastron,Alabastron,Place_Name
+city of Dogs,city of Dogs,Place_Name
+city of Hercules,city of Hercules,Place_Name
+Arsinoe,Arsinoe,Place_Name
+Memphis,Memphis,Place_Name
+Pyramids,Pyramids,Place_Name
+Labyrinth,Labyrinth,Place_Name
+Moeris,Moeris,Place_Name
+City of the Sun,City of the Sun,Place_Name
+Adiabene,Adiabene,Place_Name
+Cordueni,Cordueni,Place_Name
+Tigris,Tigris,Place_Name
+Caspian Gates,Caspian Gates,Place_Name
+Parthia,Parthia,Place_Name
+Media,Media,Place_Name
+Cyrus,Cyrus,Place_Name
+Margiane,Margiane,Place_Name
+Antiochia,Antiochia,Place_Name
+Oxus,Oxus,Place_Name
+Panda,Panda,Place_Name
+Tanais,Tanais,Place_Name
+Scythia,Scythia,Place_Name
+Caspian Sea,Caspian Sea,Place_Name
+Phasis,Phasis,Place_Name
+Pontus,Pontus,Place_Name
+Caspian sea,Caspian sea,Place_Name
+Emodos,Emodos,Place_Name
+Hyrcanian Sea,Hyrcanian Sea,Place_Name
+Cos,Cos,Place_Name
+Emaus,Emaus,Place_Name
+Hydaspes,Hydaspes,Place_Name
+Imaus,Imaus,Place_Name
+Taprobane,Taprobane,Place_Name
+Carmania,Carmania,Place_Name
+Arachosia,Arachosia,Place_Name
+Persia,Persia,Place_Name
+Cane,Cane,Place_Name
+Muziris,Muziris,Place_Name
+Babylon,Babylon,Place_Name
+Persis,Persis,Place_Name
+Elymais,Elymais,Place_Name
+Eulaeus,Eulaeus,Place_Name
+Charax,Charax,Place_Name
+Tylos,Tylos,Place_Name
+Ethiopia,Ethiopia,Place_Name
+Baragaza,Baragaza,Place_Name
+Gades,Gades,Place_Name
+Aethiopia,Aethiopia,Place_Name
+Aria,Aria,Place_Name
+Susiane,Susiane,Place_Name
+Seleucia,Seleucia,Place_Name
+Petra,Petra,Place_Name
+Coele Syria,Coele Syria,Place_Name
+Pelusium,Pelusium,Place_Name
+Cyrenaica,Cyrenaica,Place_Name
+Thapsus,Thapsus,Place_Name
+Adrumetum,Adrumetum,Place_Name
+Clupea,Clupea,Place_Name
+Carthage,Carthage,Place_Name
+Utica,Utica,Place_Name
+Numidia,Numidia,Place_Name
+Pillars of Hercules,Pillars of Hercules,Place_Name
+Persepolis,Persepolis,Place_Name
+Judaea,Judaea,Place_Name
+Libanus,Libanus,Place_Name
+Idumaea,Idumaea,Place_Name
+Samaria,Samaria,Place_Name
+Hierosolyma,Hierosolyma,Place_Name
+Ascalon,Ascalon,Place_Name
+Joppa,Joppa,Place_Name
+Caesarea,Caesarea,Place_Name
+Phoenicia,Phoenicia,Place_Name
+Sidon,Sidon,Place_Name
+Tyre,Tyre,Place_Name
+Berytus,Berytus,Place_Name
+Botrys,Botrys,Place_Name
+Tripolis,Tripolis,Place_Name
+Byblus,Byblus,Place_Name
+Laodicea,Laodicea,Place_Name
+Cilicia,Cilicia,Place_Name
+Crete,Crete,Place_Name
+Cataonia,Cataonia,Place_Name
+Amanus,Amanus,Place_Name
+Issus,Issus,Place_Name
+Soli,Soli,Place_Name
+Tarsus,Tarsus,Place_Name
+Pisidia,Pisidia,Place_Name
+Side,Side,Place_Name
+Pamphylia,Pamphylia,Place_Name
+Lycaonia,Lycaonia,Place_Name
+Xanthus,Xanthus,Place_Name
+Caunus,Caunus,Place_Name
+Halicarnassus,Halicarnassus,Place_Name
+Cnidos,Cnidos,Place_Name
+Doris,Doris,Place_Name
+Chios,Chios,Place_Name
+Cyclades,Cyclades,Place_Name
+Gythium,Gythium,Place_Name
+Malea,Malea,Place_Name
+Argos,Argos,Place_Name
+Elis,Elis,Place_Name
+Olympia,Olympia,Place_Name
+Messenia,Messenia,Place_Name
+Peloponnesus,Peloponnesus,Place_Name
+Syracuse,Syracuse,Place_Name
+Catina,Catina,Place_Name
+Carteia,Carteia,Place_Name
+Galatia,Galatia,Place_Name
+Mysia,Mysia,Place_Name
+Sardis,Sardis,Place_Name
+Smyrna,Smyrna,Place_Name
+Sipylus,Sipylus,Place_Name
+Tmolus,Tmolus,Place_Name
+Lydia,Lydia,Place_Name
+Ionia,Ionia,Place_Name
+Tralles,Tralles,Place_Name
+Colophon,Colophon,Place_Name
+Miletus,Miletus,Place_Name
+Samos,Samos,Place_Name
+Athens,Athens,Place_Name
+Megara,Megara,Place_Name
+Corinth,Corinth,Place_Name
+Sikyon,Sikyon,Place_Name
+Achaia,Achaia,Place_Name
+Patrae,Patrae,Place_Name
+Epirus,Epirus,Place_Name
+New Carthage,New Carthage,Place_Name
+Athos,Athos,Place_Name
+Ceylon,Ceylon,Place_Name
+Rhyndacus,Rhyndacus,Place_Name
+Italy,Italy,Place_Name
+Hyrcania,Hyrcania,Place_Name
+Olisipo,Olisipo,Place_Name
+Lugdunum,Lugdunum,Place_Name
+Jaffa,Jaffa,Place_Name
+Rhine,Rhine,Place_Name
+Po,Po,Place_Name
+Danube,Danube,Place_Name
+Dnieper,Dnieper,Place_Name
+Thurii,Thurii,Place_Name
+Cave-dweller Country,Cave-dweller Country,Place_Name
+Pelion,Pelion,Place_Name
+Cyrene,Cyrene,Place_Name
+Phrygia,Phrygia,Place_Name
+Olympus,Olympus,Place_Name
+Panticapaeum,Panticapaeum,Place_Name
+Cimmerian Bosphorus,Cimmerian Bosphorus,Place_Name
+Black Sea,Black Sea,Place_Name
+Tarracina,Tarracina,Place_Name
+Thrace,Thrace,Place_Name
+Bononia,Bononia,Place_Name
+Ticinus,Ticinus,Place_Name
+Faventia,Faventia,Place_Name
+Actium,Actium,Place_Name
+Judea,Judea,Place_Name
+Jerusalem,Jerusalem,Place_Name
+Ecbatana,Ecbatana,Place_Name
+Scotussa,Scotussa,Place_Name
+Avernus,Avernus,Place_Name
+Limyra,Limyra,Place_Name
+Bithynia,Bithynia,Place_Name
+Gela,Gela,Place_Name
+Aspendus,Aspendus,Place_Name
+Citium,Citium,Place_Name
+Bactria,Bactria,Place_Name
+Pagasae,Pagasae,Place_Name
+Chaonia,Chaonia,Place_Name
+Tagus,Tagus,Place_Name
+Padus,Padus,Place_Name
+Hebrus,Hebrus,Place_Name
+Pactolus,Pactolus,Place_Name
+Selinus,Selinus,Place_Name
+Adriatic,Adriatic,Place_Name
+Thebaid,Thebaid,Place_Name
+temple of Concord,temple of Concord,Place_Name
+Heliopolis,Heliopolis,Place_Name
+Alabanda,Alabanda,Place_Name
+Orthosia,Orthosia,Place_Name
+Capitol,Capitol,Place_Name
+Eridanus,Eridanus,Place_Name
+Electrides,Electrides,Place_Name
+Rhone,Rhone,Place_Name
+Liguria,Liguria,Place_Name
+Britain,Britain,Place_Name
+Crathis,Crathis,Place_Name
+Syrtes,Syrtes,Place_Name
+Pannonia,Pannonia,Place_Name
+Carnuntum,Carnuntum,Place_Name
+Paros,Paros,Place_Name
+Attica,Attica,Place_Name
+Thermodon,Thermodon,Place_Name
+Amisos,Amisos,Place_Name
+Chalcedon,Chalcedon,Place_Name
+Thasos,Thasos,Place_Name
+Trachis,Trachis,Place_Name
+Oita,Oita,Place_Name
+Parnassus,Parnassus,Place_Name
+Lesbos,Lesbos,Place_Name
+Alabastrum,Alabastrum,Place_Name
+Damascus,Damascus,Place_Name
+Philae,Philae,Place_Name
+Arcadia,Arcadia,Place_Name
+Corsica,Corsica,Place_Name
+Aeolis,Aeolis,Place_Name
+Atarneus,Atarneus,Place_Name
+Ida,Ida,Place_Name
+Samnium,Samnium,Place_Name
+Hypasis,Hypasis,Place_Name
+Sydrus,Sydrus,Place_Name
+Rhodapha,Rhodapha,Place_Name
+Palibothra,Palibothra,Place_Name
+Prinas,Prinas,Place_Name
+Cainas,Cainas,Place_Name
+Condochates,Condochates,Place_Name
+Erannoboas,Erannoboas,Place_Name
+Cosoagus,Cosoagus,Place_Name
+Sonus,Sonus,Place_Name
+Protalis,Protalis,Place_Name
+Peucolaitis,Peucolaitis,Place_Name
+Taxilla,Taxilla,Place_Name
+Modogalinga,Modogalinga,Place_Name
+Andarae,Andarae,Place_Name
+Dardae,Dardae,Place_Name
+Methora,Methora,Place_Name
+Chrysobora,Chrysobora,Place_Name
+Dandaguda,Dandaguda,Place_Name
+Tropina,Tropina,Place_Name
+Patala,Patala,Place_Name
+Capitalia,Capitalia,Place_Name
+Automula,Automula,Place_Name
+Amenda,Amenda,Place_Name
+Cantaba,Cantaba,Place_Name
+Prasiane,Prasiane,Place_Name
+Argyre,Argyre,Place_Name
+Crocala,Crocala,Place_Name
+Bibraga,Bibraga,Place_Name
+Toralliba,Toralliba,Place_Name
+Hippuros,Hippuros,Place_Name
+Palaesimundus,Palaesimundus,Place_Name
+Megisba,Megisba,Place_Name
+Palesimundus,Palesimundus,Place_Name
+Cydara,Cydara,Place_Name
+Coliacum,Coliacum,Place_Name
+Emodian mountains,Emodian mountains,Place_Name
+Capisa,Capisa,Place_Name
+Parabeste,Parabeste,Place_Name
+Cartana,Cartana,Place_Name
+Tonberos,Tonberos,Place_Name
+Arosapes,Arosapes,Place_Name
+Gedrusi,Gedrusi,Place_Name
+Arbis,Arbis,Place_Name
+Sigerus,Sigerus,Place_Name
+Catarcludi,Catarcludi,Place_Name
+Meros,Meros,Place_Name
+Perimula,Perimula,Place_Name
+Chenab,Chenab,Place_Name
+Oratae,Oratae,Place_Name
+2,Book 2,Book
+4,Book 4,Book
+5,Book 5,Book
+6,Book 6,Book
+7,Book 7,Book
+8,Book 8,Book
+9,Book 9,Book
+10,Book 10,Book
+11,Book 11,Book
+12,Book 12,Book
+13,Book 13,Book
+15,Book 15,Book
+16,Book 16,Book
+17,Book 17,Book
+18,Book 18,Book
+19,Book 19,Book
+21,Book 21,Book
+22,Book 22,Book
+24,Book 24,Book
+27,Book 27,Book
+31,Book 31,Book
+32,Book 32,Book
+33,Book 33,Book
+34,Book 34,Book
+35,Book 35,Book
+36,Book 36,Book
+37,Book 37,Book
+Onesicritus ,Onesicritus ,Person_Name
+"Alexander III, the Great (general)","Alexander III, the Great (general)",Person_Name
+"Heracles (s. of Zeus), Hercules","Heracles (s. of Zeus), Hercules",Person_Name
+Artemidorus Ephesius,Artemidorus Ephesius,Person_Name
+Isidoros of Charax,Isidoros of Charax,Person_Name
+"Dionysus (s. of Zeus), Bacchus","Dionysus (s. of Zeus), Bacchus",Person_Name
+Paulus,Paulus,Person_Name
+Aemilius,Aemilius,Person_Name
+Amasis,Amasis,Person_Name
+Memnon (s. of Tithonus),Memnon (s. of Tithonus),Person_Name
+Osiris,Osiris,Person_Name
+Calliope (d. of Zeus),Calliope (d. of Zeus),Person_Name
+"Antiochus, Antiochos (misc)","Antiochus, Antiochos (misc)",Person_Name
+Seleucus I Nicator s. Antiochus,Seleucus I Nicator s. Antiochus,Person_Name
+Margos,Margos,Person_Name
+Orodes,Orodes,Person_Name
+Crassus,Crassus,Person_Name
+"Ochus, Ochos","Ochus, Ochos",Person_Name
+Cyrus (kings of Persia),Cyrus (kings of Persia),Person_Name
+Semiramis,Semiramis,Person_Name
+Demodamas (geographer),Demodamas (geographer),Person_Name
+Apollo (s. of Zeus) (cf Phoebus),Apollo (s. of Zeus) (cf Phoebus),Person_Name
+"Varro, Marcus Varro","Varro, Marcus Varro",Person_Name
+"Gn. Pompeius Magnus (Roman general), Pompey","Gn. Pompeius Magnus (Roman general), Pompey",Person_Name
+"Mithridates, Mithridatic","Mithridates, Mithridatic",Person_Name
+Chryse (d. of Almus),Chryse (d. of Almus),Person_Name
+Hecataeus of Miletus,Hecataeus of Miletus,Person_Name
+Eratosthenes (scholar),Eratosthenes (scholar),Person_Name
+M. Vipsanius Agrippa (ally of Augustus),M. Vipsanius Agrippa (ally of Augustus),Person_Name
+Posidonius of Apameia (Stoic philosopher),Posidonius of Apameia (Stoic philosopher),Person_Name
+Patrocles (Macedonian general and geographer),Patrocles (Macedonian general and geographer),Person_Name
+Megasthenes (geographer),Megasthenes (geographer),Person_Name
+Dionysius (ambassador),Dionysius (ambassador),Person_Name
+Ptolemy II Philadelphus (king) ,Ptolemy II Philadelphus (king) ,Person_Name
+Seneca,Seneca,Person_Name
+Diognetus,Diognetus,Person_Name
+Baeton,Baeton,Person_Name
+Kratos (s. of Pallas),Kratos (s. of Pallas),Person_Name
+"Zeus (s. of Cronus), Jupiter","Zeus (s. of Cronus), Jupiter",Person_Name
+"Claudius Caesar, Roman emperor","Claudius Caesar, Roman emperor",Person_Name
+Annius,Annius,Person_Name
+"Helios, the Sun (s. of Hyperion)","Helios, the Sun (s. of Hyperion)",Person_Name
+Canopus (mythology),Canopus (mythology),Person_Name
+Arius (Christian heretic),Arius (Christian heretic),Person_Name
+Juba II,Juba II,Person_Name
+"Nearchos, Nearchus","Nearchos, Nearchus",Person_Name
+Leonnatus (Macedonian noble),Leonnatus (Macedonian noble),Person_Name
+Nymphs ,Nymphs ,Person_Name
+Arcturus,Arcturus,Person_Name
+"Pirates, piracy","Pirates, piracy",Person_Name
+Hippalus (explorer),Hippalus (explorer),Person_Name
+Pandion,Pandion,Person_Name
+Cassandra (d. of Priam),Cassandra (d. of Priam),Person_Name
+"Poseidon (s. of Cronus), Neptune","Poseidon (s. of Cronus), Neptune",Person_Name
+Epiphanes,Epiphanes,Person_Name
+Numenius,Numenius,Person_Name
+Ctesias (physician and historian),Ctesias (physician and historian),Person_Name
+Eudoxus of Cnidus (astronomer),Eudoxus of Cnidus (astronomer),Person_Name
+Homer (poet) ,Homer (poet) ,Person_Name
+Aristotle (philosopher) ,Aristotle (philosopher) ,Person_Name
+Isigonus,Isigonus,Person_Name
+Crates of Mallus,Crates of Mallus,Person_Name
+Agatharchides (geographer),Agatharchides (geographer),Person_Name
+"Cleitarchus, Clitarchus, Kleitarchos (historian)","Cleitarchus, Clitarchus, Kleitarchos (historian)",Person_Name
+"Duris, Douris (of Samos, historian)","Duris, Douris (of Samos, historian)",Person_Name
+Germanicus,Germanicus,Person_Name
+Herodotus (historian),Herodotus (historian),Person_Name
+"Metrodorus, Metrodoros","Metrodorus, Metrodoros",Person_Name
+Regulus,Regulus,Person_Name
+"Ptolemy, Ptolemaeus (misc)","Ptolemy, Ptolemaeus (misc)",Person_Name
+"Tiberius Caesar, Roman emperor","Tiberius Caesar, Roman emperor",Person_Name
+Triton (s. of Poseidon),Triton (s. of Poseidon),Person_Name
+Nereids,Nereids,Person_Name
+Octavius Caesar Augustus (Roman Emperor) ,Octavius Caesar Augustus (Roman Emperor) ,Person_Name
+Turranius,Turranius,Person_Name
+Andromeda (d. of Cepheus),Andromeda (d. of Cepheus),Person_Name
+Scaurus,Scaurus,Person_Name
+Statius,Statius,Person_Name
+Statius Sebosus (geographer),Statius Sebosus (geographer),Person_Name
+Dinon (historian),Dinon (historian),Person_Name
+Melampus (s. of Amythaon),Melampus (s. of Amythaon),Person_Name
+Democritus (philosopher),Democritus (philosopher),Person_Name
+"Vergilius, Virgil (poet)","Vergilius, Virgil (poet)",Person_Name
+Nero (Roman emperor),Nero (Roman emperor),Person_Name
+Mithridates VI of Pontus,Mithridates VI of Pontus,Person_Name
+Fabius,Fabius,Person_Name
+"Cheiron, Chiron (centaur, myth. s. of Cronus)","Cheiron, Chiron (centaur, myth. s. of Cronus)",Person_Name
+Poppaea,Poppaea,Person_Name
+Theophrastus (philosopher),Theophrastus (philosopher),Person_Name
+Harpalus,Harpalus,Person_Name
+Mago (writer),Mago (writer),Person_Name
+Anaxilaus,Anaxilaus,Person_Name
+Cleopatra,Cleopatra,Person_Name
+Mark Antony (Roman general),Mark Antony (Roman general),Person_Name
+Polycleitus of Larissa (geographer),Polycleitus of Larissa (geographer),Person_Name
+"Lycos, Lycus","Lycos, Lycus",Person_Name
+Theopompus (Greek historian),Theopompus (Greek historian),Person_Name
+Coelius,Coelius,Person_Name
+Apion (scholar),Apion (scholar),Person_Name
+"Cronus (s. of Uranus), Saturn","Cronus (s. of Uranus), Saturn",Person_Name
+Larcius,Larcius,Person_Name
+Licinius,Licinius,Person_Name
+Hammon,Hammon,Person_Name
+"Licinius, Licinius Macer","Licinius, Licinius Macer",Person_Name
+Polygnotus (painter),Polygnotus (painter),Person_Name
+Micon (Athenian painter and sculptor),Micon (Athenian painter and sculptor),Person_Name
+Apelles (painter),Apelles (painter),Person_Name
+Echion,Echion,Person_Name
+"Melanthius (tragedian, painter, writer)","Melanthius (tragedian, painter, writer)",Person_Name
+Nicomachus of Thebes,Nicomachus of Thebes,Person_Name
+Menelaus (s. of Atreus),Menelaus (s. of Atreus),Person_Name
+"Xenocrates, Xenokrates","Xenocrates, Xenokrates",Person_Name
+Pythagoras (misc),Pythagoras (misc),Person_Name
+Cornelius,Cornelius,Person_Name
+Bocchus,Bocchus,Person_Name
+Xenocrates,Xenocrates,Person_Name
+Sudines,Sudines,Person_Name
+Livia,Livia,Person_Name
+Phaethon (son of Helios),Phaethon (son of Helios),Person_Name
+Aeschylus,Aeschylus,Person_Name
+Philoxenus of Cythera,Philoxenus of Cythera,Person_Name
+Euripides (playwright),Euripides (playwright),Person_Name
+Nicander,Nicander,Person_Name
+"Satyrus, Satyros","Satyrus, Satyros",Person_Name
+"Apollonius, Apollonios, Apollonium","Apollonius, Apollonios, Apollonium",Person_Name
+"Chares, Khares","Chares, Khares",Person_Name
+Ammon,Ammon,Person_Name
+Philemon (poet),Philemon (poet),Person_Name
+Zenothemis,Zenothemis,Person_Name
+Pytheas (explorer),Pytheas (explorer),Person_Name
+Timaeus (historian),Timaeus (historian),Person_Name
+Nicias (misc),Nicias (misc),Person_Name
+Theochrestus,Theochrestus,Person_Name
+Xenocrates of Aphrodisias,Xenocrates of Aphrodisias,Person_Name
+Mnaseas (traveller),Mnaseas (traveller),Person_Name
+Penelope (d. of Icarius),Penelope (d. of Icarius),Person_Name
+Hesperides ,Hesperides ,Person_Name
+Hesperus,Hesperus,Person_Name
+"Sophocles (playwright, Athenian general)","Sophocles (playwright, Athenian general)",Person_Name
+Meleager (s. of Oeneus),Meleager (s. of Oeneus),Person_Name
+Julianus,Julianus,Person_Name
+"Archelaus, Archelaos","Archelaus, Archelaos",Person_Name
+Nonius,Nonius,Person_Name
+Catullus,Catullus,Person_Name
+Servilius,Servilius,Person_Name
+Ismenias (flute-player ),Ismenias (flute-player ),Person_Name
+Demostratus,Demostratus,Person_Name
+Menander (misc),Menander (misc),Person_Name
+"Magi, Magus","Magi, Magus",Person_Name
+Petra,Petra,Person_Name
+"Aphrodite (d. of Uranus), Venus","Aphrodite (d. of Uranus), Venus",Person_Name
+Milo of Croton (athlete) ,Milo of Croton (athlete) ,Person_Name
+Alexander (misc),Alexander (misc),Person_Name
