@@ -1573,7 +1573,7 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 <section id="person-name-annotationtag-retrieve" class="level4" data-number="4.4.1">
 <h4 data-number="4.4.1" class="anchored" data-anchor-id="person-name-annotationtag-retrieve"><span class="header-section-number">4.4.1</span> Person name annotation/tag retrieve</h4>
-<p>In order to extract the people names within the captioned text, approaches of retriving from the TOPOSText annotation and from the tagging of text given by the pretrained multilingual named entity recognition model <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> are compared for adopting the most completed output.</p>
+<p>In order to extract the people names within the captioned text, approaches of retriving from the TOPOSText annotation and from the tagging of text given by the pretrained multilingual named entity recognition model <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are compared for adopting the most completed output.</p>
 <p><strong>1. Annotation retrieving from TOPOSText</strong></p>
 <p>On TOPOSText, other than place names, a list of proper names (including people, gods, festivals, animals and artworks) are also annotated to the text of the classics. Each proper name has a unique URI as identifier in the html structure, such as: **&lt;a href=“/people/54” target=“_blank”&gt;Muses&lt;/a&gt;**.</p>
 <p>Utilizing the tools of <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a>, the textual proper names, their URIs along with the book-chapter-paragraph number they occured in, can be retrieved with the URLs of both parts of <em>Natural History</em> on TOPOSText.</p>
@@ -1744,13 +1744,13 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="92">
+<div class="cell" data-scrolled="true" data-execution_count="92">
 <div class="cell-output cell-output-display">
 <p>As shown in <a href="#tbl-person_anno_merged">Table&nbsp;8</a>, the validated annotated person names are added to the India-related text dataset. With the person name annotation retrieving, there found total <strong>3583</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
 </div>
 </div>
 <p><strong>2. Named entity recognition with <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a></strong></p>
-<p>To evaluate the quality and completeness of the extracted person name annotations, two widely practiced pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> are utilized for tagging person names in the India-related text.</p>
+<p>To evaluate the quality and completeness of the extracted person name annotations, two widely practiced pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are utilized for tagging person names in the India-related text.</p>
 <div class="cell" data-execution_count="86">
 <div class="cell-output cell-output-display" data-execution_count="86">
 <div>
@@ -1833,8 +1833,8 @@ if(typeof(LDAvis) !== "undefined"){
 <p>And after merging the person name tags with the dataset of place name occurences, there found total <strong>1881</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
 </div>
 </div>
-<p><strong>3. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span></strong></p>
-<p>As a comparison, another well-esteemed NLP pretrained model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="inproceedings">(<a href="#ref-inproceedings" role="doc-biblioref"><strong>inproceedings?</strong></a>)</span> is also applied for the named enetity recognition to the same text.</p>
+<p><strong>3. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a></strong></p>
+<p>As a comparison, another well-esteemed NLP pretrained model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> is also applied for the named enetity recognition to the same text.</p>
 <div class="cell" data-execution_count="97">
 <div class="cell-output cell-output-display" data-execution_count="97">
 <div>
@@ -2217,6 +2217,9 @@ if(typeof(LDAvis) !== "undefined"){
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-akbik2018coling" class="csl-entry" role="listitem">
+Akbik, Alan, Duncan Blythe, and Roland Vollgraf. 2018. <span>“Contextual String Embeddings for Sequence Labeling.”</span> In <em><span>COLING</span> 2018, 27th International Conference on Computational Linguistics</em>, 1638–49.
+</div>
 <div id="ref-bail" class="csl-entry" role="listitem">
 Bail, Christopher A. n.d. <span>“Topic <span>Modeling</span>.”</span> Accessed August 3, 2023. <a href="https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html">https://cbail.github.io/textasdata/topic-modeling/rmarkdown/Topic_Modeling.html</a>.
 </div>
