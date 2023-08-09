@@ -72,7 +72,7 @@ div.csl-indent {
   <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link active" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul>
   <li><a href="#natural-history-and-its-complexity" id="toc-natural-history-and-its-complexity" class="nav-link" data-scroll-target="#natural-history-and-its-complexity"><span class="header-section-number">1.1</span> <em>Natural History</em> and its complexity</a></li>
-  <li><a href="#spatial-perstpective-in-natural-history" id="toc-spatial-perstpective-in-natural-history" class="nav-link" data-scroll-target="#spatial-perstpective-in-natural-history"><span class="header-section-number">1.2</span> Spatial perstpective in <em>Natural History</em></a></li>
+  <li><a href="#spatial-perspective-in-natural-history" id="toc-spatial-perspective-in-natural-history" class="nav-link" data-scroll-target="#spatial-perspective-in-natural-history"><span class="header-section-number">1.2</span> Spatial perspective in <em>Natural History</em></a></li>
   <li><a href="#text-source-for-the-study" id="toc-text-source-for-the-study" class="nav-link" data-scroll-target="#text-source-for-the-study"><span class="header-section-number">1.3</span> Text source for the study</a></li>
   </ul></li>
   <li><a href="#sec-research_question" id="toc-sec-research_question" class="nav-link" data-scroll-target="#sec-research_question"><span class="header-section-number">2</span> Research Question</a>
@@ -96,10 +96,10 @@ div.csl-indent {
   <ul>
   <li><a href="#place-name-distribution-in-india-related-text" id="toc-place-name-distribution-in-india-related-text" class="nav-link" data-scroll-target="#place-name-distribution-in-india-related-text"><span class="header-section-number">4.1</span> Place name distribution in India-related text</a></li>
   <li><a href="#word-frequency-and-collocating-bi-grams" id="toc-word-frequency-and-collocating-bi-grams" class="nav-link" data-scroll-target="#word-frequency-and-collocating-bi-grams"><span class="header-section-number">4.2</span> Word frequency and collocating bi-grams</a></li>
-  <li><a href="#topic-modeling" id="toc-topic-modeling" class="nav-link" data-scroll-target="#topic-modeling"><span class="header-section-number">4.3</span> Topic modeling</a></li>
-  <li><a href="#network-analysis-for-named-entity" id="toc-network-analysis-for-named-entity" class="nav-link" data-scroll-target="#network-analysis-for-named-entity"><span class="header-section-number">4.4</span> Network analysis for Named Entity</a>
+  <li><a href="#topic-modelling" id="toc-topic-modelling" class="nav-link" data-scroll-target="#topic-modelling"><span class="header-section-number">4.3</span> Topic modelling</a></li>
+  <li><a href="#sec-network" id="toc-sec-network" class="nav-link" data-scroll-target="#sec-network"><span class="header-section-number">4.4</span> Network analysis for named entities</a>
   <ul class="collapse">
-  <li><a href="#person-name-annotationtag-retrieve" id="toc-person-name-annotationtag-retrieve" class="nav-link" data-scroll-target="#person-name-annotationtag-retrieve"><span class="header-section-number">4.4.1</span> Person name annotation/tag retrieve</a></li>
+  <li><a href="#person-name-annotationtagging-retrieval" id="toc-person-name-annotationtagging-retrieval" class="nav-link" data-scroll-target="#person-name-annotationtagging-retrieval"><span class="header-section-number">4.4.1</span> Person name annotation/tagging retrieval</a></li>
   <li><a href="#network-graph-generation" id="toc-network-graph-generation" class="nav-link" data-scroll-target="#network-graph-generation"><span class="header-section-number">4.4.2</span> Network graph generation</a></li>
   </ul></li>
   </ul></li>
@@ -148,15 +148,14 @@ div.csl-indent {
 <h2 data-number="1" class="anchored" data-anchor-id="sec-introduction"><span class="header-section-number">1</span> Introduction</h2>
 <section id="natural-history-and-its-complexity" class="level3" data-number="1.1">
 <h3 data-number="1.1" class="anchored" data-anchor-id="natural-history-and-its-complexity"><span class="header-section-number">1.1</span> <em>Natural History</em> and its complexity</h3>
-<p>Pliny the Elder’s <em>Natural History</em> is widely recognized as the earliest encyclopedia in the world, manifesting a pioneering effort in comprehensively cataloging the vast array of human knowledge from that era.</p>
-<p>The work is thematically divided into 37 books, covering a diverse range of subjects including astronomy, geography, zoology, botany, medicine, and more. Pliny meticulously consulted a wide range of Greek and Roman references, totaling approximately 2,000 volumes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and interwove his own literary interpretation or comments to the narratives.</p>
-<p>Despite the carefully designed knowledge-ordering framework <span class="citation" data-cites="lao2016">(<a href="#ref-lao2016" role="doc-biblioref">Lao 2016</a>)</span>, scholars have observed a paradoxical complexity in <em>Natural History</em>, evident in its linguistic style, narrative approach, and use of references. The work compiles inconsistent toponyms from Greek and Latin, includes digressions in descriptions <span class="citation" data-cites="roller2022">(<a href="#ref-roller2022" role="doc-biblioref">Roller 2022</a>)</span>, and exhibits changes in vocabularies and sentence structures <span class="citation" data-cites="pinkster2005">(<a href="#ref-pinkster2005" role="doc-biblioref">Pinkster 2005</a>)</span>. However, it is precisely this complexity that makes the work more fascinating and not only a valuable source of the knowledge and worldview of the ancient world, but also a gateway into Pliny’s conceptualization, imagination, and even the prevailing imperial ideology of that time.</p>
-<p>The complexity and interconnectivity of the general structure of <em>Natural History</em> are further highlighted in different aspects by refreshing approaches. For the content organisation, <span class="citation" data-cites="healy1999">Healy (<a href="#ref-healy1999" role="doc-biblioref">1999</a>)</span> advocated Pliny’s original contribution in revealing the technology and science engagement of the Rome Empire. Taking the historical, political and linguistic context into consideration, he found that in addition to providing informative descriptions of natural phenomena and scientific experiments, Pliny also developed the scientific language in Latin through his work. And <span class="citation" data-cites="naas2002">Naas (<a href="#ref-naas2002" role="doc-biblioref">2002</a>)</span> discussed how Pliny formulated the diverse materials into his encyclopaedic structure, revealing the work’s multifaceted nature as an epistemological, ideological, and moral project. Analysing Pliny’s employment of the historical exemplum in the work, <span class="citation" data-cites="schultze2011">Schultze (<a href="#ref-schultze2011" role="doc-biblioref">2011</a>)</span> argued how that literary device directed and teased the readers as well as established a profound connection between human beings and the entire spectrum of nature in <em>Natural History</em>.</p>
-<p>In addition to the close reading methods used in the above analyses of the context and references in <em>Natural History</em>, <span class="citation" data-cites="rydberg-cox2021">Rydberg-Cox (<a href="#ref-rydberg-cox2021" role="doc-biblioref">2021</a>)</span> employed network analysis method with different metrics to map the interrelationships between Pliny’s sources and the topics discussed in the work. Furthermore, <span class="citation" data-cites="fantoli2022">Fantoli (<a href="#ref-fantoli2022" role="doc-biblioref">2022</a>)</span> presented a comparative study of book 2 of <em>Natural History</em> and book 7 of Seneca’s work <em>Natural Questions</em>, both of which are astronomy sections in the Latin classics about nature. Her study utilized statistical method to analyse variations in their discourse distribution, and identified Pliny’s unique stylistic features. The encyclopaedic authorial intent shown in <em>Natural History</em> is also vindicated through correspondence and tree analysis. These two studies demonstrate how distant reading methodologies offer novel insights into our understanding of the ancient treatises.</p>
-<p>In addition to the contextual and referential analyses about <em>Natural History</em>, <span class="citation" data-cites="rydberg-cox2021">Rydberg-Cox (<a href="#ref-rydberg-cox2021" role="doc-biblioref">2021</a>)</span> employed network analysis techniques, applying various metrics to illustrate the connections between Pliny’s sources and the topics discussed in the work. Furthermore, <span class="citation" data-cites="fantoli2022">Fantoli (<a href="#ref-fantoli2022" role="doc-biblioref">2022</a>)</span> conducted a comparative examination of book 2 of <em>Natural History</em> and book 7 of Seneca’s <em>Natural Questions</em>, both focused on astronomy as part of the Latin classics about nature. Statistical methods were applied to investigate variations in their discursive distribution, effectively identifying Pliny’s distinctive stylistic attributes. Moreover, the encyclopaedic authorial intent evident in <em>Natural History</em> is validated through correspondence and tree analysis. These studies collectively showcase how distant reading methodologies offer novel insights into our understanding of ancient treatises.</p>
+<p>Pliny the Elder’s <em>Natural History</em> is widely recognized as the earliest encyclopedia in the world, manifesting a pioneering effort in comprehensively cataloguing the vast array of human knowledge from that era.</p>
+<p>The work is thematically divided into 37 books, covering a diverse range of subjects including astronomy, geography, zoology, botany, medicine, and more. Pliny meticulously consulted a wide range of Greek and Roman references, totalling approximately 2,000 volumes<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and interwove his own literary interpretation or comments to the narratives.</p>
+<p>Despite the carefully designed knowledge-ordering framework <span class="citation" data-cites="lao2016">(<a href="#ref-lao2016" role="doc-biblioref">Lao 2016</a>)</span>, scholars have observed a paradoxical complexity in <em>Natural History</em>, evident in its linguistic style, narrative approach, and use of references. The work compiles variant toponyms from Greek and Latin, includes digressions in descriptions <span class="citation" data-cites="roller2022">(<a href="#ref-roller2022" role="doc-biblioref">Roller 2022</a>)</span>, and exhibits changes in vocabularies and sentence structures <span class="citation" data-cites="pinkster2005">(<a href="#ref-pinkster2005" role="doc-biblioref">Pinkster 2005</a>)</span>. However, it is precisely this complexity that makes the work more fascinating and not only a valuable source of the knowledge and worldview of the ancient world, but also a gateway into Pliny’s conceptualization, imagination, and even the prevailing imperial ideology of that time.</p>
+<p>The complexity and interconnectivity of the general structure of <em>Natural History</em> are further highlighted in different aspects by refreshing approaches. For the content organisation, <span class="citation" data-cites="healy1999">Healy (<a href="#ref-healy1999" role="doc-biblioref">1999</a>)</span> advocated Pliny’s original contribution in revealing the technology and science engagement of the Rome Empire. Taking the historical, political and linguistic context into consideration, he found that in addition to providing informative descriptions of natural phenomena and scientific experiments, Pliny also developed the scientific language in Latin through his work. Moreover, <span class="citation" data-cites="naas2002">Naas (<a href="#ref-naas2002" role="doc-biblioref">2002</a>)</span> discussed how Pliny formulated the diverse materials into his encyclopaedic structure, revealing the work’s multifaceted nature as an epistemological, ideological, and moral project. Analysing Pliny’s employment of the historical exemplum in the work, <span class="citation" data-cites="schultze2011">Schultze (<a href="#ref-schultze2011" role="doc-biblioref">2011</a>)</span> argued how that literary device directed and teased the readers as well as established a profound connection between human beings and the entire spectrum of nature in <em>Natural History</em>.</p>
+<p>In addition to the contextual and referential analyses of <em>Natural History</em>, <span class="citation" data-cites="rydberg-cox2021">Rydberg-Cox (<a href="#ref-rydberg-cox2021" role="doc-biblioref">2021</a>)</span> employed network analysis techniques, applying various metrics to illustrate the connections between Pliny’s sources and the topics discussed in the work. Furthermore, <span class="citation" data-cites="fantoli2022">Fantoli (<a href="#ref-fantoli2022" role="doc-biblioref">2022</a>)</span> conducted a comparative examination of book 2 of <em>Natural History</em> and book 7 of Seneca’s <em>Natural Questions</em>, both focused on astronomy as part of the Latin classics about nature. Statistical methods were applied to investigate variations in their discursive distribution, effectively identifying Pliny’s distinctive stylistic attributes. Moreover, the encyclopaedic authorial intent evident in <em>Natural History</em> is validated through correspondence and tree analysis. These studies collectively showcase how distant reading methodologies offer novel insights into our understanding of ancient treatises.</p>
 </section>
-<section id="spatial-perstpective-in-natural-history" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="spatial-perstpective-in-natural-history"><span class="header-section-number">1.2</span> Spatial perstpective in <em>Natural History</em></h3>
+<section id="spatial-perspective-in-natural-history" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="spatial-perspective-in-natural-history"><span class="header-section-number">1.2</span> Spatial perspective in <em>Natural History</em></h3>
 <p>As pointed out by <span class="citation" data-cites="beagon2011">Beagon (<a href="#ref-beagon2011" role="doc-biblioref">2011</a>)</span>, differentiating from his predecessors, Pliny showed a “terrestrial curiosity” in <em>Natural History</em>, emphasising recognition of the physical, material world. In this regard, the vision of geography plays a pivotal role in distributing information, knowledge, and events throughout <em>Natural History</em>.</p>
 <p>Drawing from the long-established topographical and ethnographic traditions, Pliny seamlessly connects volumes dedicated to geography (books 3-6) with broader elements, activities, and cultural, historical, and societal contexts<span class="citation" data-cites="roller2022">(<a href="#ref-roller2022" role="doc-biblioref">Roller 2022</a>)</span>, exemplified in his portrayal of exotic plants, communities’ habitats, imperial expeditions, and trade products. In other words, geographical names that occurred in each book of <em>Natural History</em> served as signposts guiding readers through diverse lands, shedding light on how Pliny and his contemporaries perceived and conceptualized the world around them.</p>
 <p>A normalized frequency of place name occurrence in the work is calculated as the ratio of counts of the occurrences of place names in each book to the word lengths of the book (<a href="#tbl-place_book_distribution">Table&nbsp;1</a>). The bar chart (<a href="#fig-place_distribution">Figure&nbsp;1</a>) depicts the comparison of the distribution of place names in the books of <em>Natural History</em>. The observation aligns with the content structure of <em>Natural History</em>, that books 3-6 centred around the themes of “geography and ethnography”, contain the most mentions of location names, and place names are also frequently mentioned in books about agriculture and horticulture (book 12-14), aquatic life (book 31), and mining and mineralogy (book 34-37).</p>
@@ -437,7 +436,7 @@ div.csl-indent {
 </section>
 <section id="text-source-for-the-study" class="level3" data-number="1.3">
 <h3 data-number="1.3" class="anchored" data-anchor-id="text-source-for-the-study"><span class="header-section-number">1.3</span> Text source for the study</h3>
-<p><em>Natural History</em> is originally in Latin. For the purpose of this study, an English translation conducted by Henry T. Riley (1816-1878) and John Bostock (1773-1846), first published in 1855, is utilized. The translated text is obtained in a digitized version from the <a href="https://topostext.org/the-project">TOPOSText project</a>, having been sourced from the Perseus Project and governed by a Creative Commons Attribution-Share-Alike 3.0 U.S. License.</p>
+<p><em>Natural History</em> is originally in Latin. For the purpose of this study, an English translation by Henry T. Riley (1816-1878) and John Bostock (1773-1846), first published in 1855, is utilized. The translated text is obtained in a digitized version from the <a href="https://topostext.org/the-project">TOPOSText project</a>, having been sourced from the Perseus Project and governed by a Creative Commons Attribution-Share-Alike 3.0 U.S. License.</p>
 <p>Annotations of proper names, place names and their corresponding coordinates are available together with the text of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) on <a href="https://topostext.org/the-project">TOPOSText project</a>. This invaluable resource allows for creating a dataset that includes both the textual contents and geographical annotations, which can be utilized to investigate the distribution of place names in the entire work and examine the frequencies and patterns of geography-related content.</p>
 <p>The extension of the extracted corpora and the workflow of the extraction will be further explained in the Methodology chapter (<a href="#sec-methodology">Section&nbsp;3</a>).</p>
 </section>
@@ -471,7 +470,7 @@ div.csl-indent {
 
 <div id="tbl-topplace" class="anchored">
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<caption>Table&nbsp;2: Top 20 mentioned place names in Natural History</caption>
+<caption>Table&nbsp;2: Top 20 mentioned place names in <em>Natural History</em></caption>
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -698,19 +697,19 @@ div.csl-indent {
 <p>The workflow for this study involves the following key stages:</p>
 <p><strong>Data Collection</strong>:</p>
 <p>As mentioned in the Introduction chapter (<a href="#sec-introduction">Section&nbsp;1</a>), the text employed for this study is obtained from the digitized English translation (by Henry T. Riley (1816-1878) and John Bostock (1773-1846)) of Pliny’s <em>Natural History</em> available on <a href="https://topostext.org/the-project">TOPOSText project</a>.</p>
-<p>The two parts of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) are scraped for their the textual contents together with the geographical annotation of the mentioned ancient places, and their book, chapter and paragraph affiliations with the function provided in <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> library of Python.</p>
+<p>The two parts of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) are scraped for their the textual contents together with the geographical annotation of the mentioned ancient places, and their book, chapter and paragraph positions with the function provided in <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> library of Python.</p>
 <p><strong>Data Preprocessing</strong>:</p>
-<p>The information extracted from the HTML is structured into separate columns as <a href="https://pandas.pydata.org/">Pandas</a> dataframe, a dataframe for plain text of the entire work, and a dataframe for geographical-related text in <em>Natural History</em> with the geographical annotations are generated and stored in CSV format.</p>
+<p>The information extracted from the HTML file is structured into separate columns as <a href="https://pandas.pydata.org/">Pandas</a> dataframe, a dataframe for plain text of the entire work, and a dataframe for geographical-related text in <em>Natural History</em> with the geographical annotations are generated and stored in CSV format.</p>
 <p>After a preliminary exploration, the research focus is narrowed down to India-related text in <em>Natural History</em>. Referring to the geographical territories in the scope of ancient Greek and Roman world <span class="citation" data-cites="talbert2000">(<a href="#ref-talbert2000" role="doc-biblioref">Talbert 2000b</a>)</span>, a dataframe for India-related text is filtered from the abovementioned dataframe for geographical-related text with the range of corresponding coordinates of Indian subcontinent in the era of <em>Natural History</em>. The flitered India-related text dataframe is also stored in CSV format.</p>
 <p>The location names mentioned in the India-related text were checked manually for its completeness. The identified location names without annotation in TOPOSText were appended to the India-related text dataset.</p>
 <p>Additionally, the textual contents in the datasets were preprocessed with tokenization, lemmatization and the exclusion of stop-words processes.</p>
 <p><strong>Data Analysis</strong>:</p>
-<p>Statistical analysis is conducted in the preliminary exploration of the extracted dataframes. A nomalized frequency of geographical name occurence in each book is calculated for an overview of the place name distribution in <em>Natural History</em>. And the top 1% prominently mentioned place names in the entire work are sorted out with the time of their occurencies. The specific attention on India-related text as a case study is drown from this initial observation.</p>
+<p>Statistical analysis is conducted in the preliminary exploration. A nomalized frequency of geographical name occurence in each book is calculated for an overview of the place name distribution in <em>Natural History</em>. The top 1% prominently mentioned place names in the entire work are sorted out with the time of their occurencies. The specific attention on India-related text as a case study is drown from this initial observation.</p>
 <p>In the analysis of the India-related text (target corpus) in <em>Natural History</em>, three analysis methods are employed:</p>
 <ol type="1">
 <li><p>Word frequency and collocation analysis: single word frequency and bi-gram collocation of the target corpus are measured with the functions in <a href="https://www.nltk.org/">NLTK</a> package for an overview of the common word patterns relating to India in <em>Natural History</em>.</p></li>
 <li><p>Topic modelling: <a href="https://radimrehurek.com/gensim/">Genism</a> library is used for semantic vectorization and implemetion of Latent Dirichlet Allocation (LDA) model for the topic modelling of the target corpus, and the library of <a href="https://pyldavis.readthedocs.io/en/latest/index.htmlgenism">pyLDAvis</a> is utilized for an interactive visualisation. The output of this method shows the potential topics in the India-related text in <em>Natural History</em>.</p></li>
-<li><p>Network analysis for named entities: Person names mentioned in the India-related text are retrieved from annotaions on TOPOSText. Person and place names occured in the target corpus are extracted as nodes together with their affiliated book numbers, and the co-occurence between the nodes are counted as edges for network analysis. The output of this method is a graph showing the clusters of the nodes in the target corpus, indicating the structure of the content related to India in <em>Natural History</em>.</p></li>
+<li><p>Network analysis for named entities: Person names mentioned in the India-related text are retrieved from annotaions on TOPOSText. Person and place names occured in the target corpus are extracted as nodes together with the book numbers where it is mentioned, and the co-occurence between the nodes are counted as edges for network analysis. The output of this method is a graph showing the clusters of the nodes in the target corpus, indicating the structure of the content related to India in <em>Natural History</em>.</p></li>
 </ol>
 <p><strong>Interpretation and Conclusion</strong>:</p>
 <p>The workflow and parameter setting of each research method are explained at the beginning of each analysis section. The results aquired from each method are interpreted with a dialouge to the broader literature and close reading of the related text.</p>
@@ -721,11 +720,11 @@ div.csl-indent {
 <p>This section provides an overview of the data preparation process, encompassing four sub-sections: HTML scraping from TOPOSText, creation of a filtered dataset of “India-related text,” completeness check and preprocessing of textual data. The tools and procedures employed in data collection and dataset generation for the study are introduced in the subsequent content.</p>
 <section id="html-scraping-from-topostext" class="level4" data-number="3.2.1">
 <h4 data-number="3.2.1" class="anchored" data-anchor-id="html-scraping-from-topostext"><span class="header-section-number">3.2.1</span> HTML scraping from TOPOSText</h4>
-<p>As previously stated, the textual contents of Pliny’s <em>Natural History</em> are available on the <a href="https://topostext.org/the-project">TOPOSText project</a>, presented in two distinct parts: <a href="https://topostext.org/work/148">Book 1-11</a>, <a href="https://topostext.org/work/153">Book 12-37</a>. Both parts are provided in HTML format, offering separate sections of the complete work.</p>
+<p>As previously stated, the textual contents of Pliny’s <em>Natural History</em> are available on the <a href="https://topostext.org/the-project">TOPOSText project</a>, presented in two distinct parts: <a href="https://topostext.org/work/148">Book 1-11</a>, <a href="https://topostext.org/work/153">Book 12-37</a>, both of which are in HTML format.</p>
 <p>To extract the relevant data, the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> tool, a Python library renowned for parsing HTML and XML documents, was employed.</p>
 <p>The text in the HTML documents is organised into paragraphs, each uniquely identified by an “id” attribute that specifies its corresponding book, chapter, and paragraph number. For instance, a typical paragraph has an “id” tag as follows:</p>
 <p><strong>&lt;p id=‘urn:cts:latinLit:phi0978.phi001:3.9.7’&gt;</strong></p>
-<p>The textual contents are retrieved with the information from these “id” attributes and structured as a reference dataset, comprising the plain text of <em>Natural History</em> divided into paragraphs, with each paragraph assigned a unique identifier, and separate columns indicating its affiliated book, chapter, and paragraph number. An illustrative example of the dataset’s structure is shown as <a href="#tbl-dataset_plaintext">Table&nbsp;3</a>.</p>
+<p>The textual contents are retrieved with the information from these “id” attributes and structured as a reference dataset, comprising the plain text of <em>Natural History</em> divided into paragraphs, with each paragraph assigned a unique identifier, and separate columns indicating its book, chapter, and paragraph number. An illustrative example of the dataset’s structure is shown as <a href="#tbl-dataset_plaintext">Table&nbsp;3</a>.</p>
 <div class="cell" data-df-print="tibble" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
@@ -935,15 +934,15 @@ div.csl-indent {
 <section id="filtered-dataset-of-india-related-text" class="level4" data-number="3.2.2">
 <h4 data-number="3.2.2" class="anchored" data-anchor-id="filtered-dataset-of-india-related-text"><span class="header-section-number">3.2.2</span> Filtered dataset of “India-related text”</h4>
 <p>As outlined in the Research Question chapter (<a href="#sec-research_question">Section&nbsp;2</a>), this thesis examines texts concerning the Indian region in Pliny’s <em>Natural History</em> as a case study. The objective is to explore how India is described, portrayed, and imagined within this extensive work, providing valuable insights into its complexity.</p>
-<p>To ensure a comprehensive contextual analysis, the dataset creation considers not only instances where the word “India” is directly mentioned but also text related to the Indian region. This broader approach aims to encompass a wider scope of relevant information. Drawing from the research and mapping of the Indian region in the perception of the ancient Greek and Roman world, as explained and manifested in the <em>Barrington Atlas of the Greek and Roman World</em> <span class="citation" data-cites="talbert2000-1 talbert2000">(<a href="#ref-talbert2000-1" role="doc-biblioref">Talbert 2000a</a>, <a href="#ref-talbert2000" role="doc-biblioref">2000b</a>)</span>, the approximate coordinates defining the target region are as follows<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
+<p>To ensure a comprehensive contextual analysis, the dataset creation considers not only instances where the word “India” is directly mentioned but also text related to the Indian region. According to the <em>Barrington Atlas of the Greek and Roman World</em> <span class="citation" data-cites="talbert2000-1 talbert2000">(<a href="#ref-talbert2000-1" role="doc-biblioref">Talbert 2000a</a>, <a href="#ref-talbert2000" role="doc-biblioref">2000b</a>)</span>, the approximate coordinates defining the target region are as follows<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>:</p>
 <ul>
 <li>Latitude: 5-35 degrees North</li>
 <li>Longitude: 65-95 degrees East</li>
 </ul>
 <p>Utilizing the aforementioned dataset of geographical-related text in <em>Natural History</em>, the records with corresponding coordinates falling within the specified range are extracted to construct a dataset relevant to the discourse about the Indian region in the work. The filtering process ensures not only the text explicitly mentioning “India” but also those including other place names situated within the defined boundaries of the Indian region were retained.</p>
 <p>The new dataset comprises the textual content and the geographical coordinates of the mentioned Indian place in <em>Natural History</em>. An example of the structure of the dataset of India-related text is shown as <a href="#tbl-dataset_indiatext">Table&nbsp;5</a>.</p>
-<div class="cell" data-df-print="tibble" data-fontsize="8pt" data-execution_count="5">
-<div class="cell-output cell-output-display" data-execution_count="5">
+<div class="cell" data-df-print="tibble" data-fontsize="8pt" data-execution_count="80">
+<div class="cell-output cell-output-display" data-execution_count="80">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -980,68 +979,68 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">85</td>
-<td>fd43dc48-2410-4edd-8131-ce6cc6a3c809</td>
-<td>https://topostext.org/place/300740RInd</td>
+<td>cc45a3...</td>
+<td>https:...</td>
 <td>India</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>urn:ct...</td>
 <td>30.0000</td>
 <td>74.0000</td>
 <td>2</td>
 <td>75</td>
 <td>1.0</td>
-<td>Similarly it is reported that at the town of S...</td>
+<td>Simila...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">92</td>
-<td>30fe041c-3577-4375-a1f9-a7cc8c9212dc</td>
-<td>https://topostext.org/place/300740RInd</td>
+<td>1692bc...</td>
+<td>https:...</td>
 <td>India</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>urn:ct...</td>
 <td>30.0000</td>
 <td>74.0000</td>
 <td>2</td>
 <td>75</td>
 <td>1.0</td>
-<td>Similarly it is reported that at the town of S...</td>
+<td>Simila...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">93</td>
-<td>0d786fbe-aed1-4f9a-9fbf-fa7c228a57cb</td>
-<td>https://topostext.org/place/300740RInd</td>
+<td>519bd3...</td>
+<td>https:...</td>
 <td>India</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.75.1</td>
+<td>urn:ct...</td>
 <td>30.0000</td>
 <td>74.0000</td>
 <td>2</td>
 <td>75</td>
 <td>1.0</td>
-<td>Similarly it is reported that at the town of S...</td>
+<td>Simila...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">218</td>
-<td>b28b62fc-8505-4fa9-aace-bd7b3df792c8</td>
-<td>https://topostext.org/place/254683WInd</td>
+<td>61d6f7...</td>
+<td>https:...</td>
 <td>Indus</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.98.1</td>
+<td>urn:ct...</td>
 <td>25.4487</td>
 <td>68.3192</td>
 <td>2</td>
 <td>98</td>
 <td>1.0</td>
-<td>Near the town of Harpasa in Asia stands a jagg...</td>
+<td>Near t...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">343</td>
-<td>b010b6b5-0608-4c97-a980-171813b8b06a</td>
-<td>https://topostext.org/place/300740RInd</td>
+<td>eb8611...</td>
+<td>https:...</td>
 <td>India</td>
-<td>urn:cts:latinLit:phi0978.phi001:2.112.1</td>
+<td>urn:ct...</td>
 <td>30.0000</td>
 <td>74.0000</td>
 <td>2</td>
 <td>112</td>
 <td>1.0</td>
-<td>Our own portion of the earth, which is my subj...</td>
+<td>Our ow...</td>
 </tr>
 </tbody>
 </table>
@@ -1058,7 +1057,7 @@ div.csl-indent {
 </section>
 <section id="data-completeness-check" class="level4" data-number="3.2.3">
 <h4 data-number="3.2.3" class="anchored" data-anchor-id="data-completeness-check"><span class="header-section-number">3.2.3</span> Data completeness check</h4>
-<p>The paragraphs extracted from the India-related text dataset undergo manual verification for the completeness of Indian place name annotations. Each distinct paragraph in the dataset is individually extracted and stored in TXT format as separate files within a corpus folder. The file names contain information about the affiliating book, chapter, and paragraph numbers.</p>
+<p>The paragraphs extracted from the India-related text dataset undergo manual verification for the completeness of Indian place name annotations. Each distinct paragraph in the dataset is individually extracted and stored in TXT format as separate files within a corpus folder. The file names contain information about the book, chapter, and paragraph numbers.</p>
 <div class="cell" data-execution_count="44">
 <div class="cell-output cell-output-display">
 <p>There are in total 146 distinct paragraphs mentioning Indian places in <em>Natural History</em> according to the annotations on TOPOSText.</p>
@@ -1071,7 +1070,7 @@ div.csl-indent {
 </div>
 </div>
 <p>The text files are uploaded to <a href="https://recogito.pelagios.org/">Recogito</a> platform, which offers a semantic annotation tool and automatic geographical annotation suggestions from its supported gazetteers. This process aims to find Indian place names mentioned in the target corpus that were not annotated in TOPOSText. These unidentified place names are then marked on the <a href="https://recogito.pelagios.org/">Recogito</a> workspace with the available geographical coordinates information as additional annotations. And the identified annotations are exported in CSV format for a supplement to the dataset of India-related text in <em>Natural History</em>.</p>
-<p>As shown in <a href="#tbl-supplement_annotation">Table&nbsp;6</a>, the supplement annotations are organized in the following manner:</p>
+<p>As shown in <a href="#tbl-supplement_annotation">Table&nbsp;6</a>, the supplement annotations are organised in the following manner:</p>
 <p><strong>FILE</strong>: This column contains the name of the file indicating the book, chapter, and paragraph number where the mentioned place name appears.</p>
 <p><strong>QUOTE_TRANSCRIPTION</strong>: This column contains the textual name of the place as mentioned in the text.</p>
 <p><strong>URI</strong>: The URI column contains the unique identifier for the place obtained from the gazetteers available on the <a href="https://recogito.pelagios.org/">Recogito</a> platform.</p>
@@ -1080,8 +1079,8 @@ div.csl-indent {
 <p><strong>PLACE_TYPE</strong>: This column contains the automatically matched geographical role provided by the gazetteers. It describes the type of the place.</p>
 <p><strong>VERIFICATION_STATUS</strong>: This column indicates whether the place names have been “verified” with confirmed coordinates that match the gazetteers’ information.</p>
 <p><strong>COMMENTS</strong>: This column includes manual remarks for the place names that do not have matching coordinates but are believed to indicate Indian place names based on the context.</p>
-<div class="cell" data-execution_count="46">
-<div class="cell-output cell-output-display" data-execution_count="46">
+<div class="cell" data-execution_count="81">
+<div class="cell-output cell-output-display" data-execution_count="81">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1118,67 +1117,67 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>2.75.1_text.txt</td>
+<td>2.75...</td>
 <td>hypasis</td>
 <td>PLACE</td>
-<td>http://pleiades.stoa.org/places/60110</td>
-<td>Zadadros/Hypasis/Sydrus (river)</td>
-<td>32.500000</td>
-<td>72.500000</td>
+<td>http...</td>
+<td>Zada...</td>
+<td>32.5...</td>
+<td>72.5...</td>
 <td>river</td>
-<td>VERIFIED</td>
+<td>VERI...</td>
 <td>NaN</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>6.21.4_text.txt</td>
+<td>6.21...</td>
 <td>sydrus</td>
 <td>PLACE</td>
-<td>http://pleiades.stoa.org/places/60110</td>
-<td>Zadadros/Hypasis/Sydrus (river)</td>
-<td>32.500000</td>
-<td>72.500000</td>
+<td>http...</td>
+<td>Zada...</td>
+<td>32.5...</td>
+<td>72.5...</td>
 <td>river</td>
-<td>VERIFIED</td>
+<td>VERI...</td>
 <td>NaN</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>6.21.4_text.txt</td>
-<td>rhodapha</td>
+<td>6.21...</td>
+<td>rhod...</td>
 <td>PLACE</td>
-<td>http://pleiades.stoa.org/places/60019</td>
-<td>Rhodopha</td>
-<td>27.500000</td>
-<td>77.500000</td>
+<td>http...</td>
+<td>Rhod...</td>
+<td>27.5...</td>
+<td>77.5...</td>
 <td>unknown</td>
-<td>VERIFIED</td>
-<td>A river in India, mentioned by Pliny\nhttps://...</td>
+<td>VERI...</td>
+<td>A ri...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">5</td>
-<td>6.21.4_text.txt</td>
-<td>palibothra</td>
+<td>6.21...</td>
+<td>pali...</td>
 <td>PLACE</td>
-<td>http://pleiades.stoa.org/places/59978</td>
-<td>Palibothra|Palibothra, Patna Skt.: Paṭaliputra</td>
-<td>25.614443</td>
-<td>85.135020</td>
-<td>settlement</td>
-<td>VERIFIED</td>
+<td>http...</td>
+<td>Pali...</td>
+<td>25.6...</td>
+<td>85.1...</td>
+<td>sett...</td>
+<td>VERI...</td>
 <td>NaN</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">6</td>
-<td>6.21.5_text.txt</td>
+<td>6.21...</td>
 <td>prinas</td>
 <td>PLACE</td>
-<td>http://pleiades.stoa.org/places/60008</td>
-<td>Prinas (river)</td>
-<td>25.621435</td>
-<td>86.511556</td>
+<td>http...</td>
+<td>Prin...</td>
+<td>25.6...</td>
+<td>86.5...</td>
 <td>river</td>
-<td>VERIFIED</td>
+<td>VERI...</td>
 <td>NaN</td>
 </tr>
 </tbody>
@@ -1215,9 +1214,9 @@ Name: UUID, dtype: int64</code></pre>
 <p>The supplemented place name annotations were added to the India-related text dataset. The updated dataset contains 285 occurrences of paragraphs mentioning Indian places. And the distinct place names mentioned are [‘India’ ‘Indus’ ‘Ganges’ ‘Acesinus’ ‘Hydaspes’ ‘Taprobane’ ‘Arachosia’ ‘Muziris’ ‘Baragaza’ ‘Ceylon’ ‘Hypasis’ ‘Sydrus’ ‘Rhodapha’ ‘Palibothra’ ‘Prinas’ ‘Cainas’ ‘Condochates’ ‘Erannoboas’ ‘Cosoagus’ ‘Sonus’ ‘Protalis’ ‘Peucolaitis’ ‘Taxilla’ ‘Modogalinga’ ‘Andarae’ ‘Dardae’ ‘Methora’ ‘Chrysobora’ ‘Dandaguda’ ‘Tropina’ ‘Patala’ ‘Capitalia’ ‘Automula’ ‘Amenda’ ‘Cantaba’ ‘Prasiane’ ‘Argyre’ ‘Crocala’ ‘Bibraga’ ‘Toralliba’ ‘Hippuros’ ‘Palaesimundus’ ‘Megisba’ ‘Palesimundus’ ‘Cydara’ ‘Coliacum’ ‘Emodian mountains’ ‘Capisa’ ‘Parabeste’ ‘Cartana’ ‘Tonberos’ ‘Arosapes’ ‘Gedrusi’ ‘Arbis’ ‘Sigerus’ ‘Catarcludi’ ‘Meros’ ‘Perimula’ ‘Chenab’ ‘Oratae’].</p>
 </div>
 </div>
-<div class="cell" data-execution_count="52">
+<div class="cell" data-execution_count="79">
 <div class="cell-output cell-output-display">
-<p>And the supplemented Indian place names are updated to the dataset of geographically-related text, which contains all place name occurrences in <em>Natural History</em>. The supplement expanded the dataset from 8876 occurrences of geographical names to 8932.</p>
+<p>And the supplemented Indian place names are updated to the dataset of geographical-related text, which contains all place name occurrences in <em>Natural History</em>. The supplement expanded the dataset from 8876 occurrences of geographical names to 8932.</p>
 </div>
 </div>
 </section>
@@ -1233,42 +1232,42 @@ Name: UUID, dtype: int64</code></pre>
 <h2 data-number="4" class="anchored" data-anchor-id="data-analysis"><span class="header-section-number">4</span> Data Analysis</h2>
 <section id="place-name-distribution-in-india-related-text" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="place-name-distribution-in-india-related-text"><span class="header-section-number">4.1</span> Place name distribution in India-related text</h3>
-<p>The comparison between the total number of place names and the place names specifically related to the Indian subcontinent mentioned in each book, is depicted in <a href="#fig-grouped_place_name_count_comparison">Figure&nbsp;3</a>. The difference in numbers between the two categories is significant, as indicated by the large disparity.</p>
-<p>To facilitate a more effective comparison of the referencing trends across different books, <a href="#fig-subplots_place_name_count_comparison">Figure&nbsp;4</a> presents subplots with varying y-axis scales. This approach allows for a clearer visualization of the trends and patterns in place name references throughout the various books.</p>
-<div class="cell" data-execution_count="29">
+<p>The comparison between the distribution of all place names and Indian place names mentioned in each book, is depicted in <a href="#fig-grouped_place_name_count_comparison">Figure&nbsp;3</a>. The difference in numbers between the two categories is significant, as indicated by the large disparity.</p>
+<p>To facilitate a more effective comparison, <a href="#fig-subplots_place_name_count_comparison">Figure&nbsp;4</a> presents subplots with varying y-axis scales. This approach allows for a clearer visualisation of the trends and patterns of the place names distribution throughout the various books.</p>
+<div class="cell" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div id="fig-grouped_place_name_count_comparison" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<figcaption class="figure-caption">Figure&nbsp;3: Occurence count for all place names and place names of Indian subcontinent in each book</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;3: Occurence count of all place names and Indian place names in each book</figcaption>
 <p><img src="NHthesis_structure_files/figure-html/fig-grouped_place_name_count_comparison-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="30">
+<div class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div id="fig-subplots_place_name_count_comparison" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<figcaption class="figure-caption">Figure&nbsp;4: Occurence count for all place names and place names of Indian subcontinent in each book_different y-axis scales</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4: Occurence count for of place names and Indian place names in each book_different y-axis scales</figcaption>
 <p><img src="NHthesis_structure_files/figure-html/fig-subplots_place_name_count_comparison-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>The figures reveal a distinct difference between the occurrence trends of place names related to the Indian subcontinent and all place names collectively. Specifically, the referencing of the Indian subcontinent is highly concentrated in books 6, 12, and 37 of Pliny’s narrative. This discrepancy indicates that the mentioning of place names from the Indian subcontinent is closely tied to specific themes and topics within Pliny’s work.</p>
-<p>In this regard, three methodologies have been employed to analyze the texts pertaining to the Indian subcontinent in <em>Natural History</em>, including word frequency and collocation analysis, topic modeling, and network analysis. The objective of these analyses is to delve deeper into the textual content, unraveling the intricate relationships and uncovering the underlying themes and connections associated with the place names of the Indian subcontinent.</p>
-<p>Through word frequency and collocation analysis, the aim is to identify keyword and significant word combinations co-occur in the textual content about India in <em>Natural History</em>. This analysis provides insights into the specific linguistic patterns and contextual associations surrounding the Indian places mentioned in the work, providing an overview of the keyword in the discourse.</p>
-<p>Topic modeling allows for a broader exploration of the thematic landscape within which the Indian subcontinent place names are embedded. By clustering related words and identifying prevalent topics, this methodology helps to discern the major themes and subject matters that emerge from Pliny’s narrative, providing a comprehensive understanding of the broader context in which these place names are mentioned.</p>
-<p>Furthermore, network analysis offers a visual representation of the interconnections among the place names of the Indian subcontinent and other entities in Pliny’s work. By examining the relationships between different locations and named entities, this analysis uncovers the geographical and conceptual networks that exist within the text, revealing how the Indian subcontinent place names contribute to the overall structure and narrative flow of <em>Natural History</em>.</p>
-<p>Together, these methodologies aim to provide a nuanced and comprehensive exploration of the texts related to the Indian subcontinent in <em>Natural History</em>. By delving into the linguistic, thematic, and network aspects of these place names, a deeper understanding of their role in shaping Pliny’s narrative can be achieved.</p>
+<p>The figures reveal a distinct difference between the occurrence trends of Indian place names and of all place names collectively. The mentions of the Indian places is highly concentrated in books 6, 12, and 37 in <em>Natural History</em>, which indicates that the Indian place names are closely tied to specific themes and topics in the narrative.</p>
+<p>In this regard, three methodologies have been employed to analyse the India-related text in <em>Natural History</em>, including word frequency and collocation analysis, topic modelling, and network analysis, in order to explore the underlying themes and content structure associated with the Indian place names in the work.</p>
+<p>Word frequency and collocation analysis helps to identify significant word patterns and combinations in the textual content, providing an overview of the potential keywords in the work.</p>
+<p>While topic modelling allows for a broader exploration of the thematic landscape within the India-related text in the work. The lantent major topics emerged from the narratives could be interpreted from the model-clustered keywords and further integrated with a close reading of the context where the place names mentioned.</p>
+<p>Furthermore, network analysis offers a visualisation of the interconnections among the place names and other entities in the India-related text throughout the work. By examining the relationships between different locations and named entities, this analysis uncovers the geographical and conceptual networks within the text, revealing how the content about India is structured in <em>Natural History</em>.</p>
+<p>Together, these methodologies aim to provide a nuanced comprehension of the narratives about India in <em>Natural History</em> by delving into the linguistic patterns, thematic traits, and content network of the India-related text in the work.</p>
 </section>
 <section id="word-frequency-and-collocating-bi-grams" class="level3" data-number="4.2">
 <h3 data-number="4.2" class="anchored" data-anchor-id="word-frequency-and-collocating-bi-grams"><span class="header-section-number">4.2</span> Word frequency and collocating bi-grams</h3>
-<p>By utilizing the measurements available in the <a href="https://www.nltk.org/">NLTK</a> package, a word frequency list and collocating bi-grams were generated from the text associated with Indian place names in <em>Natural History</em>. These outputs provide an overview of the prevalent words and word patterns, as potential keywords in the text.</p>
-<p>In the initial observation, the words “India” and “one” ranked high in the frequency list. However, it is apparent that the passages would include the word “India” when discussing about India, making it less informative as a keyword. Likewise, the word “one” appeared as a generic descriptor for bringing up a type of tribe, plant, or attributes like distance, volume, or range, offering limited insight as a keyword. To enhance the relevance and descriptive nature of the frequency list, these two common but less informative words, “India” and “one”, are further excluded from the token list.</p>
-<div class="cell" data-execution_count="18">
+<p>Using the measurements available in the <a href="https://www.nltk.org/">NLTK</a> package, a list of word frequency and collocating bigrams were compiled from the text associated with Indian place names in <em>Natural History</em>. These outputs provide an overview of the most commonly used words and word patterns, suggesting the potential keywords in the text.</p>
+<p>Upon initial observation, “India” and “one” ranked high in the frequency list. However, since the passages would inevitably include the word “India” in the discussion of the region, making it less informative as a keyword. Similarly, the word “one” appeared as a generic descriptor for referring to a type of tribe, plant, or attributes like distance, volume, or range, offering limited relevance as a keyword. Therefore, these two common but less informative words were further excluded from the tokens for the frequency list compiling.</p>
+<div class="cell" data-execution_count="14">
 <div class="cell-output cell-output-display">
-<p>Among 17729 tokens excluding “India” and “one”, 201 (the top 1%) frequently occuring words in the India-related text in <em>Natural History</em> are shown in <a href="#fig-freqwords_treemap">Figure&nbsp;5</a> and <a href="#fig-freqwords_wordcloud">Figure&nbsp;6</a>.</p>
+<p>Among 17729 tokens excluding “India” and “one” within the India-related text in <em>Natural History</em>, 201 (the top 1%) frequently occurring words are displayed in <a href="#fig-freqwords_treemap">Figure&nbsp;5</a> and <a href="#fig-freqwords_wordcloud">Figure&nbsp;6</a>.</p>
 </div>
 </div>
 <div class="cell" data-execution_count="19">
@@ -1291,8 +1290,9 @@ Name: UUID, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>An intriguing observation from the word frequency sorting is the prominence of the word “also” in the given text. The word “also” appears frequently, which can be attributed to the encyclopaedic nature of the work, where it is often used to draw comparisons in introductions about species and natural phenomena.</p>
-<p>As shown in the following examples where “also” appears in the India-related text in <em>Natural History</em>, it is indeed used when comparing the counterparts in India after introducing a natural phenomenon, plant or human activity. In this regard, the common use of “also” may imply that India holds significance as a contrast in the broader narrative.</p>
+<p>One intriguing observation from the word frequency sorting is the prominence of the word “also” in the given text. The frequent appearance of ‘also’ may be attributed to the encyclopaedic nature of the work, as it is often used to draw comparisons when introducing species and natural phenomena.</p>
+<p>For example, in India-related text of <em>Natural History</em>, ‘also’ appears when introducing a natural phenomenon, plant or human activity, and then comparing it with its counterparts in India. Therefore, the common use of ‘also’ may suggest that India has a significant role in providing a contrast in the broader narrative.</p>
+<p>As shown in the following examples where “also” appears in the India-related text in <em>Natural History</em>, it is indeed used when introducing a natural phenomenon, plant or human activity, and then comparing it with its counterparts in India. Therefore, the common use of ‘also’ may suggest that India has a significant role in providing a contrast in the broader narrative.</p>
 <blockquote class="blockquote">
 <p>2.75.1 “<strong>Also</strong> in India at the well-known port of Patala the sun rises……”</p>
 </blockquote>
@@ -1305,20 +1305,20 @@ Name: UUID, dtype: int64</code></pre>
 <blockquote class="blockquote">
 <p>12.17.1 “Arabia <strong>also</strong> produces cane-sugar, but that grown in India is more esteemed.”</p>
 </blockquote>
-<p>The hypothesis is further confirmed towards the end of the work in book 37, where Pliny concludes his comprehensive discourse on “Nature”. In 37.77.1, Pliny bestows the highest praise upon Italy, considering it to have earned “Nature’s crown”. And in this context, when expressing his preference and overall judgment, Pliny makes one final mention of “India”. He indicates that, “if we leave aside the fabulous marvels of India”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, Spain can be appreciated as a significant and attractive destination, second only to Italy. This unintentional highlight of India suggests that it holds considerable importance as a distant contrast to the Mediterranean area, where the focal point locates in the <em>Natural History</em>’s world scope.</p>
-<p>And following by “also”, the words “stone”, “river”, “called” and “colour” notably stand out in the word frequeny sorting. These frequent occurrences suggest some potential themes related to India in the content of <em>Natural History</em>, which aligns with the distribution of Indian place names as depicted in <a href="#fig-subplots_place_name_count_comparison">Figure&nbsp;4</a>.</p>
-<p>Looking into the text in the three books pertaining the most mentions of Indian place names, book 6 includes specific topics on Nations of India, the Ganges and Indus (two main rivers in India) and routes of voyages to India, and book 12 contains introductions to trees and the economic values of their roots and leaves, as well as plants and their medical and flavouring effects. While book 37 focuses on descriptions of different types of gemstones, where the priciple types are introduced in a sequence/category of colours, alongside critics about the luxury trade they represents.</p>
-<p>The frequent use of the word “river” in India-related text may be related to the mention of voyage and trading routes concerning India in <em>Natural History</em>. On the other hand, “stone” and “color” clearly connect to the content in book 37, which deals with gemstones.</p>
-<p>As indicated by <span class="citation" data-cites="roller2022">Roller (<a href="#ref-roller2022" role="doc-biblioref">2022</a>)</span>, “Rivers, especially, were of significancetotheRomans:Romeoweditsoriginstoitscontrolof a major crossing of the Tiber that affected travel throughout the Italian peninsula, and river cults were a major part of Roman ideology”.</p>
-<p>These two potential themes observed from the frequent occuring words indicate that the geographical location and routes toward Indian subcontinent, and its role as an origin of many plants, animals and gemstones, pocesses a significance in the content about India in <em>Natural History</em>.</p>
-<p>In addition to word frequency observation, collocation analysis is utilized to explore the common word patterns within the India-related text in <em>Natural History</em>.</p>
-<div class="cell" data-execution_count="7">
+<p>The hypothesis is further supported towards the end of book 37, where Pliny concludes his extensive discussion on “Nature”. In 37.77.1, Pliny gives the highest praise to Italy, believing it to have earned the title of “Nature’s crown”. In this context, while giving his preference and overall assessment, Pliny makes a final mention of “India”. He suggests that, “if we leave aside the fabulous marvels of India”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, Spain can be regarded as an appealing destination, second only to Italy. This accidental emphasis on India implies that it has significant importance as a distant contrast to the Mediterranean region, where <em>Natural History</em> focuses its attention.</p>
+<p>Notably, the words “stone”, “river”, “called”, and “colour” stand out in the word frequency sorting that is followed by the word “also”. These frequent occurrences indicates some potential themes about India in the work, which aligns with the distribution of Indian place names as depicted in <a href="#fig-subplots_place_name_count_comparison">Figure&nbsp;4</a>.</p>
+<p>It was found that the three books with the highest mentions of Indian place names are book 6, which covers specific topics on the Nations of India, the Ganges and Indus (two main rivers in India), and routes of voyages to India; book 12, which includes introductions to trees, their economic values of roots and leaves, and information on plants’ medicinal and flavouring effects; and book 37, which focuses on descriptions of different types of gemstones where the principle types are introduced in a sequence and category of colours, accompanied with criticism regarding the luxury trade these gemstones represent.</p>
+<p>The frequent mention of the word “river” in India-related text could be attributed to the references to voyage and trade routes concerning India. Also, as pointed out by <span class="citation" data-cites="roller2022">Roller (<a href="#ref-roller2022" role="doc-biblioref">2022</a>)</span>, the Roman ideology attached great significance to rivers, as they symbolised the opening of a territory and characterized the inland regions together with mountains, where the Romans originated. This ideology, also reflected in Pliny’s writing, contrasts with what he inherited from the Greek geographical scholarship that lays a focus on coasts.</p>
+<p>The terms “stone” and “color” connect directly to the content of Book 37, which concentrates on gemstones, thereby identifying “gemstones” as a prominent theme in the narrative.</p>
+<p>The two themes inferred from the frequently occurring words suggest that the geographic location and the routes towards India, along with its contribution as the source of numerous plants, animals, and gemstones, are of considerable importance in the content about India in <em>Natural History</em>.</p>
+<p>In addition to observing word frequency, collocation analysis is used to explore common word patterns within the text about India in <em>Natural History</em>.</p>
+<div class="cell" data-execution_count="16">
 <div class="cell-output cell-output-display">
-<p>The top 0.1% of the most likely collocating bi-grams are extracted using the likelihood ratio measurement. This selection process yields 18 out of 17728 bi-grams that are most significant and likely to co-occur together in the target corpus.</p>
+<p>Using the likelihood ratio measurement, the collocating bi-grams that rank within the top 0.1% likelihood are extracted. As a result of this selection process, 18 out of 17728 bigrams that are that are highly significant and likely to co-occur in the target corpus are obtained.</p>
 </div>
 </div>
-<p>However, during the initial observation, it was noted that approximately one-third of the extracted bi-grams contained the word “hundred”, such as in (‘hundred’, ‘fifty’) and (‘six’, ‘hundred’). These bi-grams typically denoted measurements for distance, object length, or quantity, offering limited descriptive information about the content of the text. Consequently, the word “hundred” was excluded from further bi-gram extraction to focus on more informative and relevant co-occuring words.</p>
-<p>And the updated output bi-grams are list as follows:</p>
+<p>During the first observation, it was noticed that about one third of the extracted bigrams contained the word ‘hundred’, e.g.&nbsp;in (‘hundred’, ‘fifty’) and (‘six’, ‘hundred’). These bigrams typically represent measurements for distance, object length or quantity, providing limited descriptive information about the text’s content. Subsequently, the word “hundred” was excluded from further bigram extraction to concentrate on more informative and relevant co-occurring words.</p>
+<p>The updated output bigrams are listed as follows:</p>
 <div class="cell" data-execution_count="21">
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>[('alexander', 'great'),
@@ -1341,20 +1341,20 @@ Name: UUID, dtype: int64</code></pre>
  ('ft.', 'long')]</code></pre>
 </div>
 </div>
-<p>The extracted bi-grams can be broadly categorized into four types:</p>
+<p>The compiled bigrams can be broadly classified into four categories:</p>
 <p><strong>Historical figures</strong>: (‘alexander’, ‘great’), (‘father’, ‘liber’), (‘emperor’, ‘nero’)</p>
 <p><strong>Geographical locations and features</strong>: (‘caspian’, ‘gate’), (‘river’, ‘indus’), (‘asia’, ‘minor’), (‘red’, ‘sea’)</p>
 <p><strong>Meseuarments (distance, currency, length, time)</strong>: (‘fifty’, ‘mile’), (‘denarii’, ‘pound’), (‘fourteen’, ‘equinoctial’), (‘equinoctial’, ‘hour’), (‘mile’, ‘breadth’), (‘ft.’, ‘long’)</p>
 <p><strong>Trading goods</strong>: (‘gold’, ‘silver’), (‘precious’, ‘stone’), (‘olive’, ‘oil’), (‘lapis’, ‘lazuli’)</p>
-<p>On the one hand, the presence of bi-grams associated with geographical locations, distance, and time measurements in the India-related text reaffirms India’s position as a geographic reference, consistent with the earlier findings from the word frequency list and literature review. On the other hand, within the context of the Indo-Mediterranean network of exchange, the occurrence of bi-grams related to geographical locations, currency measurements, and trading goods underscores the importance of India’s role in merchandise trade within the narratives of <em>Natural History</em>.</p>
-<p>Furthermore, the occurrence of historical figures such as “Alexander III, the Great (king of Macedon)”, “Nero (Roman emperor)”, and “Father Liber (referring to Dionysus, the Greek god of winemaking and wine)” suggests their connections with India in the history of expeditions or mythical tales (Dionysus is believed to have conquered India in Greek epic). This observation opens up a perspective for clustering the human names mentioned in the text to reveal the content structure about India in <em>Natural History</em>, which will be further explored in the Network Analysis section.</p>
-<p>In conclusion, the analysis of word frequency and collocation in the India-related text within <em>Natural History</em> reveals noteworthy word patterns. These patterns suggest that India holds a significant role as a geographical contrast, being compared in terms of distance, natural phenomena, and origin of products with other regions introduced in the narrative. Furthermore, it is highlighted for its prominent role in merchandise trade in the portrait of India in <em>Natural History</em>.</p>
+<p>On one hand, the bigrams associated with geographical locations, distance, and time measurements in the India-related text confirm India’s geographical significance, which is in line with the earlier discoveries from the word frequency list and literature review. On the other hand, within the framework of the Indo-Mediterranean exchange, the appearance of bigrams related to geographical locations, currency measurements, and trading goods highlights the significance of India’s role in the merchandise trade in the context of <em>Natural History</em>.</p>
+<p>Moreover, the presence of noteworthy individuals like Alexander III, the Great (king of Macedon), Nero (Roman emperor), and Father Liber (referring to Dionysus, the Greek god of winemaking and wine), in historical accounts or mythical narratives, suggests their association with India in terms of either expeditions or folklore (It is believed that Dionysus conquered India in a Greek epic). This observation presents an opportunity to cluster the names of individuals mentioned in the text, thus exposing the underlying content structure pertaining to India in <em>Natural History</em>. This will be discussed in detail in the Network Analysis section (<a href="#sec-network">Section&nbsp;4.4</a>).</p>
+<p>To conclude, the analysis of word frequency and collocation in the India-related text in <em>Natural History</em> demonstrates notable word patterns. These patterns indicate that India plays a significant role as a geographical contrast, compared in terms of distance, natural phenomena, and product origin with other regions introduced in the narrative. Moreover, it is emphasised for its significant role in merchandise trade in the representation of India in <em>Natural History</em>.</p>
 </section>
-<section id="topic-modeling" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="topic-modeling"><span class="header-section-number">4.3</span> Topic modeling</h3>
-<p>Furthermore, topic modeling approach is applied to delve further into the underlying topics about India in the work. Topic modeling is a widely used method for text analysis that infers the latent topics in a collection of documents<span class="citation" data-cites="bail underwood2012">(<a href="#ref-bail" role="doc-biblioref">Bail n.d.</a>; <a href="#ref-underwood2012" role="doc-biblioref">Underwood 2012</a>)</span>. Latent Dirichlet Allocation (LDA), as its most commonly employed algorithm, operates under an assumption that each document contains a mixture of different topics, and each topic is defined as a collection of words with varying probabilities of appearance in the passages<span class="citation" data-cites="underwood2012 kapadia2022">(<a href="#ref-underwood2012" role="doc-biblioref">Underwood 2012</a>; <a href="#ref-kapadia2022" role="doc-biblioref">Kapadia 2022</a>)</span>.</p>
-<p>In this study, the collection of India-related text in <em>Natural History</em>, segmented into paragraphs, are considered as different “documents”. And the <a href="https://radimrehurek.com/gensim/">Genism</a> library in Python is utilized for semantic vectorization and the implementation of the LDA model on the groups of words within the text<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
-<p>Since the corpus size for text pertaining to Indian place names is relatively small, after several attempts with a consideration of the coherence score distribution depicted in <a href="#fig-topic_coherence_distribution">Figure&nbsp;7</a>, the number of topics is determined to be 3, with 40 passes to obtain the most optimal and non-overlapping topic clusters.</p>
+<section id="topic-modelling" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="topic-modelling"><span class="header-section-number">4.3</span> Topic modelling</h3>
+<p>Furthermore, a topic modelling approach is applied to uncover the underlying topics relating to India in the work. Topic modelling is a widely used method for text analysis that infers the latent topics present in a collection of documents <span class="citation" data-cites="bail underwood2012">(<a href="#ref-bail" role="doc-biblioref">Bail n.d.</a>; <a href="#ref-underwood2012" role="doc-biblioref">Underwood 2012</a>)</span>. Latent Dirichlet Allocation (LDA), which is the most commonly employed algorithm for topic modelling, operates under the assumption that each document contains a mixture of different topics, and each topic is defined as a collection of words that may appear with varying probabilities in the passages <span class="citation" data-cites="underwood2012 kapadia2022">(<a href="#ref-underwood2012" role="doc-biblioref">Underwood 2012</a>; <a href="#ref-kapadia2022" role="doc-biblioref">Kapadia 2022</a>)</span>.</p>
+<p>In this study, the collection of India-related text in <em>Natural History</em>, which is segmented into paragraphs, is considered as separate “documents”. The semantic vectorization and implementation of the LDA model on groups of words in the text is achieved by utilizing the <a href="https://radimrehurek.com/gensim/">Gensim</a> library in Python<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Due to the small corpus size of text pertaining to Indian place names, the number of topics has been determined to be 3, with 40 passes, based on an assessment of the coherence score distribution depicted in Figure <a href="#fig-topic_coherence_distribution">Figure&nbsp;7</a>. This approach aims to obtain the most optimal and non-overlapping topic clusters.</p>
 <div class="cell" data-execution_count="75">
 <div class="cell-output cell-output-display">
 <div id="fig-topic_coherence_distribution" class="quarto-figure quarto-figure-center anchored">
@@ -1365,7 +1365,7 @@ Name: UUID, dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<p>And the list of 30 keywords, grouped by the 3 assigned topics, is presented below.</p>
+<p>The list of 30 keywords, organised into the three assigned topics, is displayed below.</p>
 <div class="cell" data-execution_count="27">
 <div class="cell-output cell-output-stdout">
 <pre><code>[(0,
@@ -1396,14 +1396,15 @@ Name: UUID, dtype: int64</code></pre>
   '0.003*"part"')]</code></pre>
 </div>
 </div>
-<p>Based on the prominent categories of the keywords and the possible interconnection within each group, a interpretation of the topic emerged from each keyword clusters can be drawn as follows.</p>
-<p><strong>Group 0</strong>: This group consists of keywords related to precious stones, such as “stone”, “amber”, “rock-crystal”and “glass”, with colour references like “black”, “white”, and “red”. Therefore, the underlying topic appears to be the description of precious stones.</p>
-<p><strong>Group 1</strong>: This group comprises various natural products, such as “tree”, “leaf”, “pepper”,“grain” and “nard”, along with descriptive words like “weight”, “pound” and “taste”. In addition, the ancient Roman currency “denarii” appears in the group, suggesting a possible topic related to merchandise trade with Indian subcontinent.</p>
-<p><strong>Group 2</strong>: This group contains different geographical features, such as “river”, “island”, “sea” and “mountain”. It also includes terms related to cities, nations, kings, and distances, and the name “Alexander”, referring to Alexander the Great, who has undertook an expedition to Indian subcontinent. “Elephant”, as an important property of the King in India during Pliny’s era, also represents the power and size of the Indian kingdoms. In this regard, the underlying topic for this group likely pertains to geography and society in India.</p>
-<p>The interactive visualisation of the 3 topic clusters, manifesting the intertopic distance map and the most salient/relevant terms within the given textand their contributing weights for each topic, can be accessed on the html version of this <a href="https://raw.githack.com/lizaodawn/NH_thesis/main/NHthesis_structure.html">thesis</a>.</p>
-<p>The static demonstration of the visualisation can be referred in <a href="#fig-topic_cluster0">Figure&nbsp;8</a>, <a href="#fig-topic_cluster1">Figure&nbsp;9</a>, <a href="#fig-topic_cluster2">Figure&nbsp;10</a> and <a href="#fig-topic_cluster3">Figure&nbsp;11</a>.</p>
-<p>The intertopic distance map is shown on the left panel of the interactive chart. Each bubble represents a topic, and the size of the bubble indicates the percentage of the texts in the corpus contributing to the topic. The distance between the bubbles implies the extent of difference between them. And a good topic model is expected to have big and non-overlapping bubbles scattered throughout the chart <span class="citation" data-cites="tran2022">(<a href="#ref-tran2022" role="doc-biblioref">Tran 2022</a>)</span>.</p>
-<p>And the most salient/relevant keyword is shown on the right panel. The blue bars represent the overall frequency of each word in the corpus. If no topic is selected, the blue bars of the most frequently used words will be displayed. The contribution of the frequent word to each topic will be shown in size difference when hovering. And when hovering on the bubbles in the left panel, there will be red bars in the right panel giving the estimated number of times a given term was generated by a given topic. The word with the longest red bar is estimated to be used the most in the texts belonging to that topic.</p>
+<p>Based on the prominent categories of the keywords and the possible interconnections within each group, an interpretation of the topic emerging from each keyword cluster can be drawn as follows.</p>
+<p><strong>Group 0</strong>: This group consists of keywords related to precious stones such as “stone”, “amber”, “rock-crystal”and “glass”, with colour references like “black”, “white”, and “red”. Therefore, the underlying topic appears to be the description of precious stones.</p>
+<p><strong>Group 1</strong>: This group includes various natural products such as “tree”, “leaf”, “pepper”, “grain” and “nard”, together with descriptive words such as “weight”, “pound” and “taste”. In addition, the ancient Roman currency ‘denarii’ appears in the group, suggesting a possible topic related to trade with India.</p>
+<p><strong>Group 2</strong>: This group contains various geographical features such as “river”, “island”, “sea” and “mountain”. It also includes terms related to cities, nations, kings and distances, and the name “Alexander”, referring to Alexander the Great, who undertook an expedition to the Indian subcontinent. “Elephant”, as an important possession of the king in India during Pliny’s time, also represents the power and size of the Indian kingdoms. In this respect, the underlying topic for this group probably relates to geography and society in India.</p>
+<p>The interactive visualisation of the 3 topic clusters, manifesting the intertopic distance map and the most salient/relevant terms within the given text and their contributing weights for each topic, can be accessed in the HTML version of this <a href="https://raw.githack.com/lizaodawn/NH_thesis/main/NHthesis_structure.html">thesis</a>.</p>
+<p>The static demonstration of the visualisation can be seen in <a href="#fig-topic_cluster0">Figure&nbsp;8</a>, <a href="#fig-topic_cluster1">Figure&nbsp;9</a>, <a href="#fig-topic_cluster2">Figure&nbsp;10</a> and <a href="#fig-topic_cluster3">Figure&nbsp;11</a>.</p>
+<p>The intertopic distance map is shown in the left panel of the interactive graph. Each bubble represents a topic, and the size of the bubble indicates the percentage of texts in the corpus that contribute to that topic. The distance between the bubbles indicates the degree of difference between them. And a good topic model is expected to have large and non-overlapping bubbles scattered across the graph <span class="citation" data-cites="tran2022">(<a href="#ref-tran2022" role="doc-biblioref">Tran 2022</a>)</span>.</p>
+<p>And the most salient/relevant keyword is shown in the right panel. The blue bars show the total frequency of each word in the corpus when no topic is selected. When hovering over one of the bubbles to select a specific topic, red bars will appear in the right panel showing the estimated frequencies of the terms in the selected topic, with the blue bar remaining in the background as a reference. The word with the longest red bar is estimated to contribute the most to the texts belonging to this topic.</p>
+<p>By hovering over a specific word in the right panel, the different contribution of a particular word to each topic can be seen.</p>
 <div class="cell" data-execution_count="38">
 <div class="cell-output cell-output-display" data-execution_count="38">
 
@@ -1490,39 +1491,46 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>In the above visualisation, the three keyword clusters are distanced from each other, indicating that they formed distinct potential topics within the given text. And the first (about stones) and the last (about Indian geography and society) topics took up a more significatnt portion comparing to the second topic (about merchandise trade).</p>
-<p>Additionally, the specific context of the Indian places mentioned in <em>Natural History</em> is manually summarized and categorized into broader types to serve as a comparison and extension to the topics generated by the model. The innitial comments about the context were drawn upon a close reading of the related text, with consideration of the book and chapter theme indicated in the text. The comments and summary are stored in CSV format and imported as pandas data frame.</p>
-<div class="cell" data-execution_count="87">
+<p>In the visualisation above, the three keyword clusters are distanced from each other, indicating that they formed different potential topics within the given text. And the first topic (about stones) and the last topic (about Indian geography and society) took up a more significant proportion compared to the second topic (about merchandise trade).</p>
+<p>In addition, the specific context of the Indian places mentioned in <em>Natural History</em> was manually summarised and categorised into broader types to serve as a comparison and extension to the topics generated by the model. The initial comments on context are based on a close reading of the relevant text, taking into account the book and chapter theme indicated in the text. The comments and summary are stored in CSV format and imported as a Pandas dataframe.</p>
+<div class="cell" data-execution_count="20">
 <div class="cell-output cell-output-display">
-<p>And the summarized comments were further categorized into seven types, namely [‘geographical reference’, ‘conquest history’, ‘passing mention’, ‘general introduction’, ‘criticism’, ‘prominent features’, ‘goods/animals/plants origin’, ‘producing activity’, ‘product/knowledge exchange’].</p>
+<p>And the summarised comments were further categorized into seven types, namely [‘geographical reference’, ‘conquest history’, ‘passing mention’, ‘general introduction’, ‘criticism’, ‘prominent features’, ‘goods/animals/plants origin’, ‘producing activity’, ‘product/knowledge exchange’].</p>
 </div>
 </div>
-<p><strong>Geographical reference</strong>: refers to the occurence of Indian place names as geographical reference in the narrative, for example:</p>
+<p>A detailed introduction to these seven context catergories with examples of passages can be found below.</p>
+<p><strong>Geographical reference</strong>: refers to the occurrence of Indian place names as a geographical reference in the narrative, for example:</p>
 <blockquote class="blockquote">
 <p>2.112.1 “…from the river <strong>Ganges</strong> and its mouth where it flows into the Eastern Ocean, through <strong>India</strong> and Parthyene to the Syrian city of Myriandrus situated on the Issic gulf 5,215…”</p>
 </blockquote>
-<p><strong>Passing mention</strong>: refers to the condition that the names of Indian place included as a side note, for example:</p>
+<p><strong>Passing mention</strong>: refers to the condition that the Indian place names are included as a passing reference, e.g:</p>
 <blockquote class="blockquote">
 <p>5.11.1 “…Coptos, which from its proximity to the Nile, forms its nearest emporium for the merchandise of <strong>India</strong> and Arabia…”</p>
 </blockquote>
-<p><strong>Conquest history</strong>: refers to the mentions of Indian place names in the context of recalling the conquest history of Alexader the Great, for example:</p>
+<p><strong>Conquest history</strong>: refers to the mention of Indian place names in the context of the conquest history of Alexander the Great, for example:</p>
 <blockquote class="blockquote">
 <p>8.61.2 “…When Alexander the Great was on his way to <strong>India</strong>, the king of Albania had presented him with one dog of unusually large size…”</p>
 </blockquote>
-<p><strong>General introduction</strong>: refers to the focused introduction about the general situation of places in Indian subcontinent, including transportation in the work, it is normally directly indicated at the begining of the affiliated chapter. For example, the whole chapter 21 of book 6 has a leading topic as “The nations of India”, the whole chapter 22 of book 6 has a leading topic as “The Ganges”.</p>
-<p><strong>Prominent features</strong>: in <em>Natural History</em>, the plants and animals from India are often noted for their large size, and Pliny often highlight the good quality of Indian products in his discussion, these genre of context is categorize as “prominent features” of India. For example:</p>
+<p><strong>General introduction</strong>: refers to the focused introduction about the general situation of places in the India, including the transport in the work, it is usually indicated directly at the beginning of the associated chapter. For example, the whole of chapter 21 of book 6 has a leading topic as “The Nations of India”, the whole of chapter 22 of book 6 has a leading topic as “The Ganges”.</p>
+<p><strong>Prominent features</strong>: In <em>Natural History</em>, plants and animals from India are often noted for their large size, and Pliny often highlights the good quality of Indian products in his discussion, this kind of context is categorised as “prominent features” of India. For example:</p>
 <blockquote class="blockquote">
-<p>8.14.1 “…Megasthenes writes that in <strong>India</strong> snakes grow so large as to be able to swallow stags and bulls whole…” 37.21.1 “…<strong>India</strong>, likewise, is the sole producer of these stones and combining, as they do, the brilliant qualities of the most valuable gems, they above all others description…”</p>
+<p>8.14.1 “…Megasthenes writes that in <strong>India</strong> snakes grow so large as to be able to swallow stags and bulls whole…”</p>
 </blockquote>
-<p><strong>Goods/animals/plants origin</strong>: there are also many descriptions about India as the origin of different goods, animals and plants, this genre refers to those without concrete comments on their size or quality, just simply mentioned the object is originated in India, for example:</p>
+<blockquote class="blockquote">
+<p>37.21.1 “…<strong>India</strong>, likewise, is the sole producer of these stones and combining, as they do, the brilliant qualities of the most valuable gems, they above all others description…”</p>
+</blockquote>
+<p><strong>Goods/animals/plants origin</strong>: There are also many descriptions of India as the origin of various goods, animals and plants, this type of context refers to those without specific comments on their size or quality, just mentioning that the object originated in India, for example:</p>
 <blockquote class="blockquote">
 <p>8.25.2 “Hyrcania and <strong>India</strong> produce the tiger, au animal of terrific speed…”</p>
 </blockquote>
-<p><strong>Producing activity</strong>: this genre refer to the cases that introduces about the human activity or specific producing process about natural creatures or trading products, such as:</p>
+<p><strong>Producing activity</strong>: this type refer to the cases that introduce about the human activity or specific production process about natural creatures or commercial products, such as</p>
 <blockquote class="blockquote">
-<p>8.8.1 “The method of capturing them in <strong>India</strong> is for a mahout riding one of the domesticated elephants…” 37.20.1 “…The <strong>Indians</strong> have found a way of counterfeiting various precious stones, and beryls in particulars by staining rock-crystal.”</p>
+<p>8.8.1 “The method of capturing them in <strong>India</strong> is for a mahout riding one of the domesticated elephants…”</p>
 </blockquote>
-<p><strong>Criticism</strong>: woven in the description about merchandise trade with Indian subcontinent, Pliny had drwan direct criticism about the human greed and unnecessary interference on nature it represents, hence these narratives are specificly grouped together, for example:</p>
+<blockquote class="blockquote">
+<p>37.20.1 “…The <strong>Indians</strong> have found a way of counterfeiting various precious stones, and beryls in particulars by staining rock-crystal.”</p>
+</blockquote>
+<p><strong>Criticism</strong>: woven into the description of trade with the India, Pliny had drawn direct criticism about the human greed and unnecessary interference on nature it represents, hence these narratives are specifically grouped together, for example:</p>
 <blockquote class="blockquote">
 <p>12.14.2 “To think that its only pleasing quality is pungency and that we go all the way to India to get this! Who was the first person who was willing to try it on his viands, or in his greed for an appetite was not content merely to be hungry?”</p>
 </blockquote>
@@ -1532,14 +1540,14 @@ if(typeof(LDAvis) !== "undefined"){
 <blockquote class="blockquote">
 <p>33.2.1 “It came to be deemed the proof of wealth, the true glory of luxury, to possess something that might be absolutely destroyed in a moment. Nor was this enough: we drink out of a crowd of precious stones, and set our cups with emeralds, we take delight in holding India for the purpose of tippling, and gold is now a mere accessory.”</p>
 </blockquote>
-<p><strong>Product/knowledge exchange</strong>: in some circumstances, Pliny also mentioned about the knowledge and product exchange during the trade, such as:</p>
+<p><strong>Product/knowledge exchange</strong>: In some circumstances, Pliny also mentioned about the exchange of knowledge and products during the trade, such as:</p>
 <blockquote class="blockquote">
 <p>34.48.3 “India possesses neither copper nor lead, and procures them in exchange for her precious stones and pearls.”</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>37.23.2 “…Indeed, as is generally known, in India the stone is exposed to view by the mountain streams…Later we persuaded the Indians to share our appreciation of it.”</p>
 </blockquote>
-<p>And the distribution of context type concluded from close reading is shown in <a href="#fig-book_context_distribution">Figure&nbsp;12</a> and <a href="#fig-context_type_freq">Figure&nbsp;13</a>.</p>
+<p>And the distribution of context types derived from close reading is shown in <a href="#fig-book_context_distribution">Figure&nbsp;12</a> and <a href="#fig-context_type_freq">Figure&nbsp;13</a>.</p>
 <div class="cell" data-execution_count="24">
 <div class="cell-output cell-output-display">
 <div id="fig-book_context_distribution" class="quarto-figure quarto-figure-center anchored">
@@ -1560,33 +1568,35 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>In general, the contexts concluded from the close reading can relate to the latent topics generated from the distant reading method and added more details to the keywords clusters. That is, if we understand the content about India in <em>Natural History</em> in three main topics, namely stons, trade, and contrasting nation, under the “stone” topic, except for describing the colour and texture of different types of gemstone, there also include the description about India as an origin of gemstones in a high quality. And under the large proportion of Indian places as geographical reference and focused introduction mentioned in the narrative, contributes to the formation of “nation” condition as a major topic. Additionally, there were conquest history of the Roman Empire to Indian subcontinent referred in the description. And for the topic about “trade”, though it seem inferior to the previous two in terms of quantity, but it is this part that reflects more sentimental judgement from Pliny out of his stoicism standpoint that worshiping nature as a devine and against luxurious desire <span class="citation" data-cites="beagon1996">(<a href="#ref-beagon1996" role="doc-biblioref">Beagon 1996</a>)</span>.</p>
-<p>On top of the observation from the previous section, that India is seen as an important geographical contrast, as well as a significant trading partner in the narrative, a more nuanced protrait of India, linking the conquest story/history of the Roman Empire and criticism aobut human greed from the stoicism with abundant natural wonders and products of the best quality in the world can be drawn from the comprehension of topic modelling and close reading.</p>
+<p>In general, by integrating close reading and topic modelling, the contexts inferred from close reading can enrich the topics generated by the model, providing more intricate detail to the keyword clusters.</p>
+<p>For example, within the overarching themes of ‘stones’, ‘trade’ and ‘contrasting nation’ that emerge from the content about India in <em>Natural History</em>, the theme of ‘stones’ not only encompasses the description of various gemstones in terms of their colour and texture, but also positions India as the source of these precious stones of the highest quality. The abundance of references to Indian places as geographical markers, coupled with a focused introduction to India’s natural, social and political circumstances, contributes significantly to the formation of a major theme that presents India as a contrasting entity to the Roman Empire. Notably, the narrative also touches on the historical context of the Roman conquest of the Indian subcontinent within this theme.</p>
+<p>Furthermore, the theme of ‘trade’, though seemingly smaller in scope than the previous two, is of particular significance as it reflects Pliny’s Stoic perspective, which reveres nature as divine and condemns excessive material desire that disrupts natural harmony <span class="citation" data-cites="beagon1996">(<a href="#ref-beagon1996" role="doc-biblioref">Beagon 1996</a>)</span>.</p>
+<p>Beyond the observation that India is both a geographical counterpoint and an important trading partner within the narrative, the integration of topic modelling and close reading leads to a more nuanced portrayal of India. This portrayal presents India as a junction where the conquest narratives of the Roman Empire intersect with Stoicism’s critique of human greed, all the while being adorned with an abundance of natural wonders and the world’s finest products.</p>
 </section>
-<section id="network-analysis-for-named-entity" class="level3" data-number="4.4">
-<h3 data-number="4.4" class="anchored" data-anchor-id="network-analysis-for-named-entity"><span class="header-section-number">4.4</span> Network analysis for Named Entity</h3>
-<p>In addition to the previous methods partly answered on the question about “how India is described?” in <em>Natural History</em>, a network analysis of the named entities in the text may shed a light on the structure of the India-related content in the work. As inspired by the person name collocations observed from the collocation analysis, the initial idea for this section is to extract person names mentioned in the India-related text, and generate a entity cluster for the person names, place names, and book number, to explore how the content is structured in the context.</p>
-<p>Employing the dataset with supplemented Indian place name annotations, distinct place names (including annotated places outside Indian subcontinenet), person names and book numbers are considered as nodes, and the co-occurences of person name and place names, as well as that of two different place names in the same paragraph, and the book number the person and place name occured, are counted as edges.</p>
-<p>To identify the the impact of different entities in the discourse, the betweeness centrality of the nodes are mesured and represented by the size of the node. And the weight of edge between two nodes represents the time the two entities appeared in the same context. Gone through a Force Atlas 2 layout algorithm, the graph also demonstrates the rough cluster of entities which tend to be mentioned together.</p>
-<div class="cell" data-execution_count="29">
+<section id="sec-network" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="sec-network"><span class="header-section-number">4.4</span> Network analysis for named entities</h3>
+<p>In addition to the previous methods, which partially answered the question “How is India described?” in <em>Natural History</em>, a network analysis of the named entities in the text can shed light on the structure of the India-related content in the work. Inspired by the person name collocations observed in the collocation analysis, the initial idea for this section is to extract the person names mentioned in the India-related text and generate an entity cluster for the person names, place names and book numbers to explore how the content is structured in context.</p>
+<p>Using the extended dataset of Indian place name annotations, different place names (including annotated places outside India), person names and book numbers are considered as nodes. Edges are counted when two nodes co-occur, such as a person name and a place name, or two different place names in the same paragraph. The number of the book in which these names appear will also be counted as an edge.</p>
+<p>In order to identify the influence of different entities in the discourse, the centrality of nodes is measured and represented by their size. And the weight of the edge between two nodes represents the time that the two entities appear together in the same context. The graph, which has been run through a Force Atlas 2 layout algorithm, also shows the rough clustering of entities that tend to be mentioned close together.</p>
+<div class="cell" data-execution_count="23">
 <div class="cell-output cell-output-display">
-<p>Indexing with the book-chapter-paragraph number of the India-related text, the place names outside Indian subcontinent mentioned in the same paragraph are also included for the network analysis. And according to the original TOPOSText and supplemented place name annotations, there are total of 908 occurences of place names in paragraphs of Indian-related text in <em>Natural History</em>.</p>
+<p>Indexed with the book-chapter-paragraph number of the passages in the India-related text, the place names outside India while mentioned in the same paragraph are also included in the network analysis. Combining the original TOPOSText annotations and the added annotations, there are a total of 908 occurrences of place names in paragraphs of India-related text in <em>Natural History</em>.</p>
 </div>
 </div>
-<section id="person-name-annotationtag-retrieve" class="level4" data-number="4.4.1">
-<h4 data-number="4.4.1" class="anchored" data-anchor-id="person-name-annotationtag-retrieve"><span class="header-section-number">4.4.1</span> Person name annotation/tag retrieve</h4>
-<p>In order to extract the people names within the captioned text, approaches of retriving from the TOPOSText annotation and from the tagging of text given by the pretrained multilingual named entity recognition model <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are compared for adopting the most completed output.</p>
-<p><strong>1. Annotation retrieving from TOPOSText</strong></p>
-<p>On TOPOSText, other than place names, a list of proper names (including people, gods, festivals, animals and artworks) are also annotated to the text of the classics. Each proper name has a unique URI as identifier in the html structure, such as: **&lt;a href=“/people/54” target=“_blank”&gt;Muses&lt;/a&gt;**.</p>
-<p>Utilizing the tools of <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a>, the textual proper names, their URIs along with the book-chapter-paragraph number they occured in, can be retrieved with the URLs of both parts of <em>Natural History</em> on TOPOSText.</p>
-<div class="cell" data-execution_count="35">
+<section id="person-name-annotationtagging-retrieval" class="level4" data-number="4.4.1">
+<h4 data-number="4.4.1" class="anchored" data-anchor-id="person-name-annotationtagging-retrieval"><span class="header-section-number">4.4.1</span> Person name annotation/tagging retrieval</h4>
+<p>To extract the names of people within the captioned text, approaches of retrieval from the TOPOSText annotation and from the text tagging given by the pre-trained multilingual named entity recognition models <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are compared to adopt the most complete output.</p>
+<p><strong>1. Annotation retrieval from TOPOSText</strong></p>
+<p>Besides place names, a catalogue of proper names including persons, gods, festibals, animals and artworks is identified in the classical text on TOPOSText. Every proper name is assigned a distinct URI as its identifier in the HTML format, as demonstrated in the following example: **&lt;a href=“/people/54” target=“_blank”&gt;Muses&lt;/a&gt;**.</p>
+<p>Using the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> tools, the proper names, together with their respective URIs and the book-chapter-paragraph numbers in which they appear, can be retrieved from the URLs of the two sections of <em>Natural History</em> on TOPOSText.</p>
+<div class="cell" data-execution_count="28">
 <div class="cell-output cell-output-display">
-<p>In the annotated text of <em>Natural History</em> on TOPOSText, there are 5109 such proper name annotations in book 1-11 and 7038 in book 12-37, adding up to a combined total of 12147 throughout the work.</p>
+<p>The annotated text of <em>Natural History</em> on TOPOSText contains 5109 proper name annotations in book 1-11 and 7038 in book 12-37, resulting in a total of 12147 such annotations throughout the work.</p>
 </div>
 </div>
-<p>The specific annotation type as “person name” can be further validated with the <a href="https://topostext.org/api/people/readweb.php">api</a> on TOPOText. In the api file, all the entities of people/gods, has been valued as “male” or “female” as its “gender” key. Based on this criteria, those with other values in their “gender” key, such as “gender”:“animal” or “gender”:“other”, are not considered as “people” and filtered out from the retrieved output. Moreover, as there is a “concat” value indicating a detailed name of the signified person and shared with all variants of the same URI, the “concat” value is also fetched as a more accurate information of person name enetity.</p>
-<div class="cell" data-execution_count="40">
-<div class="cell-output cell-output-display" data-execution_count="40">
+<p>The <a href="https://topostext.org/api/people/readweb.php">API</a> on TOPOSText can provide further validation for the specific annotation type of “person name”. In the API file, the gender key for all the entities of people/gods has been assigned the values “male” and “female”. Based on this criterion, entities with key-value pairs such as “gender”:“animal” or “gender”:“other” are filtered out from the retrieved output, as they are not considered as “people”. Furthermore, since there is a “concat” value that denotes a detailed name of the person and is shared with all variants of the same URI, the “concat” value is also retrieved for a more accurate identification of the person named entity.</p>
+<div class="cell" data-execution_count="60">
+<div class="cell-output cell-output-display" data-execution_count="60">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1663,13 +1673,13 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="91">
+<div class="cell" data-execution_count="37">
 <div class="cell-output cell-output-display">
-<p>An example of the data structure of the retrieved output of person name annotations in <em>Natural History</em> is shown in <a href="#tbl-validated_people_anno">Table&nbsp;7</a>. There are total 6568 occurences of person names annotated in the whole work, <strong>330</strong> of which are within the India-related text.</p>
+<p>The format of the retrieved output for person name annotations in <em>Natural History</em> is exemplified in <a href="#tbl-validated_people_anno">Table&nbsp;7</a>. In the entire work, there are a total of 6568 instances of annotated person names, of which <strong>330</strong> appear within text related to India.</p>
 </div>
 </div>
-<div class="cell" data-execution_count="79">
-<div class="cell-output cell-output-display" data-execution_count="79">
+<div class="cell" data-execution_count="62">
+<div class="cell-output cell-output-display" data-execution_count="62">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1703,7 +1713,7 @@ if(typeof(LDAvis) !== "undefined"){
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
 <td>Syene</td>
-<td>2.0</td>
+<td>2</td>
 <td>Similarly it is reported that at the town of S...</td>
 <td>Onesicritus</td>
 </tr>
@@ -1711,7 +1721,7 @@ if(typeof(LDAvis) !== "undefined"){
 <td data-quarto-table-cell-role="th">1</td>
 <td>2.75.1</td>
 <td>Syene</td>
-<td>2.0</td>
+<td>2</td>
 <td>Similarly it is reported that at the town of S...</td>
 <td>Alexander III, the Great (general)</td>
 </tr>
@@ -1719,7 +1729,7 @@ if(typeof(LDAvis) !== "undefined"){
 <td data-quarto-table-cell-role="th">2</td>
 <td>2.75.1</td>
 <td>Syene</td>
-<td>2.0</td>
+<td>2</td>
 <td>Similarly it is reported that at the town of S...</td>
 <td>Alexander III, the Great (general)</td>
 </tr>
@@ -1727,7 +1737,7 @@ if(typeof(LDAvis) !== "undefined"){
 <td data-quarto-table-cell-role="th">3</td>
 <td>2.75.1</td>
 <td>Syene</td>
-<td>2.0</td>
+<td>2</td>
 <td>Similarly it is reported that at the town of S...</td>
 <td>Onesicritus</td>
 </tr>
@@ -1735,7 +1745,7 @@ if(typeof(LDAvis) !== "undefined"){
 <td data-quarto-table-cell-role="th">4</td>
 <td>2.75.1</td>
 <td>India</td>
-<td>2.0</td>
+<td>2</td>
 <td>Similarly it is reported that at the town of S...</td>
 <td>Onesicritus</td>
 </tr>
@@ -1746,15 +1756,15 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-scrolled="true" data-execution_count="92">
+<div class="cell" data-scrolled="true" data-execution_count="40">
 <div class="cell-output cell-output-display">
-<p>As shown in <a href="#tbl-person_anno_merged">Table&nbsp;8</a>, the validated annotated person names are added to the India-related text dataset. With the person name annotation retrieving, there found total <strong>3583</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
+<p>As shown in <a href="#tbl-person_anno_merged">Table&nbsp;8</a>, the validated person names are added to the India-related text dataset. By matching the book-chapter-paragraph number of the retrieved person names and place names, a total of <strong>3583</strong> co-occurrences of individual place names and person names in the same paragraph within the India-related text in <em>Natural History</em> were identified.</p>
 </div>
 </div>
 <p><strong>2. Named entity recognition with <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a></strong></p>
-<p>To evaluate the quality and completeness of the extracted person name annotations, two widely practiced pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are utilized for tagging person names in the India-related text.</p>
-<div class="cell" data-execution_count="86">
-<div class="cell-output cell-output-display" data-execution_count="86">
+<p>In order to assess the quality and completeness of the extracted person name annotations, two widely used pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are employed to tag person names in the same text.</p>
+<div class="cell" data-execution_count="77">
+<div class="cell-output cell-output-display" data-execution_count="77">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1786,37 +1796,37 @@ if(typeof(LDAvis) !== "undefined"){
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
-<td>Onesicritus</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
+<td>Leo</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Alexander</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Alexander</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Onesicritus</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">21</td>
-<td>2.112.1</td>
-<td>Our own portion of the earth, which is my subj...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.7412269, '...</td>
-<td>Artemidorus</td>
+<td data-quarto-table-cell-role="th">66</td>
+<td>4.17.4</td>
+<td>Such is Macedoni...</td>
+<td>[{'entity_group'...</td>
+<td>Paulus Aemilius</td>
 </tr>
 </tbody>
 </table>
@@ -1825,20 +1835,20 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="89">
+<div class="cell" data-execution_count="47">
 <div class="cell-output cell-output-display">
-<p>An example of the person name tags retrieved from WikiNEuRal of the given text are shown in <a href="#tbl-wiki_ppl_tag">Table&nbsp;9</a>. There are total <strong>225</strong> occurences retrieved within the India-related text.</p>
+<p>An example of the person names retrieved from WikiNEuRal tagging for the given text is shown in <a href="#tbl-wiki_ppl_tag">Table&nbsp;9</a>. There are a total <strong>225</strong> occurences retrieved within the India-related text.</p>
 </div>
 </div>
-<div class="cell" data-execution_count="90">
+<div class="cell" data-execution_count="49">
 <div class="cell-output cell-output-display">
-<p>And after merging the person name tags with the dataset of place name occurences, there found total <strong>1881</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em>.</p>
+<p>After merging the person name tags of WikiNEuRal NER with the dataset containing place name occurrences, a total of <strong>1881</strong> co-occurrences of place name and person name in the same paragraph within India-related text in <em>Natural History</em> were identified.</p>
 </div>
 </div>
 <p><strong>3. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a></strong></p>
-<p>As a comparison, another well-esteemed NLP pretrained model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> is also applied for the named enetity recognition to the same text.</p>
-<div class="cell" data-execution_count="97">
-<div class="cell-output cell-output-display" data-execution_count="97">
+<p>For comparison, named entity recognition was also performed on the same text using another well-known pretrained natural language processing model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span>.</p>
+<div class="cell" data-execution_count="78">
+<div class="cell-output cell-output-display" data-execution_count="78">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -1870,36 +1880,36 @@ if(typeof(LDAvis) !== "undefined"){
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Leo</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Alexander</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Alexander</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">0</td>
 <td>2.75.1</td>
-<td>Similarly it is reported that at the town of S...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.99636984, ...</td>
+<td>Similarly it is ...</td>
+<td>[{'entity_group'...</td>
 <td>Onesicritus</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">66</td>
 <td>4.17.4</td>
-<td>Such is Macedonia, which was once the mistress...</td>
-<td>[{'entity_group': 'LOC', 'score': 0.95384216, ...</td>
+<td>Such is Macedoni...</td>
+<td>[{'entity_group'...</td>
 <td>Paulus Aemilius</td>
 </tr>
 </tbody>
@@ -1909,17 +1919,17 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="98">
+<div class="cell" data-execution_count="55">
 <div class="cell-output cell-output-display">
-<p>An example of the person name tags retrieved from WikiNEuRal of the given text are shown in <a href="#tbl-flair_ppl_tag">Table&nbsp;10</a>. There are total <strong>102</strong> occurences retrieved within the India-related text.</p>
+<p>An example of the person name extracted from Flair tagging of the given text is shown in <a href="#tbl-flair_ppl_tag">Table&nbsp;10</a>. There are total <strong>102</strong> occurences retrieved within the India-related text.</p>
 </div>
 </div>
-<div class="cell" data-execution_count="99">
+<div class="cell" data-execution_count="56">
 <div class="cell-output cell-output-display">
-<p>And after merging the person name tags with the dataset of place name occurences, there found total <strong>938</strong> co-occurences of single place name and person name in the same paragraph within the India-related text in <em>Natural History</em> with the NER tool of Flair.</p>
+<p>After merging the person name tags of Flair NER with the dataset of place name occurences, a total <strong>938</strong> co-occurences of individual place name and person name in the same paragraph within the India-related text in <em>Natural History</em> were identified.</p>
 </div>
 </div>
-<p>As shown in <a href="#tbl-ner_compare">Table&nbsp;11</a>, the TOPOSText annotation provide more person name entities comparing to the other two methods.</p>
+<p>As depicted in <a href="#tbl-ner_compare">Table&nbsp;11</a>, the TOPOSText annotation produces more named entities of people than the other two methods.</p>
 <div class="cell" data-execution_count="108">
 <div class="cell-output cell-output-display" data-execution_count="108">
 <div>
@@ -1939,7 +1949,7 @@ if(typeof(LDAvis) !== "undefined"){
 
 <div id="tbl-ner_compare" class="anchored">
 <table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
-<caption>Table&nbsp;11: Quantity of person name entities retrieved with different methods</caption>
+<caption>Table&nbsp;11: Quantity of person named entities retrieved with different methods</caption>
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
@@ -1974,7 +1984,10 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>And the first fifteen distinct retrieved person names of the three methods can be referred in <a href="#tbl-per_name_compare">Table&nbsp;12</a>. For the case of “Alexander III, the Great (general)”, since the annotation retrieved from TOPOSText is validated with the URI, both “Alexander” and “Alexander the Great” will be recognized as the same entity. While from the output of WikiNEuRal and Flair, the two variants are recognized as two different entities. And for the case “Leo” retrieved from Flair NER, it actually refers to the zodiac constellation, rather than a person/god name, and the same entity has a “gender”:“astronomic” value in the TOPOSText annotation, which will prevent it being added to the dataset as a person name.</p>
+<p>In addition, the first fifteen distinct person names obtained through the three methods is shown in <a href="#tbl-per_name_compare">Table&nbsp;12</a>.</p>
+<p>Take the retrieval of “Alexander III, the Great (general)” as an example. In the output of TOPOSText, it is recognised as a single entity even though it has multiple name variants including “Alexander” and “Alexander the Great”. But in the outputs of WikiNEuRal and Flair, these two variants are treated as separate entities based on the difference in wording.</p>
+<p>In another case, Flair tagged “Leo” as a person name. However, it actually refers to the zodiac constellation and not a human or god’s name in the context.</p>
+<p>The reason for the different performance between TOPOSText annotation retrieval and the other two method is that there were URIs assigned to each proper name in the annotation, which efficiently prevents redundant retrival and mistaken categorising of the named entities employed for this study.</p>
 <div class="cell" data-execution_count="137">
 <div class="cell-output cell-output-display" data-execution_count="137">
 <div>
@@ -2101,35 +2114,27 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>Both in terms of quantity and quality, the person names retrieved from the TOPOSText is more reliable for this study. Therefore, the output of TOPOSText annotation retriving is appended to the dataset for node/edge generation for the network analysis.</p>
+<p>Thus, the person names extracted from TOPOSText are more reliable both in terms of quantity and quality for this analysis. For the production of network nodes and edges, the results of TOPOSText annotation retrieval are merged with the dataset of place names in India-related text.</p>
 </section>
 <section id="network-graph-generation" class="level4" data-number="4.4.2">
 <h4 data-number="4.4.2" class="anchored" data-anchor-id="network-graph-generation"><span class="header-section-number">4.4.2</span> Network graph generation</h4>
-<p>As mentioned, there will be three types of nodes for the expected network graph, namely <strong>place name</strong>, <strong>person name</strong> and <strong>book number</strong>.</p>
-<p>And there are four types of edges taken into consideration, including the co-occurence of:</p>
+<p>As mentioned previously, the network graph will contain three types of nodes: <strong>place name</strong>, <strong>person name</strong> and <strong>book number</strong>.</p>
+<p>Four types of edges are taken into consideration, including the co-occurrence of:</p>
 <ol type="1">
-<li><strong>place name</strong> and <strong>person name</strong> in the same paragraph<br></li>
-<li><strong>person name</strong> and <strong>book number</strong> it appears in<br></li>
-<li><strong>place name</strong> and <strong>book number</strong> it appears in<br></li>
-<li><strong>place name</strong> and <strong>place name</strong> in the same paragraph<br></li>
+<li><strong>place name</strong> and <strong>person name</strong> appearing in the same paragraph<br></li>
+<li><strong>person name</strong> and <strong>book number</strong> in which it appears<br></li>
+<li><strong>place name</strong> and <strong>book number</strong> it which it appears<br></li>
+<li><strong>place name</strong> and another <strong>place name</strong> appearing in the same paragraph<br></li>
 </ol>
-<div class="cell" data-execution_count="141">
+<div class="cell" data-execution_count="66">
 <div class="cell-output cell-output-display">
-<p>There are total 519 nodes and 14177 edges for the network of place name/person name/book number in India-related text of <em>Natural History</em>.</p>
+<p>The network of place names, person names, and book numbers in India-related text of <em>Natural History</em> consists of a total of 519 nodes and 14177 edges.</p>
 </div>
 </div>
-<p>The network graph generated from the captioned nodes and edges can be explored as <a href="#fig-network_graph">Figure&nbsp;14</a>. The size of the nodes represents the betweeness centralality of the entity in the context, which means the bigger the node, the more central it is in the discourse. The types of nodes (place name, person name, book number) are differenciated by colour.</p>
-<p>And the curved lines linking different nodes indicate the co-occurences between single place name and person name, two place names, and the book number of place name and person name occurs. The thickness of the line represent the counts of the co-occurence edge, which means, the thicker the line linking, the more frequent the two nodes are mentioned together.</p>
-<p>Apparently, “India” is the absolute center of the discourse. And drawing from both the node size and edge thickness, “Arabia” is the place that often mentioned together with India. Actually, the two countries are often mentioned in the same time, for example:</p>
-<blockquote class="blockquote">
-<p>13.28.1 “Ethiopia, which is on the borders of Egypt, has virtually no remarkable trees except the wool-tree, like the one described among the trees of <strong>India</strong> and <strong>Arabia</strong>.”</p>
-</blockquote>
-<blockquote class="blockquote">
-<p>22.56.1 “I myself shall not touch upon drugs imported from <strong>India</strong> and <strong>Arabia</strong> or from the outer world.”</p>
-</blockquote>
-<p>One possible reason for this pairing occurence is that Arabia locates in the middle of the route from Rome to India, and the two places similarly are significant importers for the exotic and luxurious goods trade.</p>
-<div class="cell" data-execution_count="18">
-<div class="cell-output cell-output-display" data-execution_count="18">
+<p>The network graph created from the nodes and edges mentioned can be explored through <a href="#fig-network_graph">Figure&nbsp;14</a>. The size of the node indicates the betweenness centrality of the entity in the context. The larger the node, the more central it locates in the discourse. Different types of nodes such as place names, person names, and book numbers are differentiated by colour.</p>
+<p>Curved lines connecting nodes indicate co-occurrences between a single place name and person name, two place names, and the book number where the place name or person name appears. The thickness of the line represents the count of the co-occurrence edge. The thicker the connecting line, the more often the two nodes are mentioned closely together.</p>
+<div class="cell" data-execution_count="73">
+<div class="cell-output cell-output-display" data-execution_count="73">
 <div id="fig-network_graph" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <figcaption class="figure-caption">Figure&nbsp;14: Place/person/book number network of India-related content in <em>Natural History</em></figcaption>
@@ -2138,7 +2143,15 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>Besides, there are several groups of place names located the edge of the graph, as shown in <a href="#fig-nw_edged_groups">Figure&nbsp;15</a>, indicating they tend to be mentioned together, but relatively distanced from the discussion of India. In most cases India is just a passing metion in the enumerition context.</p>
+<p>Apparently, “India” is the absolute centre of the discourse. Based on the node size and edge thickness, Arabia is frequently mentioned together with India. In fact, the two countries are often mentioned simultaneously. For instance:</p>
+<blockquote class="blockquote">
+<p>13.28.1 “Ethiopia, which is on the borders of Egypt, has virtually no remarkable trees except the wool-tree, like the one described among the trees of <strong>India</strong> and <strong>Arabia</strong>.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>22.56.1 “I myself shall not touch upon drugs imported from <strong>India</strong> and <strong>Arabia</strong> or from the outer world.”</p>
+</blockquote>
+<p>The association between India and Arabia may be due to Arabia’s position in the middle of the route from Rome to India, and the important role played by both areas in the import of luxury and exotic commodities.</p>
+<p>Besides, there exist several groups of place names located at the edge of the graph, as presented in <a href="#fig-nw_edged_groups">Figure&nbsp;15</a>, suggesting that they are often mentioned together, but with little connection to the discussion of India. In most instances, India is merely a passing reference in the enumeration context.</p>
 <div class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display">
 <div id="fig-nw_edged_groups" class="quarto-figure quarto-figure-center anchored">
@@ -2149,7 +2162,7 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>And there are three obvious person name clusters centering on Book 6, Book 7 and Book 37, the zoomed in captures are shown in <a href="#fig-network_zoom_book6n7">Figure&nbsp;16</a> (for Book 6 and Book 7) and <a href="#fig-network_zoom_book37">Figure&nbsp;17</a> (for Book 37).</p>
+<p>Furthermore, three evident clusters of person names can be identified from the network graph, centred around book 6, book 7, and book 37. Refer to <a href="#fig-network_zoom_book6n7">Figure&nbsp;16</a> (for Book 6 and Book 7) and <a href="#fig-network_zoom_book37">Figure&nbsp;17</a> (for Book 37) for the zoomed-in captures.</p>
 <div class="cell" data-execution_count="15">
 <div class="cell-output cell-output-display" data-execution_count="15">
 <div id="fig-network_zoom_book6n7" class="quarto-figure quarto-figure-center anchored">
@@ -2160,8 +2173,8 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>From the cluster of Book 6, the most frequent mentioned historical figures are Alexander the Great and Dionysus (often with a variant name as “Father Liber”), which has been mentioned to be related to the epic and history of conquest from Roman Empire to Indian subcontinent. Also other governers/generals/navigators have significant connectness within the discourse, such as “Juba II”, “Ptolemy II Philadelphus”, “Hippalus”, “Patrocles”, “Leonnatus” etc. And it also show the frequent referred scholars of Pliny in the India-related narratives, for example, “Seneca”, “Eratosthenes”, “Posidonius of Apameia”.</p>
-<p>And in the cluster of Book 7, where the discussion focus is on anthropology (human races, tribes, human behaviors), a group of scholars are significantly referred, including “Aristotle”, “Eudoxus of Cnidus”, “Duris”, “Agatharchides”.</p>
+<p>In the cluster of book 6, the most frequently mentioned historical figures are Alexander the Great and Dionysus (referred to as “Father Liber” at times), in relation to the tales and notes about the Roman Empire’s conquests in the Indian subcontinent. The discourse also includes other significant figures such as “Juba II”, “Ptolemy II Philadelphus”, “Hippalus”, “Patrocles”, and “Leonnatus”, who were governors, generals, and navigators. The cluster also depicts the frequent referenced scholars by Pliny in the India-related narratives, such as “Seneca”, “Eratosthenes”, and “Posidonius of Apameia”.</p>
+<p>In the cluster of book 7, where the discussion focused on anthropology, including human races, tribes, and human behaviors, a group of scholars are significantly referred to, including “Aristotle”, “Eudoxus of Cnidus”, “Duris”, and “Agatharchides”.</p>
 <div class="cell" data-execution_count="16">
 <div class="cell-output cell-output-display" data-execution_count="16">
 <div id="fig-network_zoom_book37" class="quarto-figure quarto-figure-center anchored">
@@ -2172,16 +2185,16 @@ if(typeof(LDAvis) !== "undefined"){
 </div>
 </div>
 </div>
-<p>While in the cluster of Book 37, strong edges are connected to Greek scholars, such as “Xenocrates”, “Aeschylus”, “Sudines” and “Zenothemis”. Also there is a significant connectness with “Magi”, referring to the priests in Zoroastrianism, a trditional Persian religion mentioned in the discussion about tales and myths related to the precious stones.</p>
-<p>An interesting finding in close reading is that in Book 37, Pliny had addressed direct disprovement to these two groups, with a strong critical attitude. As quoted in the following paragraphs, the Greek scholars and Magus are often mentioned as debatable subjects in Book 37, as a strategy for him to express his own worship of nature and the material world.</p>
+<p>While in book 37, the cluster is heavily linked to renowned Greek scholars, including “Xenocrates”, “Aeschylus”, “Sudines” and “Zenothemis”. Additionally, there is a considerable connection with the “Magi”, referring to the priests of Zoroastrianism, a traditional Persian religion, which is mentioned in the discussion about tales and myths concerning the precious stones.</p>
+<p>Upon closer examination, it is noteworthy that in book 37, Pliny directly refuted these two groups with a stern critical attitude. The Greek scholars and Magi are frequently cited as controversial subjects in book 37, serving as a strategy for Pliny to express his own worship of nature and the material world, as quoted in the subsequent paragraphs.</p>
 <blockquote class="blockquote">
 <p>37.11.2 “Here is an opportunity for <strong>exposing the falsehoods of the Greeks</strong>.”</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>37.14.1 “Now I shall discuss those kinds of gemstones that are acknowledged as such, beginning with the finest. And this shall not be my only aim, but to the greater profit of mankind <strong>I shall incidentally confute the abominable falsehoods of the Magi</strong>, since in very many of their statements about gems they have gone far beyond providing an alluring substitute for medical science into the realms of the supernatural.”</p>
 </blockquote>
-<p>To sum up, the network graph visualizes the connectedness between different types of clustered entities and the central entities within the narrative. In this study, taking the relationship of the place names, person names and book numbers in the target text into consideration, it shows clearly that India is the center of the narrative, and Arabia and Egypt are closely connected to this center. Also, it depicted how the person names of history figures, mythological gods, explorers and scholars are located in the narrative, shedding a light on the structure of the India-related content in <em>Natural History</em>.</p>
-<p>If including more types of entities, such as animals, events, ethnic groups, into the network, it will contribute to a more nuanced distance map and entity clustering, which shows more dimensions of the content structure.</p>
+<p>In summary, the network graph illustrates the interconnectivity between various clustered entities and the central entities within the narrative. In this study, the correlation between the place names, person names, and book numbers in the target text shows that India is the focal point of the narrative, while Arabia is closely linked to this centre. Furthermore, the depiction of the person names of historical figures, mythical gods, explorers, and scholars in the narrative sheds light on the structure of India-related content in <em>Natural History</em>.</p>
+<p>The inclusion of additional entity types such as animals, events, and ethnic groups in the network will undoubtedly contribute to a more nuanced distance map and entity clustering, revealing more dimensions of the content structure.</p>
 </section>
 </section>
 </section>
@@ -2189,33 +2202,32 @@ if(typeof(LDAvis) !== "undefined"){
 <h2 data-number="5" class="anchored" data-anchor-id="sec-conclusions"><span class="header-section-number">5</span> Conclusions</h2>
 <section id="comprehension-of-india-in-the-narrative" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="comprehension-of-india-in-the-narrative"><span class="header-section-number">5.1</span> Comprehension of “India” in the narrative</h3>
-<p>Leading by the research questions of “How is India described, and how is the information about India structured in the work?”, the above analysis of different methods, including word frequency and collocation pattern observation, topic modeling and network analysis, integrating with close reading of the text, comprise a comprehension of “India” in the narrative of <em>Natural History</em>.</p>
-<p>Generally, India is regarded as a significant geographical contrast to the Roman Empire and the Mediterranean. It is frequently mentioned for comparison in the description of landscape, expedition, navigating or trading routes and origins of natural creatures and elements of other locations. And the name of rivers in Indian subcontinent, including some tributaries, are given a highlight as references. Another important role of India in the narrative is a major trading partner who frequently import rare and precious treasures into the Mediterranean.</p>
-<p>More specifically, the content about India is potentially themed in three topics, integrating with a close reading of the text, these three topics can be illustrated in details. The more prominent topics are the geographical and social condition aobut Indian nations and stones originated and produced in India. In the former topic, inspite of addressing India as a origin for numerous marvels, Pliny incidentally mentioned the epic tales or history related to the conquest of India, which suggest an imperial perspective of the work. And in the less prominent topic, which focused on the merchandise trade, Pliny expressed his criticism about the human greed and unnecessary interference on nature it reflects, which echos his Stoic claim of nature and human world.</p>
-<p>And a network of place names, person names and book numbers of the India-related text has been created to depict the focus and co-occurence clusters in the content structure. It shows that Arabia and Ethopia are the two places that close to the mentioning of India in the text, and for different books, there are specific history figures and referencing scholars clustering aroud. And an interesting observation is that in the person name cluster of Book 37, which discussed about the gemstones, Mangus and Geek scholars played an important role as disproving subjects, for Pliny to express his advocate worshiping the genuine nature and material world as a Stoic.</p>
-<p>In summary, in Pliny’s unintentional portrait, India showed its complexity as a geographical contrast, an origin of marvels and treasures, a major trading partner, and a context of unecessary luxurious pursuit of Pliny’s contemporary that he debate against in the scope of <em>Natural History</em>.</p>
+<p>Leading by the research questions of “How is India described, and how is the information about India structured in the work?”, the above analysis with different methods, including word frequency and collocation analysis, topic modelling, and network analysis, with an integration of close reading to the textual contet, comprise a comprehension of “India” in the narrative of <em>Natural History</em>.</p>
+<p>In general, India is considered a significant geographical contrast to the Roman Empire and the Mediterranean. India is often mentioned for comparison in descriptions of landscapes, expeditions, navigation or trading routes, and origins of natural creatures and elements of other locations. The names of the rivers in the India, including some tributaries, are highlighted as references. India’s role as a major trading partner is also significant in the narrative, as it frequently imports rare and precious treasures into the Mediterranean.</p>
+<p>The content relating to India potentially themed in three topics which can be illustrated in more details by closely examining the text. The two dominant topics cover the geographical and social conditions of Indian nations as well as stones that are originated or produced in India. Within the topic about general introduction to India, other than addressing it as an origin of numerous marvels, Pliny also incidentally mentioned the epic tales and history related to the conquest of India, suggesting an imperial perspective of the work. And in the less prominent topic, which focused on merchandise trade, Pliny criticised human greed and the unnecessary interference with nature that it represents, which echoes his Stoic view of the relationship between nature and the human world.</p>
+<p>A network of place names, personal names, and book numbers related to India has been created to illustrate the focus and co-occurrence clusters in the content structure. It shows that Arabia is the place that in closest proximity to India in the narrative. And there tend to be specific historical figures and referencing scholars clustering around different books. It is notable that Magi and Greek scholars played a significant role as disproving subjects in the person name cluster of book 37, which helped Pliny express his Stoic advocacy of worshipping the natural and material world.</p>
+<p>In summary, in Pliny’s unintentional portrait, India showed its complex figure as a geographical contrast, an origin of marvels and treasures, a major trading partner, and a context of unecessary luxurious pursuit of Pliny’s contemporary that he debated against in the scope of <em>Natural History</em>.</p>
 </section>
 <section id="distant-reading-as-a-method" class="level3" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="distant-reading-as-a-method"><span class="header-section-number">5.2</span> Distant reading as a method</h3>
-<p>The attempt of utilizing several distant reading methods for a research of classical text in this study has, to a certain extent, achieved a response to the research question.</p>
-<p>From pinning down the research question to conducting a meticulous analysis of the designated text, the application of distant reading methods yielded insightful perspectives and enriched information. However, as shown in the topic modeling section of Data analysis, an integration of close reading is essential in interpreting the outputs of distant reading.</p>
-<p>Furthermore, when implementing these methods, data completeness check and validation are crucial steps to be taken before running the analysis. Since the sophisticated textual contents are simplified and restructured as data values in tablular format, it will make big difference for the outcome of missing or mistaken inputs.</p>
-<p>Another benefit of adopting the distant reading approaches is the output dataset can be repurposed for subsequent investigations. Together with this thesis, the following dataset and outputs are available on the <a href="https://github.com/lizaodawn/NH_thesis">GitHub repository</a> for potentially re-uses:</p>
+<p>The attempt of employing several distant reading methods for a research of classical text in this study has, to a certain extent, achieved a response to the research question.</p>
+<p>From identifying the research question to conducting analysis of the designated text, the distant reading methods have provided valuable insights and enriched information. However, as demonstrated in the topic modelling section of the data analysis, it is crucial to integrate close reading in interpreting the results obtained through distant reading.</p>
+<p>Besides, comprehensive checks are essential to ensure the completeness and validity of data before proceeding with the analysis techniques mentioned. Converting complex textual content into structured data in a tabular format requires meticulous attention to detail, as any omissions or inaccuracies in the dataset can significantly impact subsequent outputs and their representation.</p>
+<p>Another benefit of adopting the distant reading approaches is that the output dataset can be repurposed for further investigations. Together with this thesis, the following dataset and outputs are available on the <a href="https://github.com/lizaodawn/NH_thesis">GitHub repository</a> for future use:</p>
 <ol type="1">
-<li>Dataset of Indian place names mentioned in <em>Natural Hisoty</em> with the coordinating textual passages (scraped from TOPOSText with supplemented mannually checked annotations)</li>
-<li>Dataset of geographical names menttioned in <em>Natural History</em> with the coordinating textual passages (scraped from TOPOSText)</li>
-<li>Corpus files of textual passages from the <em>Natural History</em> related to India</li>
-<li>Network graph of place names, person names and book numbers about India-related contents in <em>Natural History</em></li>
+<li><p>Dataset of Indian place names mentioned in <em>Natural Hisoty</em> with the corresponding textual passages (scraped from TOPOSText with supplemented mannual annotations)</p></li>
+<li><p>Dataset of geographical names menttioned in <em>Natural History</em> with the corresponding textual passages (scraped from TOPOSText)</p></li>
+<li><p>Corpus files containing textual passages relevant to India from <em>Natural History</em></p></li>
+<li><p>Network graph featuring connections among place names, person names, and book numbers pertaining to India-related content within <em>Natural History</em></p></li>
 </ol>
-<p>Beyond that, the presentation of this thesis is practiced in an integration of <a href="https://quarto.org/">Quarto</a> with jupyter notebook. Embedding the YAML metadata into the notebook, it helped mekke a decent presentation both in HTML and PDF format. With rendering the output in HTML, the interactive maps and graphs can be published online.</p>
+<p>In addition, this thesis has been effectively presented by integrating <a href="https://quarto.org/">Quarto</a> with <a href="https://jupyter.org/">Jupyter</a> Notebook. A cohesive presentation across HTML and PDF formats has been achieved by embedding YAML metadata within the notebook. The HTML rendering makes it easy to distribute interactive maps and graphics on the web, providing a flexible approach to sharing research results.</p>
 </section>
 <section id="reflection-and-limitation" class="level3" data-number="5.3">
 <h3 data-number="5.3" class="anchored" data-anchor-id="reflection-and-limitation"><span class="header-section-number">5.3</span> Reflection and limitation</h3>
-<p>Though making the best effort to conduct a complete and consistent study for this thesis, there are still some limitation in the data preprocessing and parameter tuning sections that could be enhanced.</p>
-<p>As introduced in the Data preparation section, the Indian place names scraped from TOPOSText is found incomplete and gone through a mannual check. About 24% of the amount of orignal retrieved dataset were appended after the mannual check. Though the supplemented Indian place annotation has been updated to the dataset compelling all geographical annotations, there might be missing identifications of places outside the specified coordinates range for India, which is better to also go through a mannual check and suppliment. However, as it requires more effort and time for the scale of the current study, the step has not been taken. It will make the dataset more complete and the context for this study more consistent if the same supplimenting process of all place names could be done.</p>
-<p>And for the topic modelling section, when deciding the topic numer and passed for assigning the topics, though there is a validation process for topic number designation, and it aligns with the intuitive observation about differnt outputs, it is better to go through validation other parameters and general comparison for a more validating fine tuning.</p>
-<p>On the other hand, with time limitation, it only added person name as an additional entity node for the network analysis. The current network graph shows the distance relationship between person names, place names and book numbers. It may give more dimensions for the whole content structure when including more types of entities, as animals, events, and ethnic groups, which are available on the TOPOSText annotations. In this regard, if the study will continues in the future, this aspect can be certainlly enhanced.</p>
-<p>And for the presentation of network graph, alternative platforms should be explored for a more interactive output. The optimal scheme is to make the graph easily zooming in to different clusters, and filtering with different types of nodes.</p>
+<p>Although considerable effort has been put into conducting a comprehensive study for this thesis, there are certain limitations within the data preprocessing and parameter tuning phases that could be improved.</p>
+<p>During the data preparation phase, it was discovered that Indian place names sourced from TOPOSText were incomplete and required manual validation. As a result, about 24% of the original dataset was supplemented after validation. Although these additional annotations have been merged into the dataset containing all the place names, there may still be missing identifications of places outside the predefined coordinate range for India. However, manual validation and supplementation of such cases require a significant amount of time and effort, which was not feasible at the scale of this study. If possible, a similar supplementation process for all place names could improve the completeness of the dataset and promote greater contextual consistency for the study.</p>
+<p>And for the topic modelling section, the parameter setting of topic number was determined through a validation process based on the coherence score comparison. Further fine-tuning of the model could be achieved through additional validation of parameters and broader comparisons. Adopting this comprehensive approach would improve the robustness of the topic modelling outcomes.</p>
+<p>Due to time constraints, the network analysis only incorporated person names as an additional entity node. By encompassing more entity types, like animals, events, and ethnic groups, available through TOPOSText annotations, deeper insight into the content’s structural dynamics could be gained by expanding this analysis. This remains to improve if the study continues to progress. Moreover, the presentation of the network graphs could be enhanced by exploring alternative platforms that offer greater interactivity. A preferable approach involves creating graphs that can be easily zoomed between various clusters and filtered based on different node types. This interactivity would improve the accessibility and usability of the graph’s visualisation.</p>
 </section>
 </section>
 <section id="references" class="level2 unnumbered" data-number="6">
@@ -2303,7 +2315,7 @@ Underwood, Ted. 2012. <span>“Topic Modeling Made Just Simple Enough.”</span>
 <li id="fn1"><p><em>Natural History</em> 1.5.1 (<a href="https://topostext.org/work/148" target="_blank">https://topostext.org/work/148</a>)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>As indicated in the map-by-map directory, the range spans territories of “modern states of India (minus the Punjab), Bangladesh, Bhutan, Burma, Nepal, and Sri Lanka”.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p><em>Natural History</em> 37.77.1 (<a href="https://topostext.org/work/153" target="_blank">https://topostext.org/work/153</a>)<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>The code for LDA implementation was referred to the tutorial of <span class="citation" data-cites="barber">Barber (<a href="#ref-barber" role="doc-biblioref">n.d.</a>)</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The LDA implementation code was referenced from a tutorial by <span class="citation" data-cites="barber">Barber (<a href="#ref-barber" role="doc-biblioref">n.d.</a>)</span><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main>
 <!-- /main column -->
