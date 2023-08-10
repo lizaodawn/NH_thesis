@@ -1,3 +1,0 @@
-NLP Natural Language Processing
-TOPOSText TOPOSText Projexct
-NER Named Entity Reognition

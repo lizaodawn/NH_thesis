@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Dawn, Lizao Zhuang (r0914937)">
+<meta name="author" content="Dawn, Lizao Zhuang">
 <meta name="keywords" content="Natural History, Pliny the Elder, Spatial Humanities, Indo-Roman, Indo-Mediterranean">
 
 <title>Mapping India in Pliny the Elder’s Natural History</title>
@@ -127,7 +127,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Dawn, Lizao Zhuang (r0914937) </p>
+             <p>Dawn, Lizao Zhuang </p>
           </div>
   </div>
     
@@ -138,7 +138,8 @@ div.csl-indent {
 <div>
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
-    this is an abstract
+    <p>This study examines Pliny’s <em>Natural History</em> from a spatial perspective, focusing on the content relating to India and incorporating the digitised and annotated text available in the <a href="https://topostext.org/">TOPOSText project</a>. The research employs a variety of methodologies, including word frequency and collocation analysis, topic modelling and network analysis, with an integration of close reading practices.</p>
+    <p>The multifaceted role that India plays in the narrative is highlighted in the study’s findings. It emerges not only as a geographical counterpart and repository of precious treasures, but also as an important trading partner of the Roman Empire and the Mediterranean, a context closely related to Pliny’s Stoic perspective on the natural world. In addition, the creation of a network map linking place and person names associated with India highlights the clustering of historical figures in the content structure.</p>
   </div>
 </div>
 
@@ -436,7 +437,7 @@ div.csl-indent {
 </section>
 <section id="text-source-for-the-study" class="level3" data-number="1.3">
 <h3 data-number="1.3" class="anchored" data-anchor-id="text-source-for-the-study"><span class="header-section-number">1.3</span> Text source for the study</h3>
-<p><em>Natural History</em> is originally in Latin. For the purpose of this study, an English translation by Henry T. Riley (1816-1878) and John Bostock (1773-1846), first published in 1855, is utilized. The translated text is obtained in a digitized version from the <a href="https://topostext.org/the-project">TOPOSText project</a>, having been sourced from the Perseus Project and governed by a Creative Commons Attribution-Share-Alike 3.0 U.S. License.</p>
+<p><em>Natural History</em> is originally in Latin. For the purpose of this study, an English translation by Henry T. Riley (1816-1878) and John Bostock (1773-1846), first published in 1855, is utilized. The translated text is obtained in a digitised version from the <a href="https://topostext.org/the-project">TOPOSText project</a>, having been sourced from the Perseus Project and governed by a Creative Commons Attribution-Share-Alike 3.0 U.S. License.</p>
 <p>Annotations of proper names, place names and their corresponding coordinates are available together with the text of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) on <a href="https://topostext.org/the-project">TOPOSText project</a>. This invaluable resource allows for creating a dataset that includes both the textual contents and geographical annotations, which can be utilized to investigate the distribution of place names in the entire work and examine the frequencies and patterns of geography-related content.</p>
 <p>The extension of the extracted corpora and the workflow of the extraction will be further explained in the Methodology chapter (<a href="#sec-methodology">Section&nbsp;3</a>).</p>
 </section>
@@ -696,7 +697,7 @@ div.csl-indent {
 <h3 data-number="3.1" class="anchored" data-anchor-id="workflow"><span class="header-section-number">3.1</span> Workflow</h3>
 <p>The workflow for this study involves the following key stages:</p>
 <p><strong>Data Collection</strong>:</p>
-<p>As mentioned in the Introduction chapter (<a href="#sec-introduction">Section&nbsp;1</a>), the text employed for this study is obtained from the digitized English translation (by Henry T. Riley (1816-1878) and John Bostock (1773-1846)) of Pliny’s <em>Natural History</em> available on <a href="https://topostext.org/the-project">TOPOSText project</a>.</p>
+<p>As mentioned in the Introduction chapter (<a href="#sec-introduction">Section&nbsp;1</a>), the text employed for this study is obtained from the digitised English translation (by Henry T. Riley (1816-1878) and John Bostock (1773-1846)) of Pliny’s <em>Natural History</em> available on <a href="https://topostext.org/the-project">TOPOSText project</a>.</p>
 <p>The two parts of <em>Natural History</em> (<a href="https://topostext.org/work/148">Book1-11</a>, <a href="https://topostext.org/work/153">Book12-37</a>) are scraped for their the textual contents together with the geographical annotation of the mentioned ancient places, and their book, chapter and paragraph positions with the function provided in <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> library of Python.</p>
 <p><strong>Data Preprocessing</strong>:</p>
 <p>The information extracted from the HTML file is structured into separate columns as <a href="https://pandas.pydata.org/">Pandas</a> dataframe, a dataframe for plain text of the entire work, and a dataframe for geographical-related text in <em>Natural History</em> with the geographical annotations are generated and stored in CSV format.</p>
@@ -1586,7 +1587,7 @@ if(typeof(LDAvis) !== "undefined"){
 <section id="person-name-annotationtagging-retrieval" class="level4" data-number="4.4.1">
 <h4 data-number="4.4.1" class="anchored" data-anchor-id="person-name-annotationtagging-retrieval"><span class="header-section-number">4.4.1</span> Person name annotation/tagging retrieval</h4>
 <p>To extract the names of people within the captioned text, approaches of retrieval from the TOPOSText annotation and from the text tagging given by the pre-trained multilingual named entity recognition models <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are compared to adopt the most complete output.</p>
-<p><strong>1. Annotation retrieval from TOPOSText</strong></p>
+<p><strong>I. Annotation retrieval from TOPOSText</strong></p>
 <p>Besides place names, a catalogue of proper names including persons, gods, festibals, animals and artworks is identified in the classical text on TOPOSText. Every proper name is assigned a distinct URI as its identifier in the HTML format, as demonstrated in the following example: **&lt;a href=“/people/54” target=“_blank”&gt;Muses&lt;/a&gt;**.</p>
 <p>Using the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">Beautiful Soup</a> tools, the proper names, together with their respective URIs and the book-chapter-paragraph numbers in which they appear, can be retrieved from the URLs of the two sections of <em>Natural History</em> on TOPOSText.</p>
 <div class="cell" data-execution_count="28">
@@ -1761,7 +1762,7 @@ if(typeof(LDAvis) !== "undefined"){
 <p>As shown in <a href="#tbl-person_anno_merged">Table&nbsp;8</a>, the validated person names are added to the India-related text dataset. By matching the book-chapter-paragraph number of the retrieved person names and place names, a total of <strong>3583</strong> co-occurrences of individual place names and person names in the same paragraph within the India-related text in <em>Natural History</em> were identified.</p>
 </div>
 </div>
-<p><strong>2. Named entity recognition with <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a></strong></p>
+<p><strong>II. Named entity recognition with <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a></strong></p>
 <p>In order to assess the quality and completeness of the extracted person name annotations, two widely used pretrained machine learning models for named entity recognition, <a href="https://huggingface.co/Babelscape/wikineural-multilingual-ner">WikiNEuRal</a> <span class="citation" data-cites="tedeschi2021">(<a href="#ref-tedeschi2021" role="doc-biblioref">Tedeschi et al. 2021</a>)</span> and <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span> are employed to tag person names in the same text.</p>
 <div class="cell" data-execution_count="77">
 <div class="cell-output cell-output-display" data-execution_count="77">
@@ -1845,7 +1846,7 @@ if(typeof(LDAvis) !== "undefined"){
 <p>After merging the person name tags of WikiNEuRal NER with the dataset containing place name occurrences, a total of <strong>1881</strong> co-occurrences of place name and person name in the same paragraph within India-related text in <em>Natural History</em> were identified.</p>
 </div>
 </div>
-<p><strong>3. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a></strong></p>
+<p><strong>III. Named entity recognition with <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a></strong></p>
 <p>For comparison, named entity recognition was also performed on the same text using another well-known pretrained natural language processing model, <a href="https://huggingface.co/flair/ner-english-ontonotes-fast">Flair</a> <span class="citation" data-cites="akbik2018coling">(<a href="#ref-akbik2018coling" role="doc-biblioref">Akbik, Blythe, and Vollgraf 2018</a>)</span>.</p>
 <div class="cell" data-execution_count="78">
 <div class="cell-output cell-output-display" data-execution_count="78">
@@ -2202,11 +2203,11 @@ if(typeof(LDAvis) !== "undefined"){
 <h2 data-number="5" class="anchored" data-anchor-id="sec-conclusions"><span class="header-section-number">5</span> Conclusions</h2>
 <section id="comprehension-of-india-in-the-narrative" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="comprehension-of-india-in-the-narrative"><span class="header-section-number">5.1</span> Comprehension of “India” in the narrative</h3>
-<p>Leading by the research questions of “How is India described, and how is the information about India structured in the work?”, the above analysis with different methods, including word frequency and collocation analysis, topic modelling, and network analysis, with an integration of close reading to the textual contet, comprise a comprehension of “India” in the narrative of <em>Natural History</em>.</p>
+<p>Guided by the research questions of “How is India described, and how is the information about India structured in the work?”, the above analysis with different methods, including word frequency and collocation analysis, topic modelling, and network analysis, with an integration of close reading to the textual contet, comprise a comprehension of “India” in the narrative of <em>Natural History</em>.</p>
 <p>In general, India is considered a significant geographical contrast to the Roman Empire and the Mediterranean. India is often mentioned for comparison in descriptions of landscapes, expeditions, navigation or trading routes, and origins of natural creatures and elements of other locations. The names of the rivers in the India, including some tributaries, are highlighted as references. India’s role as a major trading partner is also significant in the narrative, as it frequently imports rare and precious treasures into the Mediterranean.</p>
 <p>The content relating to India potentially themed in three topics which can be illustrated in more details by closely examining the text. The two dominant topics cover the geographical and social conditions of Indian nations as well as stones that are originated or produced in India. Within the topic about general introduction to India, other than addressing it as an origin of numerous marvels, Pliny also incidentally mentioned the epic tales and history related to the conquest of India, suggesting an imperial perspective of the work. And in the less prominent topic, which focused on merchandise trade, Pliny criticised human greed and the unnecessary interference with nature that it represents, which echoes his Stoic view of the relationship between nature and the human world.</p>
 <p>A network of place names, personal names, and book numbers related to India has been created to illustrate the focus and co-occurrence clusters in the content structure. It shows that Arabia is the place that in closest proximity to India in the narrative. And there tend to be specific historical figures and referencing scholars clustering around different books. It is notable that Magi and Greek scholars played a significant role as disproving subjects in the person name cluster of book 37, which helped Pliny express his Stoic advocacy of worshipping the natural and material world.</p>
-<p>In summary, in Pliny’s unintentional portrait, India showed its complex figure as a geographical contrast, an origin of marvels and treasures, a major trading partner, and a context of unecessary luxurious pursuit of Pliny’s contemporary that he debated against in the scope of <em>Natural History</em>.</p>
+<p>In summary, in Pliny’s unintentional portrait, India showed its complex figure as a geographical contrast, an origin of marvels and treasures, a major trading partner, and a context of unnecessary luxurious pursuit of Pliny’s contemporary that he debated against in the scope of <em>Natural History</em>.</p>
 </section>
 <section id="distant-reading-as-a-method" class="level3" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="distant-reading-as-a-method"><span class="header-section-number">5.2</span> Distant reading as a method</h3>
