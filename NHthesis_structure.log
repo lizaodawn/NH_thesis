@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.12)  13 AUG 2023 06:22
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.12)  13 AUG 2023 06:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -858,7 +858,7 @@ File: bkm-dvipdfm.def 2020-11-06 v1.29 bookmark driver for dvipdfm (HO)
 \BKM@id=\count351
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 185.
-No file NHthesis_structure.aux.
+(./NHthesis_structure.aux)
 \openout1 = `NHthesis_structure.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 191.
@@ -1160,9 +1160,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 191.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
 (Font)              scaled to size 20.74pt on input line 194.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
@@ -1212,17 +1209,34 @@ LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
 [1]
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 231.
-[2] [3]
-No file NHthesis_structure.toc.
+[2] [3] (./NHthesis_structure.toc
+LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 10.10637pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.21884pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 14.43915pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.10739pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.21957pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 14.43622pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 10.10533pt on input line 2.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 7.21811pt on input line 2.
+)
 \tf@toc=\write4
 \openout4 = `NHthesis_structure.toc'.
 
-[4]
-No file NHthesis_structure.lof.
+[4] (./NHthesis_structure.lof)
 \tf@lof=\write5
 \openout5 = `NHthesis_structure.lof'.
 
-No file NHthesis_structure.lot.
+(./NHthesis_structure.lot)
 \tf@lot=\write6
 \openout6 = `NHthesis_structure.lot'.
 
@@ -1233,22 +1247,6 @@ LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 288.
 LaTeX Font Info:    Font shape `TU/Arial(0)/b/it' will be
 (Font)              scaled to size 14.4pt on input line 288.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.10637pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.21884pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.43915pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.10739pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.21957pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.43622pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.10533pt on input line 298.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.21811pt on input line 298.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
 (Font)              scaled to size 8.4pt on input line 298.
 LaTeX Font Info:    Font shape `TU/Arial(0)/m/n' will be
@@ -1265,79 +1263,24 @@ LaTeX Font Info:    Font shape `TU/Arial(0)/m/it' will be
 (Font)              scaled to size 10.0pt on input line 299.
 [1
 
-]
-LaTeX Font Info:    Font shape `TU/Arial(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 368.
-
-LaTeX Warning: Reference `tbl-place_book_distribution' on page 2 undefined on input line 368.
-
-
-LaTeX Warning: Reference `fig-place_distribution' on page 2 undefined on input line 369.
-
-
-LaTeX Warning: Reference `sec-methodology' on page 2 undefined on input line 373.
-
-[2]
+] [2]
 File: NHthesis_structure_files/figure-pdf/fig-place_distribution-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-place_distribution-output-1.png>
-[3]
-
-LaTeX Warning: Reference `sec-methodology' on page 4 undefined on input line 471.
-
-[4]
-
-LaTeX Warning: Reference `tbl-topplace' on page 5 undefined on input line 486.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 527.
-
-
-LaTeX Warning: Reference `fig-geonamemap_pdf' on page 5 undefined on input line 536.
-
-[5]
+[3] [4] [5]
 File: NHthesis_structure_files/figure-pdf/fig-geonamemap_pdf-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-geonamemap_pdf-output-1.png>
-[6] [7]
-
-LaTeX Warning: Reference `sec-introduction' on page 8 undefined on input line 617.
-
-
-LaTeX Warning: Reference `tbl-place_book_distribution' on page 8 undefined on input line 661.
-
-
-LaTeX Warning: Reference `fig-place_distribution' on page 8 undefined on input line 662.
-
-
-LaTeX Warning: Reference `fig-geonamemap_pdf' on page 8 undefined on input line 664.
-
-[8]
-
-LaTeX Warning: Reference `sec-conclusions' on page 9 undefined on input line 710.
-
-[9]
-
-LaTeX Warning: Reference `tbl-dataset_plaintext' on page 10 undefined on input line 753.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 775.
-
-
-LaTeX Warning: Reference `tbl-dataset_geotext' on page 10 undefined on input line 796.
-
-[10]
-Overfull \hbox (11.27444pt too wide) in alignment at lines 800--807
+[6] [7] [8] [9] [10]
+Overfull \hbox (74.02837pt too wide) in alignment at lines 800--807
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.27444pt too wide) in alignment at lines 807--812
+Overfull \hbox (74.02837pt too wide) in alignment at lines 807--812
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.27444pt too wide) in alignment at lines 812--814
+Overfull \hbox (74.02837pt too wide) in alignment at lines 812--814
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1346,29 +1289,18 @@ Overfull \hbox (74.02837pt too wide) in alignment at lines 814--825
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4 on input line 825.
-
-
-LaTeX Warning: Reference `sec-research_question' on page 11 undefined on input line 840.
-
 [11]
-
-LaTeX Warning: Reference `tbl-dataset_indiatext' on page 12 undefined on input line 874.
-
-
-Overfull \hbox (11.27444pt too wide) in alignment at lines 877--884
+Overfull \hbox (88.7061pt too wide) in alignment at lines 877--884
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.27444pt too wide) in alignment at lines 884--889
+Overfull \hbox (88.7061pt too wide) in alignment at lines 884--889
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (11.27444pt too wide) in alignment at lines 889--891
+Overfull \hbox (88.7061pt too wide) in alignment at lines 889--891
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1377,26 +1309,18 @@ Overfull \hbox (88.7061pt too wide) in alignment at lines 891--902
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 5 on input line 902.
-
 [12]
-
-LaTeX Warning: Reference `tbl-supplement_annotation' on page 13 undefined on input line 943.
-
-
-Overfull \hbox (17.80179pt too wide) in alignment at lines 978--985
+Overfull \hbox (72.10649pt too wide) in alignment at lines 978--985
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (17.80179pt too wide) in alignment at lines 985--990
+Overfull \hbox (72.10649pt too wide) in alignment at lines 985--990
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (17.80179pt too wide) in alignment at lines 990--992
+Overfull \hbox (72.10649pt too wide) in alignment at lines 990--992
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1405,45 +1329,17 @@ Overfull \hbox (72.10649pt too wide) in alignment at lines 992--1003
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 6 on input line 1003.
-
 [13] [14] [15]
-
-LaTeX Warning: Reference `fig-grouped_place_name_count_comparison' on page 16 undefined on input line 1085.
-
-
-LaTeX Warning: Reference `fig-subplots_place_name_count_comparison' on page 16 undefined on input line 1090.
-
 File: NHthesis_structure_files/figure-pdf/fig-grouped_place_name_count_comparison-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-grouped_place_name_count_comparison-output-1.png>
 File: NHthesis_structure_files/figure-pdf/fig-subplots_place_name_count_comparison-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-subplots_place_name_count_comparison-output-1.png>
-[16]
-
-LaTeX Warning: Reference `fig-freqwords_treemap' on page 17 undefined on input line 1175.
-
-
-LaTeX Warning: Reference `fig-freqwords_wordcloud' on page 17 undefined on input line 1177.
-
-[17]
+[16] [17]
 File: NHthesis_structure_files/figure-pdf/fig-freqwords_treemap-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-freqwords_treemap-output-1.png>
 File: NHthesis_structure_files/figure-pdf/fig-freqwords_wordcloud-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-freqwords_wordcloud-output-1.png>
-[18]
-
-LaTeX Warning: Reference `fig-subplots_place_name_count_comparison' on page 19 undefined on input line 1270.
-
-[19] [20]
-
-LaTeX Warning: Reference `sec-network' on page 21 undefined on input line 1374.
-
-[21]
-
-LaTeX Warning: Reference `fig-topic_coherence_distribution' on page 22 undefined on input line 1409.
-
+[18] [19] [20] [21]
 File: NHthesis_structure_files/figure-pdf/fig-topic_coherence_distribution-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-topic_coherence_distribution-output-1.png>
 [22]
@@ -1466,20 +1362,7 @@ Overfull \hbox (41.42pt too wide) in paragraph at lines 1446--1446
 []  []\TU/lmtt/m/n/12 0.007*"also" + 0.007*"city" + 0.007*"mile" + 0.007*"sea" + 0.006*"island" + [][] 
  []
 
-[23]
-
-LaTeX Warning: Reference `fig-topic_cluster0' on page 24 undefined on input line 1486.
-
-
-LaTeX Warning: Reference `fig-topic_cluster1' on page 24 undefined on input line 1486.
-
-
-LaTeX Warning: Reference `fig-topic_cluster2' on page 24 undefined on input line 1487.
-
-
-LaTeX Warning: Reference `fig-topic_cluster3' on page 24 undefined on input line 1487.
-
-[24]
+[23] [24]
 File: NHthesis_structure_files/figure-pdf/fig-topic_cluster0-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-topic_cluster0-output-1.png>
 File: NHthesis_structure_files/figure-pdf/fig-topic_cluster1-output-1.png Graphic file (type bmp)
@@ -1490,68 +1373,39 @@ File: NHthesis_structure_files/figure-pdf/fig-topic_cluster2-output-1.png Graphi
 File: NHthesis_structure_files/figure-pdf/fig-topic_cluster3-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-topic_cluster3-output-1.png>
 [26] [27] [28]
-
-LaTeX Warning: Reference `fig-book_context_distribution' on page 29 undefined on input line 1702.
-
-
-LaTeX Warning: Reference `fig-context_type_freq' on page 29 undefined on input line 1703.
-
 File: NHthesis_structure_files/figure-pdf/fig-book_context_distribution-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-book_context_distribution-output-1.png>
 File: NHthesis_structure_files/figure-pdf/fig-context_type_freq-output-1.png Graphic file (type bmp)
 <NHthesis_structure_files/figure-pdf/fig-context_type_freq-output-1.png>
 [29] [30]
+Overfull \hbox (71.3486pt too wide) in alignment at lines 1842--1850
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (71.3486pt too wide) in alignment at lines 1850--1855
+ [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (71.3486pt too wide) in alignment at lines 1855--1857
+ [] [] [] [] [] [] 
+ []
+
+
 Overfull \hbox (71.3486pt too wide) in alignment at lines 1857--1868
  [] [] [] [] [] [] 
  []
 
 [31]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 7 on input line 1868.
-
-
-LaTeX Warning: Reference `tbl-validated_people_anno' on page 32 undefined on input line 1872.
-
-
-Overfull \hbox (123.96579pt too wide) in alignment at lines 1889--1900
+Overfull \hbox (123.96579pt too wide) in alignment at lines 1877--1883
  [] [] [] [] [] [] 
  []
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8 on input line 1900.
-
-
-LaTeX Warning: Reference `tbl-person_anno_merged' on page 32 undefined on input line 1902.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9 on input line 1946.
-
-[32]
-
-LaTeX Warning: Reference `tbl-wiki_ppl_tag' on page 33 undefined on input line 1949.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 10 on input line 1992.
-
-
-LaTeX Warning: Reference `tbl-flair_ppl_tag' on page 33 undefined on input line 1995.
-
-
-LaTeX Warning: Reference `tbl-ner_compare' on page 33 undefined on input line 2003.
-
-
-Overfull \hbox (72.40717pt too wide) in alignment at lines 2021--2025
- [] [] [] [] 
+Overfull \hbox (123.96579pt too wide) in alignment at lines 1883--1887
+ [] [] [] [] [] [] 
  []
 
-[33]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 11 on input line 2025.
-
-
-LaTeX Warning: Reference `tbl-per_name_compare' on page 34 undefined on input 
+Overfull \hbox (123.96579pt too wide) in alignment at lines 1887-
