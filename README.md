@@ -3,4 +3,4 @@ This repository contains the code, the sparsed data, the generated dataset and t
 
 The study examines Pliny’s Natural History from a spatial perspective, focusing on the content relating to India and incorporating the digitised and annotated text available in the TOPOSText project. The research employs a variety of methodologies, including word frequency and collocation analysis, topic modelling and network analysis, with an integration of close reading practices.
 
-HTML version of this thesis available at https://raw.githack.com/lizaodawn/NH_thesis/main/NHthesis_structure.html
+HTML version of this thesis available at https://raw.githack.com/lizaodawn/NH_thesis/main/NHthesis_structure.html.
